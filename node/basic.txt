@@ -1,0 +1,67 @@
+//Node
+Javascript runtime server
+
+//REPL
+Read Evaluate Print Loop
+Take single expressions on user inputs and returns the result
+back to the console after executions.
+
+//Process
+Object
+It provides information about and control over the current
+Node process.
+
+-Process.arg
+Returns an array containing the command-line arguments passed when 
+the Node.js process was launched.
+
+//Bindings
+libraries that "bind" two different programming languages so that code 
+written in one language can be used in code written in another library. 
+With the presence of bindings, you don't have to write all the code again 
+just because they are in different languages.
+
+//Asynchronus and Synchronous
+In coding, synchronous operations are performed one at a time. 
+One task finishes, the next step begins. Asynchronous operations can happen 
+at the same time — you can move to the next step while another step finishes.
+Javascript is Synchronous by deafult. But callbacks, Ajax, and Node, are Asynchronous.
+
+//Thread
+A thread is an execution context, which is all the information a CPU needs 
+to execute a stream of instructions.
+Suppose you're reading a book, and you want to take a break right now, 
+but you want to be able to come back and resume reading from the exact 
+point where you stopped. One way to achieve that is by jotting down the 
+page number, line number, and word number. So your execution context 
+for reading a book is these 3 numbers.
+Threads are different from processes. A thread is a context of execution, 
+while a process is a bunch of resources associated with a computation. 
+A process can have one or many threads.
+
+//Event Loop
+Whenever we run a Node program, a thread is automatically created. 
+This thread is the only place where our entire codebase is going to be executed. 
+Inside of it, something called the event loop is generated. The role of this 
+loop is to schedule which operations our only thread should be performing at 
+any given point in time.
+Event loop is an endless loop, which waits for tasks, executes them and then 
+sleeps until it receives more tasks.
+
+-The event loop executes tasks from the event queue only when the call stack 
+is empty i.e. there is no ongoing task.
+The event loop allows us to use callbacks and promises.
+The event loop executes the tasks starting from the oldest first.
+
+//Events
+Node.js has a built-in module, called "Events", where you can create-, 
+fire-, and listen for- your own events.
+
+To include the built-in Events module use the require() method. 
+In addition, all event properties and methods are an instance of 
+an EventEmitter object.
+
+//Modules
+Reuse existing code
+Organize code
+Expose only what will be use
