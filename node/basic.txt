@@ -65,3 +65,23 @@ an EventEmitter object.
 Reuse existing code
 Organize code
 Expose only what will be use
+To export -> module.export = something;
+To import -> const something = require('something');
+
+
+//NPM
+Node package module
+Modules are libraries for Node.js.
+A package is one or more modules (libraries) 
+grouped (or packaged) together. These are commonly 
+used by other packages or a project of your own. 
+Node.js uses a package manager, where you can find 
+and install thousands of packages.
+
+//Semantic versioning
+
+Semantic versioning is a formal convention for determining the 
+version number of new software releases. The standard helps software 
+users to understand the severity of changes in each new distribution.
+A project that uses semantic versioning will advertise a Major, 
+Minor and Patch number for each release.
