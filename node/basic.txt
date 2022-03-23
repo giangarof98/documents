@@ -61,6 +61,11 @@ To include the built-in Events module use the require() method.
 In addition, all event properties and methods are an instance of 
 an EventEmitter object.
 
+-on()
+The on() method requires name of the event to handle and callback 
+function which is called when an event is raised.
+
+
 //Modules
 Reuse existing code
 Organize code
@@ -85,3 +90,36 @@ version number of new software releases. The standard helps software
 users to understand the severity of changes in each new distribution.
 A project that uses semantic versioning will advertise a Major, 
 Minor and Patch number for each release.
+
+//csv
+A comma-separated values (CSV) file is a delimited text file that 
+uses a comma to separate values. Each line of the file 
+is a data record.
+
+//fs.createReadStream
+allows you to open up a readable stream in a very simple manner. 
+All you have to do is pass the path of the file to start 
+streaming in. It turns out that the response (as well as the request) 
+objects are streams.
+
+//DNS
+Domain Name System
+DNS, or the Domain Name System, translates human readable domain names 
+(for example, www.amazon.com) to machine readable IP addresses 
+(for example, 192.0.2.44).
+
+//HTTP
+Hyper Text Transfer Protocol
+Is used to load pages on the Internet using hyperlinks.
+As a request-response protocol, HTTP gives users a way to 
+interact with web resources such as HTML files by transmitting 
+hypertext messages between clients and servers. HTTP clients 
+generally use Transmission Control Protocol (TCP) connections 
+to communicate with servers.
+
+//API
+Application Programming Interface
+API is the acronym for Application Programming Interface, which is a 
+software intermediary that allows two applications to talk to each other. 
+Each time you use an app like Facebook, send an instant message, or 
+check the weather on your phone, you’re using an API.
