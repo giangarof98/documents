@@ -123,3 +123,11 @@ API is the acronym for Application Programming Interface, which is a
 software intermediary that allows two applications to talk to each other. 
 Each time you use an app like Facebook, send an instant message, or 
 check the weather on your phone, you’re using an API.
+
+//Same origin Policy
+The same-origin policy is a browser security feature that restricts 
+how documents and scripts on one origin can interact with resources 
+on another origin.
+
+//browser mechanism which enables controlled access to resources 
+located outside of a given domain.
