@@ -129,5 +129,24 @@ The same-origin policy is a browser security feature that restricts
 how documents and scripts on one origin can interact with resources 
 on another origin.
 
-//browser mechanism which enables controlled access to resources 
+//CORS
+browser mechanism which enables controlled access to resources 
 located outside of a given domain.
+
+//Express
+Node framework
+
+-alternatives to express 
+Koa, loopback, next.js (react)
+
+
+//Middleware
+Middleware is software which lies between an operating system 
+and the applications running on it.
+Middleware literally means anything you put in the middle of one layer 
+of the software and another. Express middleware are functions that 
+execute during the lifecycle of a request to the Express server. 
+Each middleware has access to the HTTP request and response for each 
+route (or path) it's attached to.
+
+
