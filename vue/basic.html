@@ -19,14 +19,22 @@
             <!-- <button @click="age++">+</button> -->
             <button v-on:click="dec">-</button>
             <!-- <button v-on:click="age--">-</button> -->
-            <p>{{age}}</p>
+            <p>{{ typeof age}}</p>
             <p v-html="raw"></p>
             <p><a :href="url">Click here</a></p>
-            <p>{{name()}}</p>
+            <p>{{name}}</p>
+
             <label for="">First name</label>
             <input v-model="first"></input> <br>
+
+            <label for="">Middle name</label>
+            <input @keyup.enter="middleName"></input> <br>
+
             <label for="">Last name</label>
-            <input v-model="last"></input>
+            <input v-model="last"></input> <br>
+
+            <label for="">Age</label>
+            <input type="number" v-model.number="age"></input>
         </div>
         {{ start() }}
     </div>
@@ -51,16 +59,18 @@
                     message: 'Hello',
                     msg: 'World',
                     first: '',
-                    last: ''
+                    last: '',
+                    middle:''
                 }
             },
             methods: {
+                middleName(e){
+                    this.middle = e.target.value
+                },
                 start() {
                     return ` ${this.message} ${this.msg} `
                 },
-                name(){
-                    return `${this.first} ${this.last}`
-                },
+
                 inc(){
                     this.age++
                     
@@ -77,10 +87,19 @@
                         default:
                             this.age--
                     }
-                    
             
+                },
+            },
+            computed:{
+                name(){
+                    console.log('computed property was called')
+                    return `${this.first} ${this.middle} ${this.last}`
+                },
+            },
+            watch:{
+                age(newVal, oldVal){
+                    setTimeout(() => {this.age = 20}, 2000)
                 }
-                
             }
         }).mount('#app')
 
@@ -112,15 +131,18 @@
         // }).mount('#app')
 
         //Mount: Insert a Vue application into the document
-        //Data(): function that set the data into the application
+        //Data(): function that set the data into the application. Use it to store single values
 
         //Expresion: Block of code that evaluates a value
         //Proxy: A figure that represents the value of something in calculation
-        //Method: Function to perform a task
+        //Method: Function to perform a task. Use it to store functions
         //Directives: Attributes that chain the behavior of the element into which is applied
         //Reactivity: Data reflected inmediatly when changes are made
         //Events modifiers: Modify how the event is handle
-            
+        //Key modifiers: Keyboard events
+        //Compute: To calculate Something; Must be in the same level like data, methods. use it to calculate values
+        //Watchers: Watch data for changes; Must be in the same level like data, methods
+
         //directives
         //v-bind: || :  bind data 
         //var-html      -attach html from data 
