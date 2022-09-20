@@ -1,0 +1,36 @@
+Library made by Facebook
+
+JSX
+Its how react render the html code
+
+
+    ClassComponent
+ class First extends React.Component{
+     render(){
+         return (
+             <div>
+                 <h1>Hello!</h1>
+                 <h2>Hello!</h2>
+                 <p>{3*6}</p>
+             </div>
+         )
+     }
+ }
+
+
+    Function Component
+function myfunc(){
+    const mood = ['happy', 'angry', 'sad', 'hungry', 'cool']
+    return mood[Math.floor(Math.random() * mood.length)]
+}
+const First = () => {
+    return <h1>{myfunc()}</h1>
+}
+
+function First(){
+    return <h1>Hello!</h1>
+}
+
+
+    To render the React code 
+ReactDOM.render(<First/>, document.getElementById('root'))
