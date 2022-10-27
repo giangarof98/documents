@@ -34,3 +34,8 @@ function First(){
 
     To render the React code 
 ReactDOM.render(<First/>, document.getElementById('root'))
+
+
+//Props
+    properties to pass data from one to antoher Component
+    inmutable (can't change value)
