@@ -1,41 +1,61 @@
 Library made by Facebook
 
 JSX
-Its how react render the html code
+    It's how react render the html code.
+    JSX allows write HTML elements in javascript, place them into the DOM, without use createElement or appendChild() Methods
 
+What's a component? 
+    Block of react
+    Combine JS logic and JSX presentation
 
     ClassComponent
- class First extends React.Component{
-     render(){
-         return (
-             <div>
-                 <h1>Hello!</h1>
-                 <h2>Hello!</h2>
-                 <p>{3*6}</p>
-             </div>
-         )
-     }
- }
+        class First extends React.Component{
+            render(){
+                return (
+                    <div>
+                        <h1>Hello!</h1>
+                        <h2>Hello!</h2>
+                        <p>{3*6}</p>
+                    </div>
+                )
+            }
+        }
 
 
     Function Component
-function myfunc(){
-    const mood = ['happy', 'angry', 'sad', 'hungry', 'cool']
-    return mood[Math.floor(Math.random() * mood.length)]
-}
-const First = () => {
-    return <h1>{myfunc()}</h1>
-}
+        function myfunc(){
+            const mood = ['happy', 'angry', 'sad', 'hungry', 'cool']
+            return mood[Math.floor(Math.random() * mood.length)]
+        }
+        const First = () => {
+            return <h1>{myfunc()}</h1>
+        }
 
-function First(){
-    return <h1>Hello!</h1>
-}
+        function First(){
+            return <h1>Hello!</h1>
+        }
 
 
-    To render the React code 
-ReactDOM.render(<First/>, document.getElementById('root'))
+To render the React code 
+    ReactDOM.render(<First/>, document.getElementById('root'))
 
 
 //Props
     properties to pass data from one to antoher Component
     inmutable (can't change value)
+
+//State
+    Important part of react which allows to interact with the application component.
+    Internal data specific to a component; Data that changes over time
+    Instance attribute on a component
+
+    What does state track?
+        UI logic; the changing state of the interface.
+
+
+//Constructor function
+    constructor(props)
+        Initial setup
+        The constructor is a method that’s automatically called during the creation of an object from a class.
+        If your page is stateless, you can ommit constructor function. otherwise, use it
+        Constructor use one argument, props. When calling super(props, it registers your class as a react component
