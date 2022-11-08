@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const arr = ['es5', 'es6', 'es7', 'es8', 'es9', 'esX']
+        const num = [1,2,3,4,5]
+        const names = [
+            {name: 'Jhon', age: 30, alive: true, savingAcc: 300 },
+            {name: 'Sarah', age: 34, alive: true, savingAcc: 200 },
+            {name: 'Arnold', age: 50, alive: false, savingAcc: 150},
+            {name: 'Terminator', age: 0, alive: false, savingAcc: 200},
+            {name: 'Kyle', age: 33, alive: true, savingAcc: 40},
+        ]
+
+        //Map arr
+        names.map(x => {
+            //console.log(x)
+        })
+
+        //Filter
+        const x = names.filter(n => n.alive === false)
+        //console.log(x)
+
+        //Reduce
+        //const res = num.reduce((left, right) => {return left + right})
+        //const [{savingAcc}] = names;
+        const money = names.map(x => {return x.savingAcc})
+        const r = money.reduce((left, right) => {return left + right})
+        //console.log(r)
+
+
+        //forEach
+        //names.forEach(x => {console.log(`${x.name}, ${x.alive}`)})
+
+
+        //Slice
+        const slice = arr.slice(0,2)
+        console.log(slice)
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+//Array
+    Collection of items of different data type
+    The first element of an array is 0 (index)
+    The typeof of array is Object
+    Almost all methos call a function
+
+    ~Methods
+        name            description
+        -map()          create a new array by calling the provided function in every element.
+        -filter()       return a copy of the provided array with the aproved conditions.
+                        It removes the items which dont satisfy the conditions.
+        -reduce()       Loop all the values into an array, giving one result.
+                        Loop all the values from left to right
+        -forEach()      Calls a function for each element
+        -slice()        Returns a copy of a portion of the array provided into a new array
+
