@@ -10,7 +10,16 @@
         -filter()       return a copy of the provided array with the aproved conditions.
                         It removes the items which dont satisfy the conditions.
         -reduce()       Loop all the values into an array, giving one result.
-                        Loop all the values from left to right
-        -forEach()      Calls a function for each element
-        -slice()        Returns a copy of a portion of the array provided into a new array
+                        Loop all the values from left to right.
+        -forEach()      Calls a function for each element.
+        -slice()        Returns a copy of a portion of the array provided into a new array.
+
+        -pop()          Remove the last element of the array
+        -push()         Add a new element in the end of the array
+
+        -shift          Remove the first element of the array
+        -unshift()      Add a new element in the beginning of the array
+
+        -reverse()      Reverse the array provided
+
 
