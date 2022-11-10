@@ -6,20 +6,40 @@
 
     ~Methods
         name            description
-        -map()          create a new array by calling the provided function in every element.
-        -filter()       return a copy of the provided array with the aproved conditions.
+
+        -map()          Create a new array by calling the provided function in every element.
+
+        -filter()       Return a copy of the provided array with the aproved conditions.
                         It removes the items which dont satisfy the conditions.
+
         -reduce()       Loop all the values into an array, giving one result.
                         Loop all the values from left to right.
+
         -forEach()      Calls a function for each element.
+
         -slice()        Returns a copy of a portion of the array provided into a new array.
+        -splice()       Method that changes the content of the array by removing or replacing existing elements.
+                        Start: Where the index start changing the array.
+                        deleteCount: Indicate the number of elements in the array to remove from start.
 
-        -pop()          Remove the last element of the array
-        -push()         Add a new element in the end of the array
+        -pop()          Remove the last element of the array.
+        -push()         Add a new element in the end of the array.
 
-        -shift          Remove the first element of the array
-        -unshift()      Add a new element in the beginning of the array
+        -shift          Remove the first element of the array.
+        -unshift()      Add a new element in the beginning of the array.
 
-        -reverse()      Reverse the array provided
+        -reverse()      Reverse the array provided.
+
+        -includes()     Determines wheter an array includes a certain value among its entries.
+                        Return true or false.
+
+        -find()         Returns the first element that satisfies the provided function.
+
+        -some()         Test if at least one element in the array passess the test implemented in the function.
+                        Return true or false.
+
+        -every()        Test if all elements in the array passess the test implemented in the function.
+                        Return true or false.
+
 
 

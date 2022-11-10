@@ -11,7 +11,8 @@
     <script>
 
         const arr = ['es5', 'es6', 'es7', 'es8', 'es9', 'esX']
-        const num = [1,2,3,4,5]
+        const num = [1,2,3,4,5];
+        const sub = [1,2,3,4,5]
         const names = [
             {name: 'Jhon', age: 30, alive: true, savingAcc: 300 },
             {name: 'Sarah', age: 34, alive: true, savingAcc: 200 },
@@ -59,11 +60,29 @@
 
         //Unshift
         const unshift = names.unshift({name: 'Skynet', age: 0, alive: true, savingAcc: 0 })
-        console.log(names)
+        //console.log(names)
 
         //Reverse
         const rev = num.reverse()
         //console.log(rev)
+
+        //Includes
+        let i = arr.includes('es9')
+        //console.log(i)
+
+        //Find
+        const f = names.find(name => name.age == 30);
+
+        //Some
+        const some = arr.some(el => el == 'es9');
+        //console.log(some)
+
+        //Every
+        const every = arr.every(el => el.includes('es'));
+        //console.log(every);
+
+        const splice = sub.splice(3,0, 'injected')
+        console.log(sub)
 
 
     </script>
