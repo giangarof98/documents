@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    //For... 
+        const name = ['1',2,'3',4,'5']
+        const num = [1,2,3,4,5]
+
+        for(let i = 0; i < num.length; i++){
+            //console.log(num[i])
+        }
+
+    //For in...
+
+        const obj = {name: 'Jhon', age: 30, alive: true}
+        for(let x in obj){
+            //console.log(obj[x])
+        }
+
+
+    //For of ...
+    const objs = ['Jhon','Sarah','Kyle']
+    // for(let [key, value] of Object.entries(obj)){
+    //         //console.log(x)
+    //         console.log(key, value)
+    //     }
+    for(let x of objs){
+        //console.log(x)
+    }
+
+
+    //Do... while
+        let i = 0;
+        let x = "";
+        do{
+            i = i+1;
+            x = x+i
+
+        }while(i<6)
+
+        //console.log(x)
+
+
+    //While
+        let y = 0;
+        let text = '';
+        while(y < 100){
+            text += ` ${y} `;
+            y++
+        }
+        console.log(text)
+        
+    </script>
+    
+</body>
+</html>
