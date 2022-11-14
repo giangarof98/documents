@@ -41,5 +41,17 @@
         -every()        Test if all elements in the array passess the test implemented in the function.
                         Return true or false.
 
+        -sort()         Sort the elements of the array.
+
+        -at()           Based in the index value especified, will return the item index.
+
+        -fill()         Modify the Array with the value described
+                        fill(value)
+                        fill(value, start)
+                        fill(value, start, end)
+
+
+        -concat()       Return a new array by merging two arrays
+
 
 
