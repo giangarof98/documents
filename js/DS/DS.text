@@ -1,0 +1,23 @@
+BIG O notation
+
+Algorithm
+    another name for a function - block of instructions to perform a task.
+Time complexity 
+    Analysing how the runtime of an algorithm changes as the input increases
+    Quantifies the amount of time taken by an algorithm to run as a function of the length of the string representing the input.
+Space complexity 
+    The space (memory) required by the algorithm, not including inputs.
+
+    O(1) - Constant time complexity
+    O(n) - Linear time complexity
+    O(log n) - Logarithmic time complexity
+    O(n^2) - Quadratic time complexity
+
+
+Algorithm complexity
+Describe how the runtime of an Algorithm grows as the inputs grows.
+The bigger the input, the more calculations the algorith needs to perform. 
+Tip: Measuring time (Time an algorithm needs) or space (How much memory an algorith needs) to perform.
+
+The run time in Big O notation is O(n).
+Big O notation lets you compare the number of operations. It tells you how fast the algorithm grows.
