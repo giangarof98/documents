@@ -1,0 +1,8 @@
+Objects
+    Collection of unordered properties.
+    Properties are the values associated with a JavaScript object.
+
+    Object.keys
+    Object.values
+    Object.entries
+    Object.hasOwnProperty

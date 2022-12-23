@@ -1,0 +1,43 @@
+Variables
+    Following the syntax
+
+        str = 'Hello World'
+        print(str)
+        output: Hello World
+
+        a,b,c = 'Hello', 6, '6'
+        print(b)
+        output: 6
+
+        Type convert
+            str() - int() - float()
+                a = 4
+                print(str(a))
+                output: string
+
+        Formatted Strings
+            name = 'Mark'
+            age = 24
+            print(f'Hello {name}, you are {age} young') 
+                f stand for formatted
+
+        Getting Index
+            name = 'Mark'
+            print(name[1])
+            output: a
+
+            using []
+            where [start:stop:stepover]
+
+
+        Define:
+
+        Expression: combinations of operators and operands
+
+        Statement: instruction that the python interpreter can execute (Whole code)
+                    print, assignment
+
+        Inmutability: value that cant be changed                        
+
+        _
+        __

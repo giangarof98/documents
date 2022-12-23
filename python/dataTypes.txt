@@ -1,0 +1,35 @@
+Data Types
+
+    Fundamental Data Types
+        Numeric
+            int
+                integer
+                1 2 3 4 5 0
+                print(5-4)
+                output: 1
+            float
+                floating point number
+                number with decimal point
+                0.5 0.4 0.9 0.00003 7.8
+            complex
+                consists of two values, the first one is real and the second one is the imaginary one of the number
+
+        Sequence Type
+            string
+                Whatever inside of single '' or double quotes "". In other cases, using ''' - ''' quote
+            list
+            tuple
+
+        Boolean
+            true
+            false
+        Set
+        Dictionaries
+    
+    Classes
+        custom types
+
+    Specialized Data Types
+
+    bin()
+        gets the binary representation

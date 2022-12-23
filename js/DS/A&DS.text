@@ -1,0 +1,60 @@
+Algorithms and Data structure
+
+1. Devise a plan for solving problems
+2. Master common problem solving patterns
+
+
+Algorithm
+    A process or set of steps to accomplish a certain task.
+    Another name for a function - block of instructions to perform a task.
+
+    1) Problem solving
+        Understand the problem
+            -restate the problem in your own words
+            -inputs that go into the problem
+            -output that should come from from the solution to the problem
+            -can the output be determined from the input? Do i have enough information to solve the problem?
+            -label the important pieces of data that are a part of the problem
+        Concrete Examples
+            Explore examples
+            Follow a model or example which will provide a eventual solution to understand your approach
+                -start with simple examples
+                -progress to more complex examples
+        Break it down
+            Write out the steps you need to take
+        Solve or Simplify
+            If you cant solve the problem, solve a simpler one
+            Simplify:
+                Find the core difficulty
+                Ignore that difficulty (temporaly)
+                Write a simplified solution
+                Incorporate that difficulty back in
+        Refactor
+            If the code accomplish the task, refactor it. Make it better
+                check the solution
+                derive the result differently
+                understand it at a glance
+                use the method or method for some other problem
+                improve the performance
+                other ways to write the code/refactor
+                how other people solved this problem
+
+
+    2) Problem Solving Patterns
+            Master problem patterns, improve the approach to solve problems
+
+                Frecuency Counter
+                    
+                Multiple Pointers
+                Sliding Window
+                Divide and Conquer
+                Dynamic programming
+                Greedy Algorithms
+                Backtraking
+
+
+
+
+How to Solve It (1945) -  George Pólya
+
+
