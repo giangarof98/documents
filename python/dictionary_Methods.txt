@@ -1,0 +1,12 @@
+Dictionary Methods
+
+Built-in Methods
+
+    dict.keys()
+    dict.values()
+    dict.items()
+    dict.clear()
+    dict.copy()
+    dict.pop()
+    dict.update()
+

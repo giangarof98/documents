@@ -15,6 +15,12 @@ Variables
                 print(str(a))
                 output: string
 
+            You can use conversion with data structures
+                set() - tuple() - list()
+                    a = [4,5,3]
+                    print(set(a))
+                    output: set
+
         Formatted Strings
             name = 'Mark'
             age = 24

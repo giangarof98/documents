@@ -1,0 +1,10 @@
+Set Methods
+
+    .difference()
+    .discard()
+    .difference_update()
+    .intersection() ||  &
+    .isdisjoint()
+    .issubset()
+    .issuperset()
+    .union() ||  |

@@ -18,13 +18,35 @@ Data Types
             string
                 Whatever inside of single '' or double quotes "". In other cases, using ''' - ''' quote
             list
+                Mutable
+                Stored inside brackets
+                Order sequence of objects
+                    Matrix
+                        Multidimensional lists
+                Unpacking list is like destructuring
             tuple
+                Ordered data
+                Allow duplication
+                Inmutable list
+                Stored inside of round brackets
 
         Boolean
             true
             false
-        Set
+        
         Dictionaries
+            Stored inside of curly brackets
+            don't has a sorted order
+            Data structure and Data Type
+            A way to organize data
+            Have key:value
+
+        Set
+            Stored inside of curly brackets
+            unordered, unchangeable, unindexed
+            only store unique values, dont allow duplication
+
+        
     
     Classes
         custom types

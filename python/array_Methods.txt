@@ -1,0 +1,12 @@
+Array/List Methods
+
+append()
+insert()
+extend()
+pop()
+remove()
+clear()
+index()
+count()
+sort()
+reverse()
