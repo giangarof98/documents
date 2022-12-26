@@ -1,0 +1,33 @@
+Conditional Logic
+
+    if (condition) and (another condition):
+        # some task
+    elif (condition):
+        # some task
+    else:
+        # some task
+
+    
+    elif = else if
+
+    Ternary Operator - shortcut way
+
+        (condition) if (condition) else
+
+    Short Circuiting
+        Stoppage of execution of boolean operation if the truth value of expression has been determined already.
+            if (condition) or (another condition):
+                # some task
+
+
+Logical operators
+    < less than
+    > grather than
+    =< less equal than
+    >= grather equal than
+    != not equal to
+    == equals
+    is
+    and 
+    or
+    and not 
