@@ -11,7 +11,17 @@ Loops
 
     for ... in 
 
-    for ... of 
-
     while loop
+        while the condition is true... do the task
+
+
+    break:
+        Loop control statement, its used to control the sequence of the loop
+        
+    continue:
+        returns the control to the beggining of the loop, reject all the remaining statements
+        in the current iteration and moves the control back to the top of the loop
+    pass:
+        do nothing, pass the task
+
 

@@ -1,0 +1,6 @@
+Functions
+
+    define a function with def keyword
+        def some_func():
+            print('function')
+        some_func()
