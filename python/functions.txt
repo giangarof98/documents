@@ -1,6 +1,34 @@
 Functions
 
     define a function with def keyword
-        def some_func():
+        def some_func(param1, param2):                <- parameters
             print('function')
-        some_func()
+        some_func(arg1, arg2)                     <- arguments
+
+
+        Parameters
+            Placeholders for the actual values the function needs
+
+        Arguments
+            Is the value that are sent to the function when it is called.
+
+        Default Parameters
+            defined with a fallback value as a default argument. 
+            Such parameters are optional during a function call. 
+            If no argument is provided, the default value is used, 
+            and if an argument is provided, it will overwrite the default value.
+
+        Keyword Arguments
+            When passed into a function, are identifiable by specific parameter names
+
+
+        Return Statement
+            Use inside a function or method to send the function’s result back to the caller
+
+        
+        Methods
+            Associated with object/classes.
+
+        Functions
+            Set of instructions or procedures to perform a specific task,
+

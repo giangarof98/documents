@@ -13,7 +13,11 @@ coke = ['pepsi', 20, true]
 
 //array of tupples
 let movies: [string, number, boolean][];
-movies = [ ['marvel',10,true], ['dc',2,false], ['lotr',1,false] ];
+movies = [ 
+    ['marvel',10,true], 
+    ['dc',2,false], 
+    ['lotr',1,false] 
+];
 
 //tuple structure
 
