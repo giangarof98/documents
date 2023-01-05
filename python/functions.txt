@@ -32,3 +32,17 @@ Functions
         Functions
             Set of instructions or procedures to perform a specific task,
 
+
+        *args
+            allows us to pass a variable number of non-keyword arguments to a Python function.
+
+        **kwargs
+            variable number of keyword arguments as a dictionary.
+
+        General rule:  inside the parameter 
+            def func(name, *args, default param, **kwargs):
+                //return some task
+            
+            func(...)
+
+
