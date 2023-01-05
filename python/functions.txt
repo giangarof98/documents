@@ -46,3 +46,23 @@ Functions
             func(...)
 
 
+        Scope
+            Variable access for the function
+
+            Global Scope
+                Defined outside of a function but all the functions can access it
+                Global Keyword
+                    Allows you to change a variable value outside of its current scope
+
+            Local Scope
+                Defined inside a function body
+                Nonlocal Keyword
+                    Allows you to change a variable value outside of its current scope.
+                    Override varible value
+
+            General rule: 
+                The function will start looking for local scope. if not a Parent local scope
+
+
+        Nested Function
+            Function inside another Function
