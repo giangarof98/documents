@@ -1,0 +1,30 @@
+Object Oriented Programming
+
+    Everything is a object.
+    It is used to structure a software program into simple, 
+        reusable pieces of code blueprints (usually called classes), 
+        which are used to create individual instances of objects.
+
+    Objects are class instances 
+
+        class Player:
+            def __init__(self, name):
+                self.name = name
+            
+            def run(self):
+                print('run')
+        
+        player1 = Player()
+
+
+
+
+        __init__:
+            constructor
+
+        Self:
+            The self parameter is a reference to the current instance of the class, 
+                and is used to access variables that belongs to the class.
+            With this keyword, you can access the attributes and methods of the class in python.
+            It does not have to be named self, you can call it whatever you like, 
+                but it has to be the first parameter of any function in the class
