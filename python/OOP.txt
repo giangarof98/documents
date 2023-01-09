@@ -38,5 +38,17 @@ Object Oriented Programming
                 Are class variables that allow us to define different values for each object of a class.
 
             @classmethod
+                can access and modify the class state.
+                takes the class as parameter to know about the state of that class.
+                Is an expression that gets evaluated after your function is defined. 
+                    result of that evaluation shadows your function definition. 
+                    A class method receives the class as an implicit first argument, 
+                    just like an instance method receives the instance.
+                    
             @staticmethod
+                Cannot access or modify the class state.
+                Do not know about class state
+                Is also a method that is bound to the class and not the object of the class. 
+                    This method can’t access or modify the class state. 
+                    It is present in a class because it makes sense for the method to be present in class.
             
