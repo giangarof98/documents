@@ -1,4 +1,22 @@
 Object Oriented Programming
+    programming paradigm
+
+    Pilars of OOP
+
+    Encapsulation
+        It refers to the process of securing methods and data into a single unit.
+        Describes the idea of bundling data and methods that work on that data within one unit, like a class.
+
+    Abstration
+        Handle complexity by hiding unnecessary details from the user.
+        The users only interact with the basic implementation of the function, 
+        but inner working is hidden. User is familiar with that "what function does" 
+        but they don't know "how it does."
+
+    Inheritance
+
+    Polymorphism
+
 
     Everything is a object.
     It is used to structure a software program into simple, 
@@ -51,4 +69,6 @@ Object Oriented Programming
                 Is also a method that is bound to the class and not the object of the class. 
                     This method can’t access or modify the class state. 
                     It is present in a class because it makes sense for the method to be present in class.
+
+            
             
