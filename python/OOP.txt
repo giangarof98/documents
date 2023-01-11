@@ -3,19 +3,25 @@ Object Oriented Programming
 
     Pilars of OOP
 
-    Encapsulation
-        It refers to the process of securing methods and data into a single unit.
-        Describes the idea of bundling data and methods that work on that data within one unit, like a class.
+        Encapsulation
+            It refers to the process of securing methods and data into a single unit.
+            Describes the idea of bundling data and methods that work on that data within one unit, like a class.
 
-    Abstration
-        Handle complexity by hiding unnecessary details from the user.
-        The users only interact with the basic implementation of the function, 
-        but inner working is hidden. User is familiar with that "what function does" 
-        but they don't know "how it does."
+        Abstration
+            Handle complexity by hiding unnecessary details from the user.
+            The users only interact with the basic implementation of the function, 
+            but inner working is hidden. User is familiar with that "what function does" 
+            but they don't know "how it does."
 
-    Inheritance
+        Inheritance
+            It is a mechanism that allows you to create a hierarchy of classes 
+                that share a set of properties and methods by deriving a class from another class.
+            Reusability of a code
 
-    Polymorphism
+        Polymorphism
+            Refer to an object's ability to take on multiple forms.
+            Is the provision of a single interface to entities of different types, 
+                or the use of a single symbol to represent multiple different types.
 
 
     Everything is a object.
