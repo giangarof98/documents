@@ -66,3 +66,7 @@ Functions
 
         Nested Function
             Function inside another Function
+
+        Pure Function
+            Is a function that, given the same inputs, will always return the same output and have no other side effects. 
+                A pure function only depends on its inputs and does not modify any external state or data.

@@ -1,31 +1,32 @@
 Object Oriented Programming
-    programming paradigm
+    programming paradigm, where everything is a object
 
     Pilars of OOP
 
-        Encapsulation
-            It refers to the process of securing methods and data into a single unit.
-            Describes the idea of bundling data and methods that work on that data within one unit, like a class.
+        Used to structure the code in a efficient way
 
-        Abstration
-            Handle complexity by hiding unnecessary details from the user.
-            The users only interact with the basic implementation of the function, 
-            but inner working is hidden. User is familiar with that "what function does" 
-            but they don't know "how it does."
+            Encapsulation
+                It refers to the process of securing methods and data into a single unit.
+                Describes the idea of bundling data and methods that work on that data within one unit, like a class.
 
-        Inheritance
-            It is a mechanism that allows you to create a hierarchy of classes 
-                that share a set of properties and methods by deriving a class from another class.
-            Reusability of a code
+            Abstration
+                Handle complexity by hiding unnecessary details from the user.
+                The users only interact with the basic implementation of the function, 
+                but inner working is hidden. User is familiar with that "what function does" 
+                but they don't know "how it does."
 
-        Polymorphism
-            Refer to an object's ability to take on multiple forms.
-            Is the provision of a single interface to entities of different types, 
-                or the use of a single symbol to represent multiple different types.
+            Inheritance
+                It is a mechanism that allows you to create a hierarchy of classes 
+                    that share a set of properties and methods by deriving a class from another class.
+                Reusability of a code
+
+            Polymorphism
+                Refer to an object's ability to take on multiple forms.
+                Is the provision of a single interface to entities of different types, 
+                    or the use of a single symbol to represent multiple different types.
 
 
-    Everything is a object.
-    It is used to structure a software program into simple, 
+    OOP it is used to structure a software program into simple, 
         reusable pieces of code blueprints (usually called classes), 
         which are used to create individual instances of objects.
 
@@ -41,11 +42,11 @@ Object Oriented Programming
         
         player1 = Player()
 
-
-
-
         __init__:
             constructor
+
+        Dunder Method (__):
+            Can help override functionality for built-in functions for custom classes.
 
         Self:
             The self parameter is a reference to the current instance of the class, 

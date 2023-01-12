@@ -43,7 +43,4 @@ Variables
         Statement: instruction that the python interpreter can execute (Whole code)
                     print, assignment
 
-        Inmutability: value that cant be changed                        
-
-        _
-        __
+        Inmutability: value that cant be changed
