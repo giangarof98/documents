@@ -70,3 +70,30 @@ Functions
         Pure Function
             Is a function that, given the same inputs, will always return the same output and have no other side effects. 
                 A pure function only depends on its inputs and does not modify any external state or data.
+
+
+        Built-in functions
+            map():
+                It takes two parameters, 
+                    map(action(), iterable parameter)
+                returns an object of map class
+
+            filter():
+                It takes two parameters, 
+                    map(action(), iterable parameter)
+                Filter the list, and return a new list with the condition specified
+
+            zip():
+                returns a zip object, which is an iterator of tuples where the first item in each passed iterator is paired together
+
+            reduce():
+                operates on any iterable
+                It takes two parameters, 
+                    map(action(), iterable parameter)
+
+            bin()
+            enumerate()
+            range()
+            slice()
+            type()
+            complex()
