@@ -53,5 +53,21 @@ Data Types
 
     Specialized Data Types
 
-    bin()
-        gets the binary representation
+    Comprehension
+        Concise and expressive way to create new lists, dictionaries, and sets, they are faster and more readable than equivalent loops
+            List
+                [expression for item in iterable]
+
+                numbers = [1, 2, 3, 4, 5]
+                squared_numbers = [x**2 for x in numbers]
+                print(squared_numbers)
+
+            Set
+                A set comprehension has a similar syntax, but it creates a new set, with unique elements
+                    {expression for item in iterable}
+
+            Dictionaries
+                A dictionary comprehension has a similar syntax, but it creates a new dictionary by 
+                    using the expression to create the keys, and the item to create the values
+                        {expression: item for item in iterable}
+

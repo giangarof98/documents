@@ -89,7 +89,8 @@ Functions
             reduce():
                 operates on any iterable
                 It takes two parameters, 
-                    map(action(), iterable parameter)
+                    map(acc, action(), iterable parameter)
+                It is used to apply a function to the elements of an iterable, and reduce it to a single value
 
             bin()
             enumerate()
@@ -97,3 +98,16 @@ Functions
             slice()
             type()
             complex()
+
+
+
+
+        Lamda expression
+            One time anonimous function what can be define without a name
+            Syntax
+                lambda arguments: expression
+                lambda x, y: x + y
+
+
+
+
