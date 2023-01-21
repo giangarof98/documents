@@ -1,0 +1,32 @@
+Error Handler
+    The try block lets you test a block of code for errors.
+    The except block lets you handle the error.
+    The else block lets you execute code when there is no error.
+    The finally block lets you execute code, regardless of the result of the try- and except blocks.
+
+Error Handling
+    Use:
+        Try:
+            block of code
+        except:
+            block of code
+        else:
+            block of code
+        finally
+            block of code
+        
+
+        raise
+        except  TypeError
+                NameError
+                ZeroDivisionError
+                ValueError
+
+Debug and test
+    Debugging is the process of identifying and resolving errors or bugs in software code. 
+        It involves finding the source of the problem and fixing it. Testing, on the other hand, 
+        is the process of evaluating a system or its component(s) with the intent to find 
+        whether it satisfies the specified requirements or not. It involves executing the system 
+        and comparing its actual behavior to the expected behavior. Both are important for ensuring 
+        the quality and reliability of software.
+
