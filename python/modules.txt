@@ -1,0 +1,31 @@
+os: provides functionality for interacting with the operating system, such as reading and writing files, 
+    running shell commands, and manipulating environment variables.
+sys: provides access to variables and functions used or maintained by the interpreter.
+math: contains mathematical functions and constants such as trigonometric functions, logarithms, and the constant pi.
+re: provides support for regular expressions, which can be used for pattern matching and text processing.
+json: provides functions for working with JSON data.
+datetime: provides classes for manipulating dates and times.
+random: provides functions for generating random numbers and selecting random items from a list.
+itertools: provides functions for working with iterators and iterable objects.
+collections: provides additional data types such as Counter, OrderedDict, and defaultdict.
+functools: provides higher-order functions such as reduce and partial.
+
+Scapy: a powerful interactive packet manipulation program
+Paramiko: a Python implementation of the SSH protocol
+Nmap: a tool for network exploration, management, and security auditing
+Requests: a library for making HTTP requests
+Beautiful Soup: a library for web scraping and parsing HTML and XML
+Selenium: a web testing library
+Pwntools: a library for writing exploits
+Impacket: a collection of Python classes for working with network protocols
+NetfilterQueue: a python binding for libnetfilter_queue
+Wireshark: a tool for packet capture and analysis.
+
+NumPy: a library for working with arrays and mathematical operations on them
+pandas: a library for working with data in a tabular format
+Matplotlib: a library for creating visualizations and plots
+Scikit-learn: a machine learning library
+Selenium: a web testing library
+Flask: a micro web framework for building web applications
+TensorFlow: a popular machine learning library
+PyTorch: a machine learning library

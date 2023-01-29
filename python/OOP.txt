@@ -47,6 +47,8 @@ Object Oriented Programming
 
         Dunder Method (__):
             Can help override functionality for built-in functions for custom classes.
+            allow instances of a class to interact with the built-in functions and 
+                operators of the language. The word “dunder” comes from “double underscore”
 
         Self:
             The self parameter is a reference to the current instance of the class, 
