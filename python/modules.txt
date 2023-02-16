@@ -29,3 +29,19 @@ Selenium: a web testing library
 Flask: a micro web framework for building web applications
 TensorFlow: a popular machine learning library
 PyTorch: a machine learning library
+
+Pygame: Pygame is a cross-platform library for creating games in Python. 
+        It provides features for creating 2D games such as image and sound handling, sprite classes, and event handling. 
+        Pygame is a beginner-friendly library and is well suited for small to medium-sized games.
+Pyglet: Pyglet is a cross-platform library for creating games and other multimedia applications in Python. 
+        It provides features for creating 2D and 3D games, and it is designed for high performance. 
+        Pyglet is suitable for more advanced game development projects.
+PyOpenGL: PyOpenGL is a library that provides access to OpenGL (Open Graphics Library), a low-level graphics API. 
+        It is used to create 3D games and other graphics-intensive applications. 
+        PyOpenGL is more suited for advanced game development projects that require high performance and complex graphics.
+PygameZero: PygameZero is a beginner-friendly wrapper around the Pygame library. 
+            It provides a simple way to create games in Python, with a focus on making game development accessible to beginners. 
+            PygameZero is well suited for educational purposes and for learning game development.
+Pygame-Lema: Pygame-Lema is a library that provides additional functionality for Pygame, 
+            such as support for 3D graphics, physics simulation, and more. It is designed to make game development with Pygame 
+            more accessible and efficient. Pygame-Lema is well suited for small to medium-sized games.
