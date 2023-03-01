@@ -1,0 +1,43 @@
+Introduction
+    The goal of this bootcamp is to ensure that you understand cyber technologies in order to protect their infrastructure. 
+To do so, you need to first understand the history of cybersecurity and how we got to where we are today. Furthermore, 
+cybersecurity is always evolving along with technology. 
+So, it's important that you become a lifelong learner to succeed as a cybersecurity professional.
+
+    1960s
+        The history of cybersecurity begins well before today's age of cell phones and wearable devices. 
+        In the 1960s, an experimental computer network, named Advanced Research Projects Agency Network (ARPANET), was created . 
+        The purpose was to let Pentagon labs share data and research through the network to military personnel in the Cold War 
+        (Featherly, 2016). The idea was that no headquarters or base of operations would exist that could be attacked and destroyed. 
+        ARPANET served as a prelude to the Internet. Today, the Internet retains a similar structure but on a larger scale.
+
+    1980s
+        Surprisingly, the first public policy related to cybersecurity was created in the early 1980s. 
+        At that time, the first laptops had barely begun distribution, and public Internet providers didn't yet exist. 
+        So, what caused this policy to be created? The answer is a movie named WarGames. This movie, which debuted in 1983, 
+        is about a teenager who hacks into the computer of the North American Aerospace Defense Command (NORAD) and nearly starts World War III. 
+        President Ronald Reagan attended this movie. Then, during a meeting, Reagan asked General John W. Vessey if that could happen in real life. 
+        The general determined that it could and might even be worse than what the movie depicted. So after only 15 months, 
+        Reagan signed the NSDD-145 classified national security decision directive, named National Policy on Telecommunications 
+        and Automated Information Systems Security (Kaplan, 2016).
+
+        At first, the public didn't accept NSDD-145. It allowed the National Security Agency (NSA) to secure all the 
+        computer servers and networks in the United States. This began discussions of concern related to security 
+        and privacy on the Internet—a debate that still exists today.
+
+    1990s
+        In the 1990s, the Internet took off. And along with it, do did the cybersecurity industry. 
+        Virus risks increased, and companies developed antivirus programs. Secure Sockets Layer (SSL) was created to 
+        protect activities like online purchases. In fact, that was the foundation for the development of 
+        Hypertext Transfer Protocol Secure (HTTPS)—the secure version of HTTP (Education Dynamics, 2022).
+
+    2000s
+        The terrorist attacks on September 11, 2001 spurred conversations about how to avoid the next cyber threat. 
+        Since then, governments have weaponized vulnerabilities, and criminals have exploited them. This is an ever-growing 
+        problem because of the increase in our reliance on technology.
+
+        The 2000s also brought the first hacker group, named Anonymous. And, credit card hacks took off through data breaches.
+        This created the need to focus on information security throughout various sectors, including retail.
+
+    
+

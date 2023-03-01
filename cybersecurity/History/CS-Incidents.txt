@@ -1,0 +1,274 @@
+Cybersecurity Incidents
+    Cybersecurity incidents are events or occurrences that compromise the confidentiality, integrity, or availability of 
+    digital information or systems. These incidents can be caused by intentional or accidental actions, and they can have 
+    serious consequences, such as data breaches, theft of intellectual property, disruption of critical infrastructure, or financial loss.
+
+    ~Malware attacks: Malware is software designed to infiltrate or damage computer systems without the owner's knowledge or consent. 
+        Malware can be used to steal data, hijack computers for criminal purposes, or disrupt operations.
+
+    ~Phishing scams: Phishing is the practice of using social engineering to trick people into giving away sensitive information, 
+        such as passwords or credit card numbers. Phishing attacks can be carried out via email, phone calls, or text messages.
+
+    ~Ransomware attacks: Ransomware is a type of malware that encrypts the victim's files and demands payment in exchange 
+        for the decryption key. Ransomware attacks can be extremely costly and disruptive, especially for businesses.
+
+    ~Distributed denial of service (DDoS) attacks: DDoS attacks flood a website or network with traffic to the point of 
+        overwhelming its resources and making it unavailable to users. DDoS attacks can be used to extort money or disrupt services.
+
+    ~Insider threats: Insider threats are incidents where an employee or contractor of an organization intentionally or 
+        unintentionally causes harm to the organization's digital assets. This can include stealing data, i
+        ntroducing malware, or causing system disruptions.
+    
+    ~Denail of service attacks: involve overwhelming computer systems or networks with traffic, causing them to become unavailable. 
+        These attacks can result in the disruption of critical services or the loss of data.
+    
+    ~Advanced persistent threats (APTs): APTs are complex and targeted attacks that are designed to compromise a specific target, 
+        often over an extended period of time. APTs can be difficult to detect and can result in the theft of sensitive 
+        information or other forms of harm.
+
+    ~Social engineering attacks: Social engineering attacks involve the use of psychological manipulation to trick 
+        individuals into divulging sensitive information or taking other actions that are harmful to themselves or 
+        their organization. These attacks can take many forms, including phishing and spear phishing.
+
+    ~Internet of Things (IoT) attacks: IoT devices, such as smart home devices, medical devices, and industrial 
+        control systems, can be vulnerable to cyber attacks. These attacks can result in the compromise of 
+        critical infrastructure or personal data.
+
+    ~Supply chain attacks: Supply chain attacks involve the compromise of a third-party vendor or supplier 
+        that is used by an organization. These attacks can be difficult to detect and can result in the 
+        compromise of sensitive data
+
+Historical Incidents
+
+    Clipper chip development:
+            The Clipper chip was a controversial encryption device developed by the U.S. government in the 1990s. 
+            Its development was motivated by concerns that strong encryption technologies were making it difficult for 
+            law enforcement and intelligence agencies to access communications between criminals and terrorists.
+
+            The Clipper chip was designed to be a hardware encryption device that would allow users to encrypt their communications, 
+            but would also include a "backdoor" that would allow government agencies to decrypt the communications when necessary. 
+            The backdoor would be accessible only with a unique key held by the government, which would only be used with a warrant or court order.
+
+            The Clipper chip faced significant opposition from civil liberties groups, who argued that it would undermine privacy
+            and security by providing a means for government surveillance of private communications. Critics also argued that 
+            the backdoor would be vulnerable to exploitation by hackers or foreign intelligence agencies, potentially compromising national security.
+
+            Ultimately, the Clipper chip was not widely adopted and was eventually abandoned by the U.S. government. 
+            The controversy surrounding its development contributed to the development of strong encryption technologies 
+            that are now widely used for secure communications.
+
+    MoonLight Maze
+            Moonlight Maze was a 1999 US government investigation into a massive data breach of classified information. 
+            It started in 1996 and affected NASA, the Pentagon, military contractors, civilian academics, the DOE, 
+            and numerous other American government agencies. By the end of 1999, the Moonlight Maze task force was composed 
+            of forty specialists from law enforcement, military, and government. The investigators claimed that if all 
+            the information stolen was printed out and stacked, it would be three times the height of the Washington Monument, 
+            which is 555 ft (169 m) tall.[3][4] The Russian government was blamed for the attacks, although there was initially 
+            little hard evidence to back up the US accusations besides a Russian IP address that was traced to the hack. 
+            Moonlight Maze represents one of the first widely known cyber espionage campaigns in world history. 
+            It was even classified as an Advanced Persistent Threat (a very serious designation for stealthy computer 
+            network threat actors, typically a nation state or state-sponsored group) after two years of constant assault. 
+            Although Moonlight Maze was regarded as an isolated attack for many years, unrelated investigations revealed that 
+            the threat actor involved in the attack continued to be active and employ similar methods until as recently as 2016.
+
+            The hack began with the hackers building "back doors" through which they could re-enter the infiltrated systems at 
+            will and steal further data; they also left behind tools that reroute specific network traffic through Russia. 
+            Everything they exploited during the attacks came from publicly available resources, not their own creation. 
+            In most cases, the exploits were discovered by system administrators with the intention of informing others of 
+            the vulnerabilities present in their own systems, but were instead manipulated for malicious purposes.
+            The hackers found success since software manufacturers and maintainers were not vigilant about making sure there 
+            were no flaws in their systems. They would leave known vulnerabilities unpatched for long periods of time, 
+            sometimes as long as six months to a year, neglecting any security patch cycles. This was because prior to 
+            Moonlight Maze, no-one was aware of the damage that could be done through cyber attacks since the internet 
+            was still relatively new. As a result, they were extremely vulnerable and not very difficult to infiltrate, 
+            resulting in one of the largest data breaches of classified information in history. In order to conceal their 
+            location and throw off investigators, the hackers relayed their connection through various vulnerable institutions 
+            like universities, libraries, and more since the servers they hacked could only see the last location they routed 
+            through (called proxying).
+
+    Solar sunrise:
+            Solar Sunrise was a computer hacking incident that targeted US military and government computer networks in 1998. 
+            The incident was carried out by a group of hackers, including two American teenagers and an Israeli hacker.
+
+            The attack was launched through a common vulnerability in the Solaris operating system, which was used on many of
+            the targeted computer systems. The attackers were able to gain access to the systems by exploiting a known 
+            security flaw in the login process of the Solaris operating system.
+
+            Once inside the systems, the attackers installed a variety of tools and backdoors, which allowed them to maintain 
+            persistent access and continue to exfiltrate data over a period of several weeks. The attackers were able to 
+            obtain access to both unclassified and classified data, including email messages and technical documents.
+
+            The incident was discovered by a computer analyst at the Department of Defense, who noticed suspicious activity 
+            on the network. The analyst raised the alarm, and an investigation was launched. 
+            The investigation ultimately led to the arrest and prosecution of the two American teenagers and the Israeli hacker.
+
+    Operation Buckshoot Yankee:
+            In 2008, the United States Department of Defense was infected with malware. Described at the time as the 
+            "worst breach of U.S. military computers in history", the defense against the attack was named "Operation Buckshot Yankee". 
+            It led to the creation of the United States Cyber Command.
+
+            It started when a USB flash drive infected by a foreign intelligence agency was left in the parking lot of a 
+            Department of Defense facility at a base in the Middle East. It contained malicious code and was put 
+            into a USB port from a laptop computer that was attached to United States Central Command. 
+            From there it spread undetected to other systems, both classified and unclassified.
+
+            The campaign that Buckshot Yankee targeted was carried out by a Chinese hacking group known as Titan Rain. 
+            The group had been targeting US military and government computer networks for several years, stealing sensitive 
+            information and data. The campaign was considered a serious threat to US national security.
+
+            As part of Operation Buckshot Yankee, the US military and intelligence agencies conducted a number of activities 
+            to identify and neutralize the threat posed by Titan Rain. These activities included monitoring the group's activities, 
+            analyzing the group's tactics and techniques, and developing countermeasures to prevent future attacks.
+
+            The operation was successful in identifying and disrupting the Titan Rain campaign, and several individuals believed 
+            to be associated with the group were arrested in China. However, it is believed that the group continued to operate and 
+            launch cyber attacks against US targets.
+
+Cybersecurity Today
+
+    The cybersecurity field is rapidly growing. Companies are learning that they need to ramp up their security 
+        defenses against cybercriminals. With the workforce transitioning to more remote positions, and with the 
+        ise of cryptocurrency, a few trends are taking place
+
+        Cryptocurrencies will be subject to strict regulation.
+
+        Social media organizations will become stricter about how users share information.
+
+        Remote workers will continue to be targets for cybercriminals.
+
+        The cybersecurity skills gap will escalate as more jobs go unfilled.
+
+        Internet of Things (IoT) devices will become more vulnerable to cyberattacks.
+
+    Still not convinced of the need for cybersecurity? Here are a few statistics to astonish you:
+
+        Human error causes 95% of cybersecurity breaches (Mee and Brandenburg, 2020).
+
+        In 2020, the US was the target of 46% of all cyberattacks—more than double that of any other country (Lambert, 2021).
+
+        Of all the cyber breaches, 43% are insider threats—either intentional or unintentional (Check Point, 2022).
+
+        In 2021, data breaches exposed 22 billion records (Risk Based Security, 2022).
+
+        In 2021, about 40% of breaches involved phishing, 11% involved malware, and 22% involved hacking (Verizon, 2021).
+
+        In 2021, 1,862 data breaches were recorded—surpassing the 2017 record of 1,506 breaches (Fowler, 2022).
+    
+    Cyber War
+        Today, cybersecurity is more important than ever. Cyber war is a concern because it causes harm that's 
+        comparable to that of physical warfare. It does so by using technology to "disrupt the activities of a state 
+        or organization, especially the deliberate attacking of information systems for strategic or military purposes". 
+        Seven types of cyber war attacks exist: 
+
+            Espionage
+
+            Sabotage
+
+            Denial-of-service (DoS) attacks
+
+            Electrical power grid attacks
+
+            Propaganda attacks
+
+            Economic disruption
+
+            Surprise attacks (Imperva, 2022)
+
+            We combat cyber war through risk assessments, layered defenses, and the securing of the private sector.
+
+    The Business of Cybercrime
+        Today, cybercrime can almost be considered a business. While many factors motivate cybercriminals, 
+        the main one is money. In fact, according to a 2018 Bromium report by Dr. Michael McGuire, cybercriminals 
+        generate at least $1.5 trillion per year (Polk, 2021). And, that's where you come in! Cybersecurity 
+        professionals deal with this issue in several ways:
+
+            Using a continual process: Security is lifelong and not done once. To succeed in an organization, 
+                cybersecurity must be considered a continual process. Small companies might think that they're 
+                too small to be attacked, but that's not the case.
+
+            Conducting security evaluations: Companies need to evaluate the likelihood and impact of potential 
+                cyberattacks. This includes determining how easy of a target their systems are—and considering 
+                and observing what would happen if they were compromised. Lots of hidden risks can remain unnoticed. 
+                For example, the famous Target credit card breach occurred because of a heating, ventilating, 
+                and air-conditioning (HVAC) vendor that shared the credit-card processing network   .
+
+            Establishing priority: By multiplying the likelihood and impact, companies can establish priority. 
+                They can then change or update their systems as needed.
+
+            Having a security first mindset: Because cybercrime is such a massive business, a company needs to 
+                share its security responsibility across all its employees to succeed.
+
+    Current Events
+
+        Stuxnet worm
+            The Stuxnet worm is a highly sophisticated computer virus that was designed to target and disrupt Iran's nuclear program. 
+            It was first discovered in 2010 and is believed to have been created by a joint operation between the United States and Israel.
+
+            The Stuxnet worm was unique in that it was designed to specifically target programmable logic controllers (PLCs), 
+            which are the devices that control industrial processes such as those used in nuclear facilities. Once the worm infected a PLC, 
+            it could cause it to malfunction or behave in unexpected ways, which could potentially cause serious damage or even a catastrophic failure.
+
+            The Stuxnet worm was also designed to be highly stealthy, using a number of advanced techniques to avoid detection and spread throughout 
+            a network. It was able to exploit several zero-day vulnerabilities in Microsoft Windows and other software, 
+            which allowed it to spread rapidly and infect a large number of systems.
+
+            The Stuxnet worm is widely considered to be one of the most sophisticated and complex pieces of malware ever created. 
+            Its development required a significant amount of time, resources, and expertise, and it represented a major shift 
+            in the way that cyber warfare was conducted.
+        
+        SolarWinds hack
+            The SolarWinds hack was a supply chain attack, which means that the attackers were able to gain access to their targets 
+            by compromising a trusted third-party vendor. In this case, the attackers were able to inject malicious code into a software 
+            update for the SolarWinds Orion platform, which is widely used by many organizations for network and IT management.
+
+            Once the malicious code was installed on a target's system, it was able to give the attackers remote access and control 
+            of the system. This allowed the attackers to steal sensitive data, manipulate systems, and conduct further attacks.
+
+            The SolarWinds hack was a highly sophisticated and complex attack, and it demonstrated the capabilities of 
+            state-sponsored hackers to carry out long-term, covert cyber operations. The attack also highlighted the vulnerability 
+            of supply chain attacks, which can be difficult to detect and can compromise multiple organizations through a 
+            single point of compromise.
+
+        Colonial Pipeline ransomware attack
+            The Colonial Pipeline ransomware attack was a cyber attack that occurred in May 2021 and affected one of the largest fuel 
+            pipelines in the United States. The attack was carried out by a cybercriminal group known as DarkSide, 
+            which is believed to be based in Eastern Europe.
+
+            The attack began with the use of a type of malware called ransomware, which was used to encrypt the company's data and 
+            demand a ransom in exchange for the decryption key. The attackers were able to gain access to Colonial Pipeline's 
+            systems through a compromised VPN account, which was not protected by multi-factor authentication.
+
+            The attack resulted in the shutdown of the Colonial Pipeline, which transports gasoline and other fuels from 
+            refineries in the Gulf Coast to markets in the eastern United States. The shutdown caused widespread fuel 
+            shortages and panic buying in many parts of the country, and it also had significant economic impacts.
+
+            In response to the attack, Colonial Pipeline paid a ransom of $4.4 million in bitcoin to the attackers. 
+            While the company was able to recover the decryption key and restore its systems, the attack highlighted 
+            the vulnerabilities of critical infrastructure to cyber attacks and the potentially devastating 
+            consequences that such attacks can have.
+
+        The Log4j vulnerability 
+            also known as CVE-2021-44228, is a critical vulnerability in the widely used Apache Log4j logging library, 
+            which is used by many applications and systems to log information. The vulnerability was discovered in 
+            December 2021 and has been described as one of the most serious vulnerabilities in recent years due to its 
+            potential impact on a wide range of systems and applications.
+
+            The Log4j vulnerability is a remote code execution vulnerability, which means that an attacker can exploit 
+            it to execute arbitrary code on a vulnerable system or application. The vulnerability is particularly 
+            dangerous because it can be exploited through a simple and common attack vector, by sending a specially 
+            crafted log message to a vulnerable system or application.
+
+            The Log4j vulnerability has already been exploited by threat actors in the wild, and it has been used to 
+            carry out a wide range of attacks, including the deployment of ransomware and other types of malware, 
+            the theft of sensitive data, and the hijacking of systems for use in botnets.
+
+        Microsoft Exchange Y2K22 bug
+            The Microsoft Exchange Y2K22 bug is a recently discovered bug that affects certain versions of Microsoft Exchange Server. 
+            The bug is related to the way that the software handles dates and time, and it is similar to the Y2K (Year 2000) 
+            bug that caused widespread concerns leading up to the turn of the millennium.
+
+            The Microsoft Exchange Y2K22 bug is caused by a limitation in the way that the software calculates dates, which means 
+            that it is unable to correctly process certain dates after December 31, 2021. This can cause various issues, 
+            such as incorrect time stamps, email delivery failures, and problems with meeting invitations and other scheduling features.
+
+
