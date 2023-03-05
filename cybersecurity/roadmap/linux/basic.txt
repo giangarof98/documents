@@ -1,0 +1,42 @@
+-Commands
+
+    whoaim      get the active username
+    man         get the manual for a command
+    touch       create a file
+    echo        q
+    ls          list the contents
+    cp          copy a file
+    mv          move a file
+    rm          remove a file
+    mkdir       make new directory (create new folder)
+    pwd         print working directory
+    cd          change directory
+    file        display file type
+    tree        display a visual representation of the directory structure
+
+    cat         short of concatenate. read the file content
+    less        display th file content one screen at a time
+
+    Absolute path: Exact location of a path or directory
+    Relative path Specify the file location relative to the current directory
+
+        Relative paths are useful when moving files or folders around the file system, 
+        as they can be more easily modified without breaking the path. However, absolute paths are 
+        necessary when referring to files or folders in other parts of the file system, 
+        or when a program requires an absolute path to function properly.
+
+
+-Graphic User Interfice & terminal
+
+    GUI: Ubuntu, Kali, Fedora, etc 
+
+    Terminal Terminology:
+        $: Default promt sign. Indicated for non root users
+        #: Roor user/super user.
+
+        Terminal: text based interface to write Commands.
+        CLI: method of interacting with the system or program through that interface.
+        Shell: program that procesess commands and output the results. Command line interpreter.
+
+
+
