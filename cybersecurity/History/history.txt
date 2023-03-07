@@ -1,8 +1,8 @@
 Introduction
     The goal of this bootcamp is to ensure that you understand cyber technologies in order to protect their infrastructure. 
-To do so, you need to first understand the history of cybersecurity and how we got to where we are today. Furthermore, 
-cybersecurity is always evolving along with technology. 
-So, it's important that you become a lifelong learner to succeed as a cybersecurity professional.
+        To do so, you need to first understand the history of cybersecurity and how we got to where we are today. Furthermore, 
+        cybersecurity is always evolving along with technology. 
+        So, it's important that you become a lifelong learner to succeed as a cybersecurity professional.
 
     1960s
         The history of cybersecurity begins well before today's age of cell phones and wearable devices. 

@@ -3,7 +3,7 @@
     whoaim      get the active username
     man         get the manual for a command
     touch       create a file
-    echo        q
+    echo        display a string provided by the user.
     ls          list the contents
     cp          copy a file
     mv          move a file
@@ -14,8 +14,16 @@
     file        display file type
     tree        display a visual representation of the directory structure
 
-    cat         short of concatenate. read the file content
-    less        display th file content one screen at a time
+    cat         short of concatenate. read the file content. only on small files.
+    More        work better on large files. 
+    less        display th file content one screen at a time. work better on large files.
+    tail        preview a file's end.
+    head        preview a file's beginning.
+    Sort        Alphabetically sort a file.
+
+    Locate      Search command that looks into a pre-made database of filenames and outputs results. 
+    Find        search command that will search for specific search terms in filenames.
+    updatedb    Update the locate command's internal database. 
 
     Absolute path: Exact location of a path or directory
     Relative path Specify the file location relative to the current directory
@@ -24,6 +32,20 @@
         as they can be more easily modified without breaking the path. However, absolute paths are 
         necessary when referring to files or folders in other parts of the file system, 
         or when a program requires an absolute path to function properly.
+
+    wc
+        word count
+        wc -l front_desk.log network_closet.log server_room.log | sort -nr
+
+        wc counts the number of lines, words and bytes
+
+    man 
+        manual
+
+    
+    The top level of the Linux file system is the / directory, called ‘root’. Every other file and directory is contained within this directory.
+
+
 
 
 -Graphic User Interfice & terminal
