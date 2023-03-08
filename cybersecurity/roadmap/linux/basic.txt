@@ -1,4 +1,13 @@
+Path:
+    Absolute path: Exact location of a path or directory
+    Relative path Specify the file location relative to the current directory
+        Relative paths are useful when moving files or folders around the file system, 
+        as they can be more easily modified without breaking the path. However, absolute paths are 
+        necessary when referring to files or folders in other parts of the file system, 
+        or when a program requires an absolute path to function properly.
+
 -Commands
+    The top level of the Linux file system is the / directory, called ‘root’. Every other file and directory is contained within this directory.
 
     whoaim      get the active username
     man         get the manual for a command
@@ -21,17 +30,11 @@
     head        preview a file's beginning.
     Sort        Alphabetically sort a file.
 
-    Locate      Search command that looks into a pre-made database of filenames and outputs results. 
+    Locate      Search command that looks into a pre-made database of filenames and outputs results.
+                Is faster and more efficient when searching for files that have been recently added or changed, 
+                but it may not find files that were added since the last update of the database. 
     Find        search command that will search for specific search terms in filenames.
     updatedb    Update the locate command's internal database. 
-
-    Absolute path: Exact location of a path or directory
-    Relative path Specify the file location relative to the current directory
-
-        Relative paths are useful when moving files or folders around the file system, 
-        as they can be more easily modified without breaking the path. However, absolute paths are 
-        necessary when referring to files or folders in other parts of the file system, 
-        or when a program requires an absolute path to function properly.
 
     wc
         word count
@@ -42,10 +45,36 @@
     man 
         manual
 
-    
-    The top level of the Linux file system is the / directory, called ‘root’. Every other file and directory is contained within this directory.
+    awk         Search a file colomn by column and return specific text.
+
+                Example: awk -F’:’ ‘{ print $1 $3 }’ somefile.txt
+
+                    awk 
+                        The command we are invoking
+                    -F’:’ 
+                        Designate the format of the column breaks. Here we are saying make a 
+                        column break at each ‘:’. If you leave this part out, awk will break 
+                        on whitespace (spaces, tabs, etc).
+                    ‘{ print $1 $3 }’ 
+                        What do we want to do with these columns? In this example, we are printing 
+                        the first and third columns. You could print more or even include strings 
+                        like this: ‘{ print $1.$2“@somedomain.com”}’. 
+                        This might be used to build a list of email addresses. 
+                        You can also use $NR to return the last column. There is much more 
+                        we can do in this space. We will get more advanced later.
+                    somefile.txt 
+                        Where is awk going to get its data? In this example, it will look in somefile.txt.
 
 
+
+    pipe |      Used to send the output of one command to the input of the next command.
+                The | or pipe character is very useful in bash. It will take the output of 
+                a command and send it to the input of the next command. 
+                Use it to string multiple commands into what we call a "one-liner". 
+                Security professionals use grep, awk, and pipe characters to search for 
+                and pull interesting data out of files. 
+
+    uniq        Take a sorted list and output all of the unique entries. Works with an input already sorted
 
 
 -Graphic User Interfice & terminal
@@ -59,6 +88,16 @@
         Terminal: text based interface to write Commands.
         CLI: method of interacting with the system or program through that interface.
         Shell: program that procesess commands and output the results. Command line interpreter.
+
+
+Reading web server logs
+
+    185.27.99.134 - - [25/Mar/2022:00:38:48 -0500] "GET /ads.txt HTTP/1.1" 404 196
+
+    Somebody from the IP 185.27.99.134
+    On March 25th, 2022 at 12:38 AM Eastern time
+    Asked to GET a file named ads.txt using HTTP
+    But received a 404 "file not found" response of only 196 bytes
 
 
 
