@@ -1,0 +1,73 @@
+A Closer Look: Files and Users
+
+    /etc/passwd
+    The /etc/passwd file holds a list of all users on the system. Here is an example line:
+    fstack:x:1000:2000:Full Stack, , , :/home/fstack:/bin/bash
+
+    Login name (fstack)
+        The account name used when logging in
+    Optional encrypted password (x)
+        Not used anymore
+    Numerical user ID (1000)
+        The number given to a user account (1002, 1002, etc.)
+    Numerical group ID (2000)
+        The number assigned to the user's primary group. Usually, this group has the same name as their login.
+    User name or comment field (Full Stack, , , )
+        Where you type a person's actual name
+    User home directory (/home/fstack)
+        Normally /home/<login name>, but not always
+    Optional user command interpreter (/bin/bash)
+        For most users this is set to /bin/bash, but can also be set to another shell (like /bin/sh) 
+        or could also be /bin/false, /bin/nologin to lock out users
+    
+
+    /etc/shadow
+        The /etc/shadow file holds password information for users. Here is an example line:å
+        fstack:$1$x13tRK6O$UXVzwbTh6C7/WiE1W7k1f.:19047:0:99999:7:::
+
+        Login name (fstack)
+            The name of the user
+
+        Hashed password ($1$x13tRK6O$UXVzwbTh6C7/WiE1W7k1f.)
+            If the user has a *, then it has never had a password. 
+            If it has a ! or ! !, then the account is locked. 
+            The first few characters tell you what type of hash it is.
+
+        Date of last password change (19047)
+            The number of days since epoch (Jan 1, 1970) since that last change of password
+
+        Minimum password age (0)
+            The number of days old a password must be before it can be changed
+
+        Maximum password age (99999)
+            The number of days before a password expires
+
+        Password warning period (7)
+            The number of days before expiration that the OS will warn you to change your password
+
+        Account expiration date
+            The number of days since epoch (Jan 1, 1970) until an account expires and becomes unusable)
+
+    
+    UID
+        The UID is a specific number that Linux assigns to each user for identification purposes.
+
+        The root user always has the UID of 0.
+
+        Standard users, i.e., users who are real people, have UIDs greater than 1000.
+
+        System users, i.e., automated users designed to complete system tasks, 
+        generally have UIDs less than 1000.
+
+Commands
+    
+    useradd     Add a user to the system
+                useradd -c "jhon doe" -G sudo -s /bin/sh jdoe
+    
+    passwd      Change user's password
+
+    usermod     Modify and exixting user
+                usermod -aG finance jdoe
+    
+    userdel     delete an existing user
+                userdel -r jdoe

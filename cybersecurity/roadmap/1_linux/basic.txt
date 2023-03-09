@@ -23,22 +23,32 @@ Path:
     file        display file type
     tree        display a visual representation of the directory structure
 
-    history     
+    date        prints a timestamp of the current date and time
+    history     list the previus used commands
     chmod       
     chown       
     cron        
     toc         
     rev         
     alias       
-    nano        
+    nano        Default command line text editor, easy to use but lacks a lot of advance features
+    vim         text editor     
+
+    >           Build files
+    >>          Append files
 
 
     cat         short of concatenate. read the file content. only on small files.
     More        work better on large files. 
-    less        display th file content one screen at a time. work better on large files.
+    less        display the file content one screen at a time. work better on large files.
     tail        preview a file's end.
     head        preview a file's beginning.
     Sort        Alphabetically sort a file.
+
+    Grep        Search a file for a specific string of text and return any lines it appears on
+                Dig through files and return only the pieces that we want
+                Grep is pretty simple to use. You start with grep, then follow it with the word you would like 
+                    to search for, and then end it with the file you would like to search in.
 
     Locate      Search command that looks into a pre-made database of filenames and outputs results.
                 Is faster and more efficient when searching for files that have been recently added or changed, 
@@ -110,4 +120,12 @@ Reading web server logs
     But received a 404 "file not found" response of only 196 bytes
 
 
+Data Stream
+
+    Every time you run a command in Linux, three data streams are created. They are:
+
+        stdin or 0 (standard input) - This is where text that is input by the user (or another command) is handled.
+        stdout or 1 (standard output) - Output from a command is written here.
+        stderr or 2 (standard error) - If any errors are encountered, they are written here. 
+            The text will show up on the command line just like stdout, but the actual output is treated separately.
 
