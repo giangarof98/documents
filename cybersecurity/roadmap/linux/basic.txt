@@ -23,6 +23,16 @@ Path:
     file        display file type
     tree        display a visual representation of the directory structure
 
+    history     
+    chmod       
+    chown       
+    cron        
+    toc         
+    rev         
+    alias       
+    nano        
+
+
     cat         short of concatenate. read the file content. only on small files.
     More        work better on large files. 
     less        display th file content one screen at a time. work better on large files.
