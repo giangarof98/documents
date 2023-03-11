@@ -1,0 +1,52 @@
+Archiving Files
+
+    zip and gzip are not uncommon in the Linux world, but the king of archiving and 
+        compression is definitely tar. The tar command is a really old Linux utility 
+        that takes its name from "Tape ARchive". An actual tape archive is getting rarer 
+        and rarer these days, but the use of the tar command is still going strong. 
+        Tar takes some getting used to, but once you master it, you will never want to go back.
+
+        Archives created with tar are called tarballs and use the extension .tar. 
+        Tar is an archiving tool that collects files together to produce one file; 
+        on its own does not compress these files. However, we can use compression 
+        algorithms with the tar command to create a smaller file size.
+
+        Commands
+            cf: Compress a file
+            xf: Extract a file
+
+            -cf: No compression
+            -czf: gzip compression
+            -cjf: bzip2 compression
+            -cJf: xz compression
+
+Reading File permissions
+
+    -rwxr-x--- 1 root adm 71 Apr 1 12:04 access.log
+
+        The first character (-): Either a - for files or a d for directory. 
+            From this, we can see that the access.log is a file. 
+        
+        The owner (root): Has permission to read, write, and execute this file.
+
+        Group (adm): Anyone in this group is allowed to read and execute this file, 
+            but cannot write to it.
+
+        Permissions (---): Permissions for anyone who is not root and is not in the adm group. 
+            In this case, they have zero permissions. They are not allowed to interact with this file.
+
+
+    Change owner file and group name
+        sudo chmod <owner name>:<group name> <filename>   
+    Change group name
+        sudo chmod :<group name> <filename>
+    Change user owner
+        sudo chmod <owner name> <filename>   
+
+
+
+
+
+
+
+    

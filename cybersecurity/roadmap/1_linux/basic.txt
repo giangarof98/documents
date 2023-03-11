@@ -25,14 +25,20 @@ Path:
 
     date        prints a timestamp of the current date and time
     history     list the previus used commands
-    chmod       
-    chown       
+    chmod       change mode
+    chown       change owner
     cron        
     toc         
     rev         
     alias       
     nano        Default command line text editor, easy to use but lacks a lot of advance features
-    vim         text editor     
+    vim         text editor
+
+    groups
+    groudadd
+    groupmod
+    groupdel
+    getent
 
     >           Build files
     >>          Append files
