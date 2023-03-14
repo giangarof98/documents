@@ -43,10 +43,48 @@ Reading File permissions
     Change user owner
         sudo chmod <owner name> <filename>   
 
+Symbolic and octal notation
 
+    Chown is to change file ownership. 
+        There are also times when we will want to update the permissions of the file or directory itself. 
+        For example, if an important file in your organization is too open in terms of permissions, 
+        it can be a target for hackers. There are two different ways to change permissions:
 
+            Symbolic notation: Uses the letters r, w, and x to set, read, write, and execute permissions.
 
+            Octal notation: Uses base-8 numbers to set file permissions. 
 
+                We learned that execute allows a user to run a file. 
+                This is typically relevant for program files; 
+                i.e., files that you would need to execute in order for the program to run.
+
+            Directories work a little differently. 
+            The read permission allows a user to view the name of the directory. 
+            The execute permission allows a user to change into that directory. 
+
+    Chmod command
+        Is used to modified also the files permissions
+            chmod <some options here> filename
+
+            u   user
+            g   group 
+            o   other(any user)
+
+            + || -
+            add or substract a permission
+
+            r   read
+            w   write
+            x   execute
+
+            You can mix and match options
+             
+                o-w    Remove write permissions from other
+                u+rwx   Add all permissions for the user
+                +x  Add the execute permission to the user, group, and other
+
+        Binary Conversion
+            
 
 
     

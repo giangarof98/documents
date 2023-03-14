@@ -25,7 +25,7 @@ Path:
 
     date        prints a timestamp of the current date and time
     history     list the previus used commands
-    chmod       change mode
+    chmod       modify individuals permissions
     chown       change owner
     cron        
     toc         
@@ -34,11 +34,13 @@ Path:
     nano        Default command line text editor, easy to use but lacks a lot of advance features
     vim         text editor
 
-    groups
-    groudadd
-    groupmod
-    groupdel
-    getent
+    groups      Display groups
+    groudadd    Create a new group
+    groupmod    Modify a existing group
+    groupdel    Delete a group
+    getent      Get information of users and groups
+
+    stat        Display file status
 
     >           Build files
     >>          Append files
