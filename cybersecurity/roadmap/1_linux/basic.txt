@@ -42,6 +42,23 @@ Path:
 
     stat        Display file status
 
+    apt         Advance Package Tool
+                sudo apt install -package 
+                sudo apt remove -package
+
+                sudo apt upgrade -upgradeTheRepo
+                sudp apt update -upgradeTheSoftware
+                sudo apt list --upgradable
+                sudo apt show -packageInstalled
+
+                apt search <search a piece of software>
+
+                sudo dpkg -l        dpkg is a tool to install, build and remove package. -l gives the list of the packages
+
+    top         Display the processes
+    ps          Display a snapshot of the running processes.
+
+
     >           Build files
     >>          Append files
 
