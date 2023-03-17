@@ -27,7 +27,9 @@ Path:
     history     list the previus used commands
     chmod       modify individuals permissions
     chown       change owner
-    cron        
+    cron        time-based job scheduler. It allows users to schedule tasks or commands to run automatically at specified times or intervals. 
+    crontab     edit or list crontab files for individual users
+    w or who    show who is logged in and where from
     toc         
     rev         
     alias       

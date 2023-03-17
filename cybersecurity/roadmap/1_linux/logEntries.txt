@@ -1,0 +1,30 @@
+Log entries
+
+    Log file is a running history of events on your machine.
+    Arguably one of the most important logs on a Linux system is the syslog.
+    It is a busy log file that is constantly having events written to it by various systems and services. 
+    Some services have their own specialized log files.
+    An example of that would be the apache webserver.
+
+    Log files are all a little bit different, but they almost always start each line with a timestamp.
+    This makes it easier to read the history of a service chronologically. It also makes it easier to zero in on an exact point in time.
+    This could be valuable if you know that a malicious actor attacked at a certain time.
+    You could then sift through the logs around that timestamp and look for clues.
+
+    A modern Linux system produces a LOT of log entries.
+    These log files can be invaluable to a cybersecurity or IT professional, 
+        but part of the battle is knowing what log holds the information you need.
+    Take a look in the /var/log directory and you will see so many types of log files that your head will spin.
+    These files are the most commonly used logs in a cybersecurity context:
+
+        syslog:             catch-all logs for system events
+        authlog:            logs anytime a user enters a password to log in or elevate privileges
+        dpkg.log:           keep a list of the time and name of all packages installed on the system
+        apache:             webserver logs
+        vsftpf:             ftp server logs
+        mysql or mariadb:   database server logs
+
+            HTTP
+            ftp file transfer protocol
+
+    

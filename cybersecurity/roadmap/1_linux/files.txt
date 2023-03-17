@@ -22,7 +22,7 @@ Archiving Files
 
 Reading File permissions
 
-    -rwxr-x--- 1 root adm 71 Apr 1 12:04 access.log
+    -rwx r-x --- 1 root adm 71 Apr 1 12:04 access.log
 
         The first character (-): Either a - for files or a d for directory. 
             From this, we can see that the access.log is a file. 
@@ -37,7 +37,7 @@ Reading File permissions
 
 
     Change owner file and group name
-        sudo chmod <owner name>:<group name> <filename>   
+        sudo chown <owner name>:<group name> <filename>   
     Change group name
         sudo chmod :<group name> <filename>
     Change user owner
