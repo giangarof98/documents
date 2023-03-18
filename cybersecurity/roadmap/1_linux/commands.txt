@@ -1,19 +1,14 @@
-Path:
-    Absolute path: Exact location of a path or directory
-    Relative path Specify the file location relative to the current directory
-        Relative paths are useful when moving files or folders around the file system, 
-        as they can be more easily modified without breaking the path. However, absolute paths are 
-        necessary when referring to files or folders in other parts of the file system, 
-        or when a program requires an absolute path to function properly.
 
 -Commands
     The top level of the Linux file system is the / directory, called ‘root’. Every other file and directory is contained within this directory.
 
+    man         get the manual/how to use of a command
     whoaim      get the active username
     man         get the manual for a command
     touch       create a file
     echo        display a string provided by the user.
     ls          list the contents
+    cat         short of concatenate. read the file content. only on small files.
     cp          copy a file
     mv          move a file
     rm          remove a file
@@ -22,19 +17,39 @@ Path:
     cd          change directory
     file        display file type
     tree        display a visual representation of the directory structure
-
-    date        prints a timestamp of the current date and time
     history     list the previus used commands
-    chmod       modify individuals permissions
-    chown       change owner
+    date        prints a timestamp of the current date and time
+    cal         get the current calendary
+
+    wc          word count
+                wc -l front_desk.log network_closet.log server_room.log | sort -nr
+                wc counts the number of lines, words and bytes
+
+    >           Build files
+    >>          Append files
+
     cron        time-based job scheduler. It allows users to schedule tasks or commands to run automatically at specified times or intervals. 
-    crontab     edit or list crontab files for individual users
+    crontab     edit or list crontab files for individual users. Schedule task.
+                m h dom m dow command
+                * *  *  *  *  echo "the date is: $(date)" >> /home/fstack/time.txt
+
     w or who    show who is logged in and where from
     toc         
-    rev         
-    alias       
+    rev
+
+    alias       Assign a command or a set of commands to a string.
+                    alias name="command"
+                make an alias permanent
+                    vim/nano ~/.bashrc
+
+    unalias     Unset an alias.
+
+
     nano        Default command line text editor, easy to use but lacks a lot of advance features
     vim         text editor
+
+    chmod       modify individuals permissions
+    chown       change owner
 
     groups      Display groups
     groudadd    Create a new group
@@ -60,12 +75,6 @@ Path:
     top         Display the processes
     ps          Display a snapshot of the running processes.
 
-
-    >           Build files
-    >>          Append files
-
-
-    cat         short of concatenate. read the file content. only on small files.
     More        work better on large files. 
     less        display the file content one screen at a time. work better on large files.
     tail        preview a file's end.
@@ -83,14 +92,6 @@ Path:
     Find        search command that will search for specific search terms in filenames.
     updatedb    Update the locate command's internal database. 
 
-    wc
-        word count
-        wc -l front_desk.log network_closet.log server_room.log | sort -nr
-
-        wc counts the number of lines, words and bytes
-
-    man 
-        manual
 
     awk         Search a file colomn by column and return specific text.
 
@@ -123,36 +124,6 @@ Path:
 
     uniq        Take a sorted list and output all of the unique entries. Works with an input already sorted
 
-
--Graphic User Interfice & terminal
-
-    GUI: Ubuntu, Kali, Fedora, etc 
-
-    Terminal Terminology:
-        $: Default promt sign. Indicated for non root users
-        #: Roor user/super user.
-
-        Terminal: text based interface to write Commands.
-        CLI: method of interacting with the system or program through that interface.
-        Shell: program that procesess commands and output the results. Command line interpreter.
-
-
-Reading web server logs
-
-    185.27.99.134 - - [25/Mar/2022:00:38:48 -0500] "GET /ads.txt HTTP/1.1" 404 196
-
-    Somebody from the IP 185.27.99.134
-    On March 25th, 2022 at 12:38 AM Eastern time
-    Asked to GET a file named ads.txt using HTTP
-    But received a 404 "file not found" response of only 196 bytes
-
-
-Data Stream
-
-    Every time you run a command in Linux, three data streams are created. They are:
-
-        stdin or 0 (standard input) - This is where text that is input by the user (or another command) is handled.
-        stdout or 1 (standard output) - Output from a command is written here.
-        stderr or 2 (standard error) - If any errors are encountered, they are written here. 
-            The text will show up on the command line just like stdout, but the actual output is treated separately.
-
+    &&          logic operator. AND. rund one command if and only if another command succeds first
+    ;           end of a command
+    ||          OR

@@ -1,0 +1,44 @@
+-Bash Scriptt
+
+    A Bash script is a script written in the Bash (Bourne-Again SHell) language, 
+        which is a Unix/Linux shell that provides a command-line interface for interacting with the operating system.
+
+        Bash scripts are used to automate tasks, run commands, 
+        and perform system administration tasks in Linux/Unix-based systems.
+
+        A Bash script is a plain text file that contains a series of commands, 
+        statements, and functions that are executed in sequence by the Bash interpreter. 
+        The script can also accept input from the user or arguments passed to it on the command line.
+
+        Line 1: #!/bin/bash
+        Line 2: # This line is a comment and will not be executed.
+        Line 3: target_dir="/home/fstack"
+        Line 4: echo "Directory Listing of: $target_dir"
+        Line 5: ls -l $target_dir
+
+        Line 1 (shebang): The shebang is a has (#) and a bang (!) combined. 
+            This must be on the very first line with no spaces before it. 
+            The shebang tells the interactive shell that this script should be interpreted as bash commands.
+        Line 2: Any line that begins with a "#" is a comment and will not be executed. Comments are used to explain sections of code.
+        Line 3: This is the assignment of a variable called target_dir. 
+            Notice there are no spaces around the "=". It is a good idea to enclose the value 
+            of your variable with quotes, especially if you have a space or special character in the variable.
+        Line 4: This line is using echo to output text to the user. This is similar to a 
+            print statement in other languages. Notice the "$" in front of target_dir. This is required when using a variable. 
+        Line 5: This is a simple long listing command. Notice the use of the target_dir variable again. 
+        
+        Exercise solution
+            #!/bin/bash
+            echo 'creating directories'
+            mkdir ops host
+            cd host
+            mkdir configs
+            mkdir groups
+            mkdir logs
+            mkdir packages
+            mkdir users
+            echo 'copy syslog file'
+            cp /var/log/syslog ./logs
+            echo 'listing packages...' 
+            dpkg -l > ./packages/installed.txt
+

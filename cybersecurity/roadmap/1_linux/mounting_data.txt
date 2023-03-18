@@ -1,0 +1,10 @@
+Commands
+
+    lsblk       list all the block storage
+    mount       mount a block device in a location
+                            </dev/lsblk name>    </mnt/destination folder>
+                sudo mount  /dev/nvme2n1         /mnt/flash4
+
+    unmount     unmount a block device
+    md5sum      calculate a md5 hash of a string or file
+    which       locate a command

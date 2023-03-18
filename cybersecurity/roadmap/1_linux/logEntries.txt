@@ -24,7 +24,7 @@ Log entries
         vsftpf:             ftp server logs
         mysql or mariadb:   database server logs
 
-            HTTP
-            ftp file transfer protocol
+            HTTP    hyper text transfer protocol
+            ftp     file transfer protocol
 
     
