@@ -21,6 +21,10 @@
     date        prints a timestamp of the current date and time
     cal         get the current calendary
 
+    read        read input from terminal and store it in a variable
+    hostname    print the hostname of the machine
+    $()         command substitution. run a command and then substitute the result os the command in its place
+
     wc          word count
                 wc -l front_desk.log network_closet.log server_room.log | sort -nr
                 wc counts the number of lines, words and bytes

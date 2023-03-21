@@ -42,3 +42,77 @@
             echo 'listing packages...' 
             dpkg -l > ./packages/installed.txt
 
+
+    Variables
+        are used to store data that can be accessed and manipulated by the shell or other programs.
+        used to store simple values such as strings and numbers, as well as more complex data types 
+            such as arrays and associative arrays.
+        
+        Environment variables: These are variables that are set by the system or by 
+        user configuration and can be accessed by any program or script running in the shell.
+
+        Shell variables: These are variables that are specific to the current shell and 
+        can only be accessed by the current shell or any child processes that it spawns.
+
+    Conditionals
+        used to execute different blocks of code depending on whether a certain condition is true or false.
+        There are several ways to create conditionals in Bash, including using the if statement, 
+            the case statement, and the ternary operator.
+
+            example1
+                if condition; then
+                # Code to execute if condition is true
+                fi
+
+            example2
+                x=15
+                if [ $x -gt 10 ]; then
+                    echo "x is greater than 10"
+                fi
+            
+            example3
+                x=7
+                if [ $x -gt 10 ]; then
+                    echo "x is greater than 10"
+                elif [ $x -gt 5 ]; then
+                    echo "x is greater than 5 but less than or equal to 10"
+                else
+                    echo "x is less than or equal to 5"
+                fi
+
+            case statement
+
+
+            Ternary operator
+
+
+    Loops
+        used to repeat a block of code multiple times. 
+        There are several types of loops available in Bash, including the for loop, the while loop, and the until loop.
+
+            example1
+            for i in 1 2 3 4 5; do
+            echo $i
+            done
+
+            example2
+            for i in {1..5}; do
+            echo $i
+            done    
+
+            example3
+            while condition; do
+            # Code to execute while the condition is true
+            done    
+
+    function
+
+        functions are used to group a set of commands together and give them a name so that they 
+            can be called and executed multiple times throughout a script.
+
+            example1
+                greeting() {
+                    echo "Hello, world!"
+                }
+                greeting
+
