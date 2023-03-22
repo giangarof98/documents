@@ -2,24 +2,25 @@ A Closer Look: Files and Users
 
     /etc/passwd
     The /etc/passwd file holds a list of all users on the system. Here is an example line:
-    fstack:x:1000:2000:Full Stack, , , :/home/fstack:/bin/bash
+        root:x:0:0:root:/root:/bin/bash
+        fstack:x:1000:2000:Full Stack, , , :/home/fstack:/bin/bash
 
-    Login name (fstack)
-        The account name used when logging in
-    Optional encrypted password (x)
-        Not used anymore
-    Numerical user ID (1000)
-        The number given to a user account (1002, 1002, etc.)
-    Numerical group ID (2000)
-        The number assigned to the user's primary group. Usually, this group has the same name as their login.
-    User name or comment field (Full Stack, , , )
-        Where you type a person's actual name
-    User home directory (/home/fstack)
-        Normally /home/<login name>, but not always
-    Optional user command interpreter (/bin/bash)
-        For most users this is set to /bin/bash, but can also be set to another shell (like /bin/sh) 
-        or could also be /bin/false, /bin/nologin to lock out users
-    
+        Login name (fstack)
+            The account name used when logging in
+        Optional encrypted password (x)
+            Not used anymore
+        Numerical user ID (1000)
+            The number given to a user account (1002, 1002, etc.)
+        Numerical group ID (2000)
+            The number assigned to the user's primary group. Usually, this group has the same name as their login.
+        User name or comment field (Full Stack, , , )
+            Where you type a person's actual name
+        User home directory (/home/fstack)
+            Normally /home/<login name>, but not always
+        Optional user command interpreter (/bin/bash)
+            For most users this is set to /bin/bash, but can also be set to another shell (like /bin/sh) 
+            or could also be /bin/false, /bin/nologin to lock out users
+        
 
     /etc/shadow
         The /etc/shadow file holds password information for users. Here is an example line:å

@@ -78,6 +78,8 @@
 
     top         Display the processes
     ps          Display a snapshot of the running processes.
+    scp         copies files or directories between a local and a remote system or between two remote systems.
+                sudo scp ./initial_setup.sh fstack@10.20.88.9:/home/fstack
 
     More        work better on large files. 
     less        display the file content one screen at a time. work better on large files.
@@ -116,8 +118,6 @@
                         we can do in this space. We will get more advanced later.
                     somefile.txt 
                         Where is awk going to get its data? In this example, it will look in somefile.txt.
-
-
 
     pipe |      Used to send the output of one command to the input of the next command.
                 The | or pipe character is very useful in bash. It will take the output of 

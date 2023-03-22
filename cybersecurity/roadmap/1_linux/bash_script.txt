@@ -42,6 +42,14 @@
             echo 'listing packages...' 
             dpkg -l > ./packages/installed.txt
 
+    Comparision Operator
+
+        # val1 -eq val2 returns true if the values are equal
+        # val1 -ne val2 returns true if the values are not equal
+        # val1 -gt val2 returns true if val1 is greater than val2
+        # val1 -ge val2 returns true if val1 is greater or equal than val2
+        # val1 -lt val2 returns true if val1 is less than val2
+        # val1 -le val2 returns true if val1 is less or equal than val2
 
     Variables
         are used to store data that can be accessed and manipulated by the shell or other programs.
@@ -53,6 +61,22 @@
 
         Shell variables: These are variables that are specific to the current shell and 
         can only be accessed by the current shell or any child processes that it spawns.
+
+        #user input 
+            The read command waits for the user to input text and stores it in a variable.
+
+            example1
+                name="your name"
+                echo "i'm $name" || echo "i'm ${name}"
+            
+            example2
+                echo "what is your name?"
+                read name
+                echo "welcome, $name"
+
+            example3
+                read -p "what is your name?" name
+                echo "welcome, name
 
     Conditionals
         used to execute different blocks of code depending on whether a certain condition is true or false.
@@ -84,7 +108,6 @@
 
 
             Ternary operator
-
 
     Loops
         used to repeat a block of code multiple times. 
