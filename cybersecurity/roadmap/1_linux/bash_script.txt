@@ -106,6 +106,19 @@
 
             case statement
 
+                read -p "are you 18 older? y/n" answer
+                case "$answer" in
+                    [yY] | [yY][eE][sS])
+                    echo "come in"
+                    ;;
+                    [nN] | [nN][oO])
+                    echo "go away"
+                    ;;
+                *)
+                    echo "enter yes or no"
+                    ;;
+                esac
+
 
             Ternary operator
 
@@ -113,6 +126,7 @@
         used to repeat a block of code multiple times. 
         There are several types of loops available in Bash, including the for loop, the while loop, and the until loop.
 
+        for loop
             example1
             for i in 1 2 3 4 5; do
             echo $i
@@ -126,7 +140,25 @@
             example3
             while condition; do
             # Code to execute while the condition is true
-            done    
+            done
+
+            example4 
+            n="1 2 3 4 5"
+            for num in $n
+            do
+            echo "$num"
+            done
+
+        while loop
+            count=1
+            while [ $count -le 10 ]
+            do
+                echo $count
+                ((count++))
+            done
+
+            echo "loop done"
+
 
     function
 
