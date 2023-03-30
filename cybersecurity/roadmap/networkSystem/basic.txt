@@ -1,0 +1,70 @@
+IP          Internet Protocol
+            
+MAC         Media Access Control
+            sometimes referred to as a hardware or physical address, is a unique, 
+            12-character alphanumeric attribute that is used to identify individual electronic devices on a network. 
+            An example of a MAC address is: 00-B0-D0-63-C2-26.
+
+LAN         Local Area Network
+            Is a network confined to a small, localized area. Home WiFi networks and small business networks are common examples of LANs.
+
+WAN         Wide Area Network
+            Is a large computer network that connects groups of computers over large distances.
+            Setting up a WAN allows your LANs to share resources safely and efficiently.
+            It also allows you to set up another line of defense between your users and the Internet.
+
+            Technically, any large network that spreads out over a wide geographic area is a WAN. 
+            The Internet itself is considered a WAN.
+            each office typically has its own local area network, or LAN, and these LANs connect via a WAN. 
+            These long connections may be formed in several different ways, including leased lines, VPNs, or IP tunnels
+
+VPN         Virtual Private Network
+            Is an encrypted connection over the Internet from a device to a network. 
+            The encrypted connection helps ensure that sensitive data is safely transmitted.
+            Any traffic you wish to keep confidential crossing the internet should use a VPN
+            common reasons to use it include privacy, protection, and anonymity. 
+
+ISP         Internet Service Provider
+
+
+            A router passes traffic between two networks. A switch only handles traffic inside of its own LAN.
+
+Node        endpoints on the network.
+            Devices on a network are called nodes.
+            the connection point among network devices such as routers, printers, or switches that can receive 
+            and send data from one endpoint to the other.
+
+Network Models  
+
+            Peer-to-Peer:
+                Peer-to-peer: can share files or other resources with any other peer. 
+                These are usually set up as an ad-hoc way to share files, printers, databases, etc., between two devices.
+
+            Client-server:
+                one host (the server) makes resources available to other hosts (the clients). 
+                A client will request resources from the server. The server will then fulfill that request. 
+                A server might even interact with multiple clients simultaneously.
+
+Network Devices
+            
+            Firewall:   This is a network security device that monitors inbound and outbound traffic 
+                        and decides whether to allow or block traffic based on a set of rules. 
+                        Firewalls can be hardware devices or software applications.
+
+            Router:     This is a device that connects two networks or subnetworks. 
+                        It is commonly used to connect your home network to the Internet.
+
+            Switch:     This is a device that passes network traffic between devices on the same network.
+
+            Wireless Access Point (WAP): This is a device that allows wireless capable devices to connect to a wired network.
+
+Network Topologies 
+        
+        Fully connected:    Every device is connected to every other device. 
+                            This makes for a very fast, highly resilient network, but it is expensive.
+
+        Mesh: Nodes are connected to whichever devices they can reach. This type of network is cheap and resilient but slow.
+
+        Star :  Nodes are connected to central devices. Those central nodes are normally connected to other central nodes. 
+                This is a cost-effective way to make a reasonably fast network. Large networks are stars made up of many other stars.
+
