@@ -1,5 +1,49 @@
-IP          Internet Protocol
-            
+A router passes traffic between two networks. A switch only handles traffic inside of its own LAN.
+
+How the internet works?
+    The internet is a global network of computers and servers that communicate with each other 
+        using a common language called the Internet Protocol (IP).
+    When you want to access a website or send an email, your device (e.g., phone or computer) 
+        sends a request to a server using the IP address of the server.
+
+IP          Internet Protocol 
+            Is a unique identifier (string of characters) assigned to every device that is connected to the internet.
+            IP addresses allow devices to communicate with each other over the internet by identifying 
+                the source and destination of the data being transmitted. 
+                Every device that connects to the internet, whether it is a computer, phone, or other 
+                networked device, is assigned a unique IP address by an Internet Service Provider (ISP) 
+                or a local network administrator.
+            The address 127.0. 0.1 is the standard address for IPv4 loopback traffic.
+            Protocol: A protocol is an agreed-upon set of rules and conventions that two nodes use to communicate with each other.
+            IPv4
+
+            IPv6
+
+            Public IP
+
+            Private IP
+
+DNS         Domain Name system
+            It is a system that translates human-readable domain names (such as www.example.com) 
+            into IP addresses that machines can understand (such as 192.0.2.1).
+
+TCP         Transmission Control Protocol
+            is a standard that defines how to establish and maintain a network conversation by which applications can exchange data. 
+            TCP works with the Internet Protocol (IP), which defines how computers send packets of data to each other.
+
+Gateway     Is a network device that serves as an entry point for traffic from one network to another.
+
+SubnetMask  Is a 32-bit number that is used to divide an IP address into two parts, a network address and a host address.
+            Is used in conjunction with the IP address to determine which part of the address is used for the network 
+            and which part is used for the host.
+            Subnet is binary
+
+
+
+Loopback    A loopback address has been built into the IP domain system in order to allow for a device to send and receive its own data packets.
+            The loopback interface refers to the overall system by which network engineers can self-reference a device, 
+            or “ping” a device by sending its data packets back to itself.
+
 MAC         Media Access Control
             sometimes referred to as a hardware or physical address, is a unique, 
             12-character alphanumeric attribute that is used to identify individual electronic devices on a network. 
@@ -26,8 +70,10 @@ VPN         Virtual Private Network
 
 ISP         Internet Service Provider
 
-
-            A router passes traffic between two networks. A switch only handles traffic inside of its own LAN.
+NIC         Network Interface Controller
+            Is a hardware component, typically a circuit board or chip, that allows a computer to connect to a network.
+            Every NIC has a unique Media Access Control (MAC) address assigned to it. 
+            A MAC address is made up of six hexadecimal numbers, usually separated by colons. 
 
 Node        endpoints on the network.
             Devices on a network are called nodes.

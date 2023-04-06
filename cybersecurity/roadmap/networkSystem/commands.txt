@@ -1,0 +1,17 @@
+ifconfig
+
+nslookup
+
+ip address
+
+nmap
+
+netstat
+
+zenmap
+
+dig
+
+python3 -m http.server
+
+nc
