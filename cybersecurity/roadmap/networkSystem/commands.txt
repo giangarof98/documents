@@ -8,10 +8,12 @@ nmap
 
 netstat
 
+nc
+
+ncat
+
 zenmap
 
 dig
 
 python3 -m http.server
-
-nc

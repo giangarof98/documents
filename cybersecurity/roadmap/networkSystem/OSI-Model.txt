@@ -1,0 +1,53 @@
+At its most basic, a message sent through a network is nothing more than a series of bits encoded 
+into electrical pulses, radio waves, or bursts of light. 
+
+The process that converts a web page down to those pulses and then re-assembles them on the other side happens in layers. 
+
+The Open Systems Interconnection (OSI) Model is a popular way to describe these layers. 
+
+The top of the OSI model is layer 7, where you might be using a web browser to interact with a website.
+
+Layer 1 is the bottom layer where the stream of bits is being sent through copper wires, fiber optic cables, or radio waves.
+
+Because this unit is an introduction to networking, we will spend the bulk of our time discussing layers 2-4.
+
+
+
+Number              7
+Layer Name          Application
+Description         The part of an application that interacts with the network stack
+Example             A web server’s network process receives a request for an image and responds.
+
+Number              6
+Layer Name          Presentation
+Description         Encryption/encoding to decryption/decoding
+Example             The image is encoded into base64 before being sent out.
+
+Number              5
+Layer Name          Session
+Description         Keeps track of which hosts we are communicating with
+Example             The web server uses the session data to determine which host will receive the file.
+
+Number              4
+Layer Name          Transport
+Description         Where the data is broken up into packets and turned into a stream
+Example             The file is broken up into a series of packets.
+
+Number              3
+Layer Name          Network
+Description         IP addressing and routing
+Example             The chunks are inserted into a series of packets that includes IP addressing information and sent to the nearest gateway (a router). 
+                    This information is used to traverse the Internet.
+
+Number              2
+Layer Name          Datalink
+Description         MAC addresses and switching
+Example             The IP address from layer 3 is enough to get the packets to the correct LAN. 
+                    A MAC is then used by the networking gear to deliver to the correct machine.
+
+Number              1
+Layer Name          Physical 
+Description         Sends and receives bits
+Example             The frames are transmitted as bits to the Network Interface Card (NIC) on your machine.
+
+
