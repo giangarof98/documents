@@ -1,0 +1,65 @@
+TCP:    Transmission Control Protocol
+        Is a communication protocol used in computer networks.
+        It is a reliable and connection-oriented protocol that ensures the delivery of data packets from one 
+            network device to another in a secure and orderly manner.
+        Is a standard that defines how to establish and maintain a network conversation by which applications can exchange data. 
+        TCP works with the Internet Protocol (IP), which defines how computers send packets of data to each other.
+
+        When two network devices want to communicate using TCP, they first establish a connection by performing a "three-way handshake."
+        During this process, the devices exchange a series of messages to confirm that they are both ready to 
+            communicate and establish a reliable connection.
+        
+        Once the connection is established, the devices can send data packets back and forth.
+
+        When the communication is complete, the devices close the connection by performing a "four-way handshake" 
+            to confirm that all the data has been transmitted and the connection can be terminated.
+
+        How does it works?
+            TCP is a connection-oriented protocol, which means a connection is established and maintained 
+                until the applications at each end have finished exchanging messages.
+
+            TCP performs the following actions:
+                1.determines how to break application data into packets that networks can deliver;
+                2.sends packets to, and accepts packets from, the network layer;
+                3.manages flow control;
+                4.handles retransmission of dropped or garbled packets, as it's meant to provide error-free data transmission; and
+                5.acknowledges all packets that arrive.
+
+        Easy words:
+            Basically, tcp is a protocol connection which work is to send data with the help of the ip protocol
+
+
+UDP:    User Datagram Protocol
+        A transport layer communication protocol, UDP is a very common protocol for voice and video traffic.
+        Is a communication protocol used across the Internet for especially time-sensitive transmissions such as video playback or DNS lookups.
+        It is a simple and connectionless protocol that provides a way to send data packets over the network without 
+            the overhead of establishing and maintaining a connection.
+
+        UDP is commonly used for real-time applications such as audio and video streaming, online gaming, and VoIP 
+            (Voice over Internet Protocol) because it provides low latency and faster transfer of data packets.
+        
+        However, it is not suitable for applications that require reliable delivery of data, such as file transfers or email.
+
+        Overall, UDP is a lightweight and fast protocol that is useful for certain types of 
+            applications that do not require reliable delivery of data.
+
+        How does it work?
+            Like all networking protocols, UDP is a standardized method for transferring data between two computers in a network.
+            It sends packets (units of data transmission) directly to a target computer, without establishing a connection first, 
+                indicating the order of said packets, or checking whether they arrived as intended.
+
+    
+TCP - UDP Difference:   
+    UDP is faster but less reliable than TCP.
+    TCP is a connection-based protocol and UDP is connectionless.
+    While TCP is more reliable, it transfers data more slowly. UDP is less reliable but works more quickly.
+
+IP
+
+DNS 
+
+ARP 
+
+ICMP
+
+MQTT

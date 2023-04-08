@@ -1,0 +1,12 @@
+Wireshark
+    Is a network protocol analyzer, or an application that captures packets from a network connection,
+    such as from your computer to your home office or the internet.
+
+    You can capture packets that are sent and received on your network interface and analyze them at the packet level. 
+    It allows you to filter and search for specific packets based on various criteria, 
+        such as IP address, port number, protocol, and packet type.
+
+    What Wireshar does:
+        Packet capture
+        Filtering
+        Visualization

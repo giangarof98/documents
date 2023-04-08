@@ -14,14 +14,17 @@ IP          Internet Protocol
                 networked device, is assigned a unique IP address by an Internet Service Provider (ISP) 
                 or a local network administrator.
             The address 127.0. 0.1 is the standard address for IPv4 loopback traffic.
-            Protocol: A protocol is an agreed-upon set of rules and conventions that two nodes use to communicate with each other.
-            IPv4
 
-            IPv6
+            Protocol:   A protocol is an agreed-upon set of rules and conventions that two nodes use to communicate with each other.
+                        Set of rules that lays out what each bit in a packet represents.
 
-            Public IP
+            IPv4:
 
-            Private IP
+            IPv6:
+
+            Public IP:
+
+            Private IP:
 
 DNS         Domain Name system
             It is a system that translates human-readable domain names (such as www.example.com) 
