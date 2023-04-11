@@ -17,3 +17,13 @@ zenmap
 dig
 
 python3 -m http.server
+
+dhclient
+
+gftp
+
+base64
+
+xxd
+
+

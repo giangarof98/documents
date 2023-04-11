@@ -51,7 +51,9 @@ UDP:    User Datagram Protocol
     
 TCP - UDP Difference:   
     UDP is faster but less reliable than TCP.
+        connection less
     TCP is a connection-based protocol and UDP is connectionless.
+        connection oriented
     While TCP is more reliable, it transfers data more slowly. UDP is less reliable but works more quickly.
 
 IP
@@ -63,3 +65,5 @@ ARP
 ICMP
 
 MQTT
+
+DHCP

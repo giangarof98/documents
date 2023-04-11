@@ -117,3 +117,35 @@ Network Topologies
         Star :  Nodes are connected to central devices. Those central nodes are normally connected to other central nodes. 
                 This is a cost-effective way to make a reasonably fast network. Large networks are stars made up of many other stars.
 
+
+Encoding
+    Encoding is when data is changed into a different format for one reason or another. 
+    It usually makes it easier to use, read, or take up less space. 
+    The data is not meant to be obscured, but it is not always obvious what the data is. 
+    It has been around for a long time in one form or another, from hieroglyphs to shorthand to Morse code.
+        Encoding Schemes
+            ASCII
+            BINARY 
+            DECIMAL
+            BASE64
+
+Encryption
+    Is the method by which information is converted into secret code that hides the information's true meaning. 
+        Encryption standard
+            DES & 3DES
+                DES is a symmetric cipher, meaning the same key is used to encrypt and decrypt data. 
+                It uses a key that is 56 bits in length.
+            AES
+                AES is another symmetric cipher but has much longer keys, 
+                meaning it is harder to crack than DES or 3DES.
+            RSA
+                RSA is asymmetric encryption, which means that one key is used to encrypt data, 
+                and a separate key is used to decrypt it. 
+                You first must generate a public/private key pair to use it. 
+                Crypto utilities generate the keys with pairs of extremely large prime numbers. 
+                You use the public key to encrypt and the private key to decrypt.
+            Elliptical Curve
+                Iis like RSA because it is an asymmetric encryption standard that uses 
+                a public/private key pair. It differs in the way it generates the keys. 
+                ECC uses the mathematics of elliptical curves to come up with these keys. 
+                It is computationally less expensive than RSA encryption.
