@@ -1,0 +1,20 @@
+ROT13 Cipher
+
+Baconian Cipher
+
+Rail Fence Cipher
+
+Vigenere Cipher
+
+One Time Pide Cipher
+
+
+Symmetric encryption 
+    It means that the same key can be used to encrypt and decrypt data.
+Asymmetric Encryption
+    Modern web security, however, is built on asymmetric encryption. 
+    Asymmetric encryption uses one key for encrypting and another key for decrypting.
+    Asymmetric encryption is more secure than symmetric encryption but is also more computationally expensive, 
+    meaning it takes more resources to encrypt/decrypt.
+
+Digital Certificates
