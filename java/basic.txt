@@ -1,0 +1,35 @@
+Variables
+
+The Java variables have mainly three types: Local, Instance and Static.
+Variable in Java is a data container that stores the data values during Java program execution.
+Every variable is assigned a data type, which designates the type and quantity of values it can hold.
+Variable is a memory location name of the data. 
+
+Data Types are divided into two group:
+    Primitive - byte, short, int, long, float, double, boolean and char
+    Non-Primitive - String, Arrays and Classes
+
+The goal of a program is to do something with data, or in other words, stuff you put into your program.
+Your program uses a variable to manipulate the data.
+More specifically, it is a container used to store a piece of data that your program may need for its processing.
+
+A variable is composed of three elements: name, value, and type.
+
+To declare a constant in Java, you need to use the keyword "final"; othersiwe, just declare String.
+To print something, must be include within a class.
+char is used to store one character; with String you can store any text
+    char myChar = 'a';
+    String myString = "My string";
+    *notice the single and double quotes.
+
+//EXAMPLE
+            public class test {
+            public static void main(String[] args) {
+                int age = 25;
+                String name = "Jhon Doe";
+                System.out.println("i'm " + name + ", i'm " + age + " years old");
+            }
+            }
+
+
+
