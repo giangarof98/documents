@@ -66,4 +66,10 @@ ICMP
 
 MQTT
 
-DHCP
+DHCP:   Dynamic Host Configuration Protocol
+        Network management protocol used to dynamically assign an IP address to any device, or node, 
+            on a network so it can communicate using IP.
+        DHCP assigns new IP addresses in each location when devices are moved from place to place, 
+            which means network administrators do not have to manually configure each device with 
+            a valid IP address or reconfigure the device with a new IP address if it moves to a 
+            new location on the network.

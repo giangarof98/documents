@@ -19,12 +19,28 @@ IP          Internet Protocol
                         Set of rules that lays out what each bit in a packet represents.
 
             IPv4:
+                Internet Protocol version 4.
+                is the older and more widely used protocol. It uses 32-bit addresses, which means there are 
+                approximately 4 billion unique addresses available. However, due to the growth of the internet 
+                and the increasing number of devices that need to be connected to it, IPv4 addresses are becoming scarce.
 
             IPv6:
+                Internet Protocol version 6.
+                was created to solve the address exhaustion problem. It uses 128-bit addresses, 
+                which means there are approximately 340 undecillion unique addresses available. 
+                This virtually ensures that every device on the planet can have its own unique address. 
+                In addition, IPv6 offers other advantages such as improved security and better support for mobile devices.
 
             Public IP:
+                A public IP address is a unique identifier that is assigned to a device on a public network, 
+                such as the internet. Public IP addresses are globally routable, which means that they can be 
+                accessed from anywhere on the internet.
 
             Private IP:
+                is a unique identifier that is assigned to a device on a private network, such as a local area network (LAN). 
+                Private IP addresses are not globally routable, which means that they cannot be accessed from the internet. 
+                Instead, they are used for communication within the local network, allowing devices on the same network to 
+                communicate with each other.
 
 DNS         Domain Name system
             It is a system that translates human-readable domain names (such as www.example.com) 
@@ -33,6 +49,22 @@ DNS         Domain Name system
 TCP         Transmission Control Protocol
             is a standard that defines how to establish and maintain a network conversation by which applications can exchange data. 
             TCP works with the Internet Protocol (IP), which defines how computers send packets of data to each other.
+            
+            TCP Handshake
+                Three-way communication process that is used to establish a connection between two devices over a TCP/IP network. 
+                The handshake is initiated by the device that wants to establish the connection, and involves the following steps:
+
+                SYN: The first step in the TCP handshake is the SYN packet sent by the initiating device to the 
+                        destination device. This packet includes a random sequence number and a value 
+                        called the Initial Sequence Number (ISN) that is used to identify the start of a new session.
+                SYN-ACK: Upon receiving the SYN packet, the destination device sends a SYN-ACK packet back 
+                            to the initiating device. This packet contains an acknowledgment of the sequence 
+                            number received in the SYN packet, as well as a random sequence number and an ISN value.
+                ACK: The final step in the TCP handshake is the ACK packet, which is sent by the initiating 
+                        device to the destination device. This packet contains an acknowledgment of the 
+                        sequence number received in the SYN-ACK packet, and may also contain additional data.
+                
+                It is used to prevent data from being lost or corrupted during transmission.
 
 Gateway     Is a network device that serves as an entry point for traffic from one network to another.
 
@@ -40,8 +72,6 @@ SubnetMask  Is a 32-bit number that is used to divide an IP address into two par
             Is used in conjunction with the IP address to determine which part of the address is used for the network 
             and which part is used for the host.
             Subnet is binary
-
-
 
 Loopback    A loopback address has been built into the IP domain system in order to allow for a device to send and receive its own data packets.
             The loopback interface refers to the overall system by which network engineers can self-reference a device, 
@@ -83,6 +113,11 @@ Node        endpoints on the network.
             the connection point among network devices such as routers, printers, or switches that can receive 
             and send data from one endpoint to the other.
 
+Network     Is the thousands upon thousands of tiny messages being sent between hosts. 
+traffic
+
+
+
 Network Models  
 
             Peer-to-Peer:
@@ -95,7 +130,6 @@ Network Models
                 A server might even interact with multiple clients simultaneously.
 
 Network Devices
-            
             Firewall:   This is a network security device that monitors inbound and outbound traffic 
                         and decides whether to allow or block traffic based on a set of rules. 
                         Firewalls can be hardware devices or software applications.
@@ -149,3 +183,36 @@ Encryption
                 a public/private key pair. It differs in the way it generates the keys. 
                 ECC uses the mathematics of elliptical curves to come up with these keys. 
                 It is computationally less expensive than RSA encryption.
+
+
+States of data
+    Refer to the different forms that data can take, depending on its current use and storage. 
+
+    Data at rest:
+        This refers to data that is stored on a device or system and is not actively being used. 
+        Data at rest may be in the form of files, databases, backups, or archives. 
+        Examples of data at rest include files saved on a hard drive or documents stored in the cloud.
+
+    Data in motion: 
+        This refers to data that is being transmitted from one location to another over a network. 
+        Data in motion may be in the form of emails, web pages, or other types of network traffic. 
+        Examples of data in motion include streaming video, instant messaging, or file downloads.
+
+    Data in use: 
+        This refers to data that is currently being accessed or processed by a system or application. 
+        Data in use may be in the form of an open document, a running application, or a website being viewed. 
+        Examples of data in use include a document being edited in a word processor, 
+        a video being played on a media player, or a web application being used to make a purchase.
+
+
+Layer approach
+    A layered approach to security, also known as defense in depth, involves using multiple security 
+    measures to protect against different types of threats. 
+    The idea is that if one layer of security is breached, there are additional layers in place 
+    to prevent or mitigate further damage.
+
+Priviledge creep
+    Is a term used to describe the gradual accumulation of privileges or access rights beyond what 
+    is necessary or appropriate for an individual's job or role within an organization.
+
+

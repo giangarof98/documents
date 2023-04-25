@@ -1,0 +1,81 @@
+A firewall is a security device that limits traffic to and from a network. 
+It can be hardware or software-based.
+Software firewalls range from Windows Defender Firewall to UFW or iptables in 
+    Linux or more advanced software firewalls like PfSense.
+In industry, firewalls are usually standalone appliances that sit in the rack, 
+    but the network in your home most likely has a firewall built into your router.
+This is an essential security device that every network should have.
+
+The Modern SOHO Router
+    Is a small device that provides Internet access to your home or small business.
+    It does include:
+        Router: Connects your home network to the Internet.
+        Switch: Allows you to connect multiple devices.
+        Firewall: Filters traffic into and out of the network.
+        DHCP Server: Hands out and keeps track of IP addresses inside your network.
+        Wireless Access Point (WAP): Provides a wireless connection to phones, tablets, laptops, etc.
+
+        Traffic Analytics: Software to visualize traffic on your network.
+        VPN (Virtual Private Network) Server: An endpoint that allows you to create an encrypted 
+            connection into your network from anywhere.
+        POE (Power Over Ethernet): Sends power over the cable that provides a network connection. 
+            Useful for devices such as extra Wireless Access Points, Voice over IP (VOIP) phones, or IP cameras.
+
+
+Stateless Firewalls
+    All firewalls, software, or hardware falls into a couple of categories, stateful or stateless. 
+    This refers to the way the firewall sifts through traffic. In a pure, stateless firewall, every packet is inspected. 
+    Certain IPs, ports, and/or protocols are forbidden. If the packet matches those criteria, it is rejected or dropped. 
+    
+    Imagine that we have a simple stateless firewall setup to protect a web server. The firewall has three inbound rules. 
+        An inbound rule affects only traffic coming into the network. There are no outbound rules:
+            1.Allow traffic through port 80 (normally unencrypted web browsing traffic).
+            2.Reject traffic that uses FTP protocol (file transfers).
+            3.Drop ICMP traffic (ping requests).
+
+        Allow
+            In this first scenario, the client is sending HTTP traffic to the server. 
+            It matches the first rule and is allowed through the firewall.
+        Reject
+            In this second scenario, the client is sending FTP traffic to the server. 
+            Rule 2 says to reject that traffic and so the firewall sends an error message 
+            back to the client saying that this type of traffic is NOT allowed.
+        Drop
+            In the third scenario, the client is trying to ping the server. 
+            Rule 3 says to drop all ICMP traffic. The packet is not forwarded to the server. 
+            No error message is sent out. To the client, it looks as if the traffic was sent into a black hole.
+        outbound Traffic
+            In this last scenario, the server sends a ping request out to the internet. 
+            There are no rules governing outbound traffic and therefore it is allowed.
+
+Stateful Firewalls
+    These firewalls don't look at each packet individually, but they consider active 
+        connections and where each packet fits into them.
+    For instance, when we open a connection to a streaming service, our firewall notices 
+    that we have established a session with a remote host that sends thousands of similar 
+        packets to the same IP and port and uses the same protocol.
+    The firewall does not need to look at every packet going down the stream. 
+        It trusts that the packets in this stream are allowed.
+
+    Example. This firewall is protecting the client from traffic inbound from the internet. Its rules are:
+        1.All inbound traffic is dropped.
+        2.All outbound traffic is allowed.
+        3.Traffic that is part of an established connection is allowed.
+
+        Inbound Traffic
+            In this first scenario, unsolicited traffic sent from outside the network is immediately dropped because of rule number 1.
+        Outbound Traffic
+            In scenario 2, the client sends traffic out to the internet. This traffic is allowed by the second rule. 
+        Session Traffic
+            In the last scenario, our client laptop reaches out to a server on the Internet and establishes a connection.
+            The server responds. Because the client reached out first, the traffic is allowed through the firewall. 
+                Subsequent traffic coming back in that same session is also allowed. 
+        DMZ
+            Let's say your organization runs a webserver that must be available to the public. 
+            Any public facing server will be open to attacks from anywhere. 
+            If a breach occurs on the webserver, then every machine on its network is vulnerable. 
+            How do we protect our other assets? This is where a DMZ comes in. 
+            A DMZ (Demilitarized Zone) is a feature of most firewalls that allows an organization 
+            to send incoming network traffic into a tightly controlled subnet that is completely 
+            separate from the rest of the network. This protects the other machines in your organization 
+            if a breach happens inside the DMZ.

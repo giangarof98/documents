@@ -1,0 +1,71 @@
+Variable: is a value that can change depending on conditions or on information passed to the program.
+Program: consists of instructions that tell the computer what to do and data that the program uses when running.
+
+Data types: Variables can store data of different types, and different types can complete different tasks.
+    integers:   zero, positive or negative whole numbers. They can be of any length, e.g. 0, 100, -10. 
+    floats:     represent the floating point number. These are numbers with decimal points.
+    strings.    collections of alphabets, words, or other characters that are enclosed in quotation marks.
+
+Casting: change the data type of a variable.
+            Example:
+            my_num = "5"
+            print(type(int(my_num)))
+            output = <class 'int'>
+            #Notice the initial type of my_num is str
+
+            type(int())
+            type(str())
+
+Aritmethic operators
++ | - | * | / | %
+
+Getting user input
+    using input()
+    q = input('Provide your name')
+    output -> [your name]
+
+    Code Example:
+        my_name = input('My name is:')
+        neighbors_name = input('My neighbor name is:')
+        my_age = input('my age is')
+        neighbors_age = input('my neighbor age is:')
+        total_years = int(my_age) + int(neighbors_age)
+        print("I am " + my_name + " and my neighbors name is " + neighbors_name)
+        print("together our age is " + str(total_years))
+
+
+Errors: 
+    A Python program terminates as soon as it encounters an unhandled error.
+        Fortunately, the program will print the cause of the error and the line in the script that caused it. 
+            This can help us debug and correct our code.
+
+        An error caused by not following the proper structure (syntax) of the language is called a syntax error or parsing error.
+        Another common mistake is trying to print or do an action on a variable without assigning a value to it.
+        Another common error is trying to add or concatenate two variables with different data types.
+
+
+String Methods
+    In Python have a list of methods that are available. 
+    These methods help manipulate and edit strings, which is extremely helpful in working with logs. 
+    String methods help us split strings, count the number of characters in a string, and check if a string is a number, 
+    alphanumeric character or a letter.
+
+    The way we use a string method is to write variable.method()
+
+    split(): Splits the string at the specified separator, and returns a list. We will cover lists in depth in a later lesson.
+    len() :Returns the length of a string
+    count(): Returns the number of times a specified value occurs in a string
+    index():Returns the index of a specific character in a string
+    replace(): Replaces a specified phrase with another specified phrase
+    strip() : Deletes all white spaces
+
+    String Indexing
+        Strings are ordered sequences of character data. 
+        Indexing allows you to access individual characters in a string directly by using a numeric value. 
+        String indexing is zero-based; the first character in the string has index 0, the next is 1, and so on
+    
+    String Slicing
+        Used to extract a substring.
+        variable="Hello World"
+        variable[0:5]
+        output -> Hello

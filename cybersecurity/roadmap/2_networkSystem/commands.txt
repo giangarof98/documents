@@ -27,3 +27,11 @@ base64
 xxd
 
 
+gFTP
+
+systemctl restart
+
+openssl req
+
+openssl x509
+

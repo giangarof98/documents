@@ -1,0 +1,26 @@
+Defense in depth is a cybersecurity strategy that involves implementing multiple layers of 
+    security controls to protect against various types of attacks. 
+The idea behind this strategy is that if one layer of defense fails, there are still 
+    other layers in place to prevent an attacker from gaining access to sensitive data or systems.
+
+    Perimeter security: (Edge firewall)
+        This is the first layer of defense that is designed to keep unauthorized users from accessing a network or system. 
+        Perimeter security measures might include firewalls, intrusion detection and prevention systems, 
+        and access control mechanisms.
+
+    Network security: (Network segmentation)
+        This layer is focused on protecting the network itself, and might include measures like segmentation, 
+        traffic monitoring and analysis, and encryption.
+
+    Host security: 
+        Host security involves protecting individual devices or servers from attack, and might include 
+        measures like antivirus software, patch management, and application whitelisting.
+
+    Application security: 
+        This layer focuses on protecting the applications themselves, and might include measures 
+        like code reviews, input validation, and penetration testing.
+
+    Data security: 
+        Finally, data security measures are designed to protect sensitive data from unauthorized access or disclosure. 
+        This might include measures like encryption, access controls, and data backup and recovery.
+
