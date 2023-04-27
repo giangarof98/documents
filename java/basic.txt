@@ -1,35 +1,117 @@
+Setup
+    In Java, every application begins with a class name, and that class must match the filename.
+    A class should always start with an uppercase first letter.
+    Java is case-sensitive: "MyClass" and "myclass" has different meaning.
+        The main() method is required to start the program.
+        Any code inside the main() method will be executed.
+        In Java, "main()" is a special method that serves as the entry point of a Java program.
+        Each code statement must end with a semicolon (;).
+
 Variables
 
-The Java variables have mainly three types: Local, Instance and Static.
-Variable in Java is a data container that stores the data values during Java program execution.
-Every variable is assigned a data type, which designates the type and quantity of values it can hold.
-Variable is a memory location name of the data. 
+    Syntax: type variableName = value;
 
-Data Types are divided into two group:
-    Primitive - byte, short, int, long, float, double, boolean and char
-    Non-Primitive - String, Arrays and Classes
+    Variables are containers for storing data values.
+    The Java variables have mainly three types: Local, Instance and Static.
+    Variable in Java is a data container that stores the data values during Java program execution.
+    Every variable is assigned a data type, which designates the type and quantity of values it can hold.
+    Variable is a memory location name of the data.
 
-The goal of a program is to do something with data, or in other words, stuff you put into your program.
-Your program uses a variable to manipulate the data.
-More specifically, it is a container used to store a piece of data that your program may need for its processing.
+    Operators
+        + | - | * | / | % | ++ | --
+        == | != | > | < | <= | >=
+        && | ! | || 
 
-A variable is composed of three elements: name, value, and type.
+    Identifiers
+        All Java variables must be identified with unique names.
+        These unique names are called identifiers.
+        Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+        It is recommended to use descriptive names in order to create understandable and maintainable code.
+        The general rules for naming variables are:
+            Names can contain letters, digits, underscores, and dollar signs
+            Names must begin with a letter
+            Names should start with a lowercase letter and it cannot contain whitespace
+            Names can also begin with $ and _ (but we will not use it in this tutorial)
+            Names are case sensitive ("myVar" and "myvar" are different variables)
+            Reserved words (like Java keywords, such as int or boolean) cannot be used as names
 
-To declare a constant in Java, you need to use the keyword "final"; othersiwe, just declare String.
-To print something, must be include within a class.
-char is used to store one character; with String you can store any text
-    char myChar = 'a';
-    String myString = "My string";
-    *notice the single and double quotes.
+    Data Types are divided into two group:
+        Primitive - byte, short, int, long, float, double, boolean and char
+        Non-Primitive - String, Arrays and Classes
 
-//EXAMPLE
-            public class test {
-            public static void main(String[] args) {
-                int age = 25;
-                String name = "Jhon Doe";
-                System.out.println("i'm " + name + ", i'm " + age + " years old");
-            }
-            }
+        Non-primitive data types are called reference types because they refer to objects.
+        The main difference between primitive and non-primitive data types are:
+            Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
+            Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
+            A primitive type has always a value, while non-primitive types can be null.
+            A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.
+            The size of a primitive type depends on the data type, while non-primitive types have all the same size.
+
+        The goal of a program is to do something with data, or in other words, stuff you put into your program.
+        Your program uses a variable to manipulate the data.
+        More specifically, it is a container used to store a piece of data that your program may need for its processing.
+
+        A variable is composed of three elements: name, value, and type.
+
+        To declare a constant in Java, you need to use the keyword "final"; othersiwe, just declare String.
+        To print something, must be include within a class.
+        Char is used to store one character; with String you can store any text
+            char myChar = 'a';
+            String myString = "My string";
+            *notice the single and double quotes.
+
+        //EXAMPLE
+                    public class test {
+                        public static void main(String[] args) {
+                            int age = 25;
+                            String name = "Jhon Doe";
+                            System.out.println("i'm " + name + ", i'm " + age + " years old");
+                        }
+                    }
 
 
+        You can also declare a variable without assigning the value, and assign the value later
+            int num;
+            num = 5
+        if you assign a new value to an existing variable, it will overwrite the previous value
+            int num = 5;
+            num = 10;
+        If you don't want others to overwrite existing values, use the final keyword 
+            final int num = 5;
 
+    Type casting
+        Process of converting a variable of one data type to another data type.
+        Java supports two types of type casting: implicit and explicit.
+            Implicit type casting:
+                Occurs when Java automatically converts a value of one data type to another data type.
+                If you assign an int value to a float variable, Java will automatically convert the int 
+                    to a float without the need for an explicit cast.
+            Explicit type casting:
+                Requires the programmer to manually convert a value of one data type to another 
+                    data type using a cast operator.
+                if you want to assign a double value to an int variable, you must explicitly cast 
+                    the double value to an int using the cast operator.
+
+String
+    Strings are used for storing text.
+    A String variable contains a collection of characters surrounded by double quotes.
+    A String in Java is actually an object, which contain methods that can perform certain operations on strings.
+    Java counts positions from zero: 0 is the first position in a string, 1 is the second, 2 is the third ...
+    String Methods:
+        .length()
+        .concat()
+        .toUpperCase()
+        .toLoweCase()
+        .indexOf()
+
+        Special characters
+            \'	Single quote
+            \"	Double quote
+            \\	Backslash
+            \n	New Line	
+            \r	Carriage Return	
+            \t	Tab	
+            \b	Backspace	
+            \f	Form Feed
+
+Math                
