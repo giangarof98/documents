@@ -114,4 +114,149 @@ String
             \b	Backspace	
             \f	Form Feed
 
-Math                
+Math
+    Mathematical tasks on numbers.
+
+    Methods
+        .math()
+        .min()
+        .sqrt()
+        .abs()
+        .random()
+
+Boolean
+    Only have one of two values, like:
+        YES / NO
+        ON / OFF
+        TRUE / FALSE
+    A boolean type is declared with the boolean keyword and can only take the values true or false
+
+Conditionals
+    Java supports the usual logical conditions from mathematics.
+    Use these conditions to perform different actions for different decisions.
+    Java has the following conditional statements:
+        Use     if          to specify a block of code to be executed, if a specified condition is true
+        Use     else        to specify a block of code to be executed, if the same condition is false
+        Use     else if     to specify a new condition to test, if the first condition is false
+        Use     switch      to specify many alternative blocks of code to be executed
+
+    Syntax
+        if (condition){             //If first condition is true
+            //code execution
+        } else if (condition){      //If second condition is true and first condition false
+            //code execution
+        } else {                    //otherwise ... if all conditions are false
+            //code execution
+        }
+    
+    Ternary operator
+        Shorthand way of writing an if-else statement in a single line. 
+        It is also known as the conditional operator.
+        Syntax
+        (condition) ? valueIfTrue : valueIfFalse
+
+    Switch
+        Instead of writing many if..else statements, you can use the switch statement.
+        The switch statement selects one of many code blocks to be executed.
+
+        The switch expression is evaluated once.
+        The value of the expression is compared with the values of each case.
+        If there is a match, the associated block of code is executed.
+        When Java reaches a break keyword, it breaks out of the switch block.
+            This will stop the execution of more code and case testing inside the block.
+        The default keyword specifies some code to run if there is no case match.
+            Note that if the default statement is used as the last statement in a switch block, it does not need a break.
+        Syntax
+            switch(expression) {
+                case x:
+                    // code block
+                    break;
+                case y:
+                    // code block
+                    break;
+                default:
+                    // code block
+            }
+
+Loops
+    Loops can execute a block of code as long as a specified condition is reached.
+
+    While Loop
+        The while loop loops through a block of code as long as a specified condition is true
+        Syntax
+            int i = 0;
+            while (i < 5) {
+                System.out.println(i);
+                i++;
+            }
+
+    Do/while Loop
+        Is a variant of the while loop.
+        Will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+        Syntax
+            int i = 0;
+            do {
+                System.out.println(i);
+                i++;
+            }
+            while (i < 5);
+
+    For Loop
+        Control structure that allows you to execute a block of code repeatedly for a fixed number of times. 
+        Syntax
+            for (statement 1; statement 2; statement 3) {
+                // code block to be executed
+            }
+            Statement 1 is executed (one time) before the execution of the code block.
+            Statement 2 defines the condition for executing the code block.
+            Statement 3 is executed (every time) after the code block has been executed.
+
+            for (int i = 0; i < 5; i++) {
+                System.out.println(i);
+            }   
+            Statement 1 sets a variable before the loop starts (int i = 0).
+            Statement 2 defines the condition for the loop to run (i must be less than 5). 
+                If the condition is true, the loop will start over again, if it is false, the loop will end.
+            Statement 3 increases a value (i++) each time the code block in the loop has been executed.
+
+        Nested Loops
+            Place a loop inside another loop. This is called a nested loop.
+            The "inner loop" will be executed one time for each iteration of the "outer loop"
+            Example
+            for(int i = 0; i < 5; i++){
+                System.out.println("out " + i);
+                for(int j = 0; j < 5; j = j + 2){
+                    System.out.println("in " + j);
+                }
+            }
+
+    For Each
+        Used exclusively to loop through elements in an array
+        Syntax
+            for (type variableName : arrayName) {
+                // code block to be executed
+            }  
+    
+    Break / continue
+        Break is used to "jump out" of a switch statement.
+        The break statement can also be used to jump out of a loop.
+        The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+        You can also use break and continue in while loops
+
+Array
+    Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+    To declare an array, define the variable type with square brackets:
+        String[] arrayName;
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        int[] myNum = {10, 20, 30, 40};
+
+    Multidimensional Arrays
+        A multidimensional array is an array of arrays.
+        Multidimensional arrays are useful when you want to store data as a tabular form, like a table with rows and columns.
+        To create a two-dimensional array, add each array within its own set of curly braces:
+            int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+
+Methods
+    
+
+
