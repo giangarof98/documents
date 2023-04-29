@@ -33,7 +33,6 @@ Getting user input
         print("I am " + my_name + " and my neighbors name is " + neighbors_name)
         print("together our age is " + str(total_years))
 
-
 Errors: 
     A Python program terminates as soon as it encounters an unhandled error.
         Fortunately, the program will print the cause of the error and the line in the script that caused it. 
@@ -42,7 +41,6 @@ Errors:
         An error caused by not following the proper structure (syntax) of the language is called a syntax error or parsing error.
         Another common mistake is trying to print or do an action on a variable without assigning a value to it.
         Another common error is trying to add or concatenate two variables with different data types.
-
 
 String Methods
     In Python have a list of methods that are available. 
@@ -69,3 +67,45 @@ String Methods
         variable="Hello World"
         variable[0:5]
         output -> Hello
+
+List Methods
+    Variables can hold single pieces of data. 
+    Lists, on the other hand, can hold multiple pieces of data within a variable.
+    A list in Python is a collection of elements put into an array. 
+    A list element can be of any data type, such as strings, integers, floats and even other lists.
+        Numbers = [10, 15, 3.4, 5]
+        Items = [“coat”, “shoes”, “socks”]
+        Info = [“they”, 22, “new york”]
+        All_info = [“they”, 22, “new york”], [“she”, 28, “quito”]
+
+        append(): Adds an element at the end of the list
+        clear(): Removes all elements from the list
+        count(): Returns the number of elements with the specified value
+        index(): Returns the index of the specified value
+        remove(): Removes the first item with the specified value
+        pop(): Removes the element with the specified position form the list
+        insert(): Inserts an element at the specified position
+        reverse(): Reverses the list
+        len(): Get the length of the list
+        sort(): Sort the list alphabetically
+
+Conditionals
+    Checks if a condition meets a criteria and if it does, it will execute some code.
+    If another criteria is met, then another piece of code is executed instead, and so on.
+    Syntax 
+        if (condition):
+            //Piece of code to execute
+        elif (condition):
+            //Piece of code
+        else:
+            //Another piece of code to execute
+    
+    The statement after the `if` is called the condition. 
+        * If it is true, then the code block below it will execute. 
+        * If it is not true, then the code block after `else` will execute.
+        * At the end of the conditional statement there will always be a colon.
+
+Loops
+    A for loop is used for iterating over a sequence 
+        (that is either a list, a tuple, a dictionary, a set, or a string).
+    Is a Block of code that you wanted to repeat a fixed number of times.
