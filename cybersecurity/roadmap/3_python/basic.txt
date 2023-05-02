@@ -57,6 +57,15 @@ String Methods
     replace(): Replaces a specified phrase with another specified phrase
     strip() : Deletes all white spaces
 
+    isalnum(): Returns True if all characters in the string are alphanumeric
+    salpha(): Returns True if all characters in the string are in the alphabet
+    isascii(): Returns True if all characters in the string are ascii characters
+    isdecimal(): Returns True if all characters in the string are decimals
+    isnumeric(): Returns True if all characters are numeric
+    isdigit(): Returns True if all characters in the string are digits
+    islower(): Returns True if all characters in the string are lower case
+    isupper(): Returns True if all characters in the string are upper case
+
     String Indexing
         Strings are ordered sequences of character data. 
         Indexing allows you to access individual characters in a string directly by using a numeric value. 
@@ -109,3 +118,40 @@ Loops
     A for loop is used for iterating over a sequence 
         (that is either a list, a tuple, a dictionary, a set, or a string).
     Is a Block of code that you wanted to repeat a fixed number of times.
+
+
+Functios
+    Keyword, def, marks the start of the function header.
+    A function name, function_name in this case, uniquely identifies the function.
+    Parameters (arguments) through which we pass values to a function. They are optional.
+    A colon, :, to mark the end of the function header.
+    One or more valid Python statements that make up the function body. Statements must have the same indentation level.
+    An optional return statement to return a value from the function.
+
+    Syntax
+        //Without arguments
+        def greet():
+            print('hello')
+        greet()
+
+        //With arguments
+        def greet(name):
+            print('hello ' + name)
+        greet('mark')
+
+        An argument is simply the variable. In the above case, “name” is the parameter. 
+        The argument is the specific value that you will pass when calling the function.
+
+        Functions can contain multiple parameters that, in turn, accept multiple parameters.
+
+    Return statement
+        In the same way that you can pass values into functions as arguments, you can also retrieve values from functions via the return keyword. 
+        Instead of printing the result to the screen, you can return it into the program.
+
+        def sum(x,y):
+            return x * y
+
+        The return statement is used to conclude and exit a function and go back to the place from where it was called.
+        You can only have one return statement in a function.
+        Whichever value gets returned will be passed back into the main script.
+        It’s common to store the result of a return statement within a variable so that it can be easily referred to and reused in later parts of the program.
