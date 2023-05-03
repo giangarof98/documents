@@ -41,6 +41,7 @@ Errors:
         An error caused by not following the proper structure (syntax) of the language is called a syntax error or parsing error.
         Another common mistake is trying to print or do an action on a variable without assigning a value to it.
         Another common error is trying to add or concatenate two variables with different data types.
+        ` Invalid syntax. Perhaps you forgot a comma? `, indicates there's a concatenate error or quotation mark opening and closing in the code
 
 String Methods
     In Python have a list of methods that are available. 
@@ -57,8 +58,8 @@ String Methods
     replace(): Replaces a specified phrase with another specified phrase
     strip() : Deletes all white spaces
 
-    isalnum(): Returns True if all characters in the string are alphanumeric
-    salpha(): Returns True if all characters in the string are in the alphabet
+    isalnum(): Returns True if all characters in the string are alphanumeric. Includes special characters
+    isalpha(): Returns True if all characters in the string are in the alphabet
     isascii(): Returns True if all characters in the string are ascii characters
     isdecimal(): Returns True if all characters in the string are decimals
     isnumeric(): Returns True if all characters are numeric
@@ -119,6 +120,12 @@ Loops
         (that is either a list, a tuple, a dictionary, a set, or a string).
     Is a Block of code that you wanted to repeat a fixed number of times.
 
+Counters
+    In some cases we need to count how many times a loop occurs or how many times a condition in the loop is met. 
+    In order to do that we use counters.
+    Before we use them we need to initialize them. This means we declare an empty or zero value variable: counter = 0
+    Each time we loop we will add 1 to the counter: counter = counter + 1
+    Another way to write this is: counter += 1. Or using: counter++
 
 Functios
     Keyword, def, marks the start of the function header.
@@ -155,3 +162,41 @@ Functios
         You can only have one return statement in a function.
         Whichever value gets returned will be passed back into the main script.
         It’s common to store the result of a return statement within a variable so that it can be easily referred to and reused in later parts of the program.
+
+Modules
+    A module in Python is a file that contains a set of pre-defined code for related functions and variables.
+    One advantage of using modules is that instead of having to write custom, complicated code ourselves, 
+    modules save us time by providing pre-created methods and functions.
+
+    If you want to get a list of all of the built-in modules, use the help("modules") command.
+
+    There are two ways you can import a module into your program:
+        Using Import Statement:
+            import <module_name>
+            import os
+            After you import this module you can access this method and the other methods in the module that are available to you.
+
+        Using the from < > import < > Statement:
+            from <module_name> import <function_name>
+            from os import *
+            without having to use os. appended right before the function name.
+
+        OS module:
+            os.getcwd()
+            os.mkdir()
+            os.listdir()
+            os.path.exists()
+            os.remove()
+
+    Installing Custom Modules
+        In some cases, modules will not be pre-built on your systems.
+
+        python3 -m pip install <Module_Name>
+
+The Main Function
+    Is like the entry point of a program. However, the Python program runs the code right from the first line.
+
+    The best practice is to
+        Write the import statement first
+        Then write all other functions (except the main function). These are called auxiliary functions.
+        Lastly, write the main function.
