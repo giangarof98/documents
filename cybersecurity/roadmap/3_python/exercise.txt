@@ -1,0 +1,519 @@
+1.
+Create a variable called my_name and assign your name to it. Print it.
+Create a variable called telephone_number and assign your telephone number to it. Print it.
+Create variable called email_address and assign your email address to it. Print it.
+
+
+2.
+Create a variable called age and assign your age to it.
+Print the type of the age variable.
+
+3.
+Print the type of the str1 variable.
+Cast the variable to an integer.
+Assign it to a new variable named num1.
+Print the new type.
+
+4.
+my_course = "cybersecurity analyst"
+Print the type of the my_course variable.
+
+5.
+Create a variable called car_name and assign the value “GMC” to it.
+Create a variable called year and assign the value 2002 to it.
+Create a variable called price and assign the value 10000 to it.
+Print the value of each variables.
+
+6.
+Create 2 variables called num_1 and num_2. Assign any number to each.
+Print the sum of num_1 and num_2.
+Print the product of num_1 and num_2.
+Print the quotient of num_1 by num_2.
+Print the remainder of the division of num_1 by num_2.
+
+7.
+Create two variables: num_int and num_str.
+Have num_int contain the integer value 4.
+Have num_str contain the string value ”5”.
+Print the sum of the two numbers.
+
+8.
+Create 2 variables, f_name and l_name.
+Assign your first and last name to the variables.
+Print and concatenate your first and last name.
+
+9.
+Create a variable named var_1.
+Assign a value of your name to it.
+Print the variable 50 times.
+
+10.
+Create a variable called my_car. Assign a favorite car name or type to it.
+Print a statement that says "My favorite car is [favorite car name or type]."
+Include the string in your output.
+
+11.
+Create two variables, my_name and neighbors_name. They should take the input of your first name and your neighbor's first name.
+Create two more variables, my_age, neighbors_age. They should the input of your age and your neighbor's age.
+Create another variable, total_years. This should crate the sum of your age and your neighbor's age.
+Print the following statements:
+    "I am [my_name] and my neighbor is [neighbor_name]."
+    "Together our age is [total_years]."
+
+12.
+Create a variable named email that accepts an email from user input.
+Create a variable named phone_number that accepts a phone number from user input.
+Print in one line both the email and the phone number you received from the user.
+
+13.
+txt = "I like bananas"
+Replace the word "bananas" with the world "apples".
+
+14.
+txt = "I love apples; apples are my favorite fruit"
+Count how many times the word "apple" appears in the text.
+
+15.
+txt = "one one was a race horse, two two was one too."
+Replace the first two occurrences of the the word 'one' with a '1'.
+
+16.
+txt = "      banana   "
+Strip all the white leading and trailing spaces from this string.
+
+17.
+txt = 'Python is a fun programming language'
+Split this text using space as a delimeter.
+
+18.
+Create a variable called user_name and receive its value from user input.
+Print the length of the username.
+
+19.
+Create 2 variables: f_name and l_name. Assign them values.
+Find the first letters of these variables.
+Print these 2 letters concatenated.
+
+20.
+txt = "It's always darkest before dawn."
+Create a new string composed of the first and last letters of this string.
+
+21.
+txt = "Intrusion Detection System"
+Create a new string composed of the first letters of each of the words in this line. Hint: Use the split() method
+
+22.
+txt = "this is a string"
+Print every second character in this string.
+
+23.
+txt = "this is a string"
+Print the first 3 characters of this string.
+
+24.
+txt = "this is a string"
+Print the last word in this string.
+
+25.
+txt = "this a string"
+Print the 4th character until the end of this string.
+
+26.
+website = "https://www.fullstackacademy.com"
+You have been provided with a variable called website that contains the url of a website. 
+    Use slicing to remove the https:// portion of this string.
+
+27.
+Create a new string (your choice).
+Print the first and last characters in this string.
+
+28.
+You are provided with the following variable: txt = "10.0.2.7:44445"
+
+Create 2 variables called ip and port
+Find the index of the colon in txt
+Assign the value of IP to the ip variable and the port number to the port variable
+Print the IP and port; i.e. your statement should read, "The IP is [ip] and the port is [port]"
+
+29.
+Create a list, list_1, that contains the strings "beta", "charlie", "alpha", and "delta".
+Add the string, “echo”, to the list.
+Remove the string, “beta”, from the list.
+Insert the word, “fox”, in the second location.
+Sort the list.
+Print the list.
+
+30.
+Create the list list_1 = ["hello", "world", 220, 8000].
+Remove the first string.
+Print the index of the element 8000.
+Append the number 5 to the list.
+Insert the number 2 to the list in the second location.
+Count how many times the word "hello" appears in the list.
+
+31.
+list_1 = ["a", "b", "c", "d", "e"]
+
+Print the first element.
+Print the last element.
+Print the second to last item.
+
+32.
+list = [1, 2, 3, 4, 7, 8]
+
+Print the third to last element.
+Print the second element.
+Print the element in the middle.
+
+33.
+Log_line = '10.0.2.17 - - [19/Feb/2022:13:57:58 -0500] "GET / HTTP/1.1" 200 10956 "-" "curl/7.68.0"'
+
+Let's use these methods to read a line from a log, access.log. This log is used to log access to an Apache server.
+
+Create a variable, Log_line, and assign a log file line to it (one has been provided for you already above).
+Print the IP that accessed the website.
+Print the method used.
+Print the response code.
+Print the user agent.
+
+
+34.
+states = ['Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming' ]
+
+Print each state that begins with the letter "R".
+Print each state that begins with the letter "T".
+Print each state that begins with the letter "V".
+Print each state thtat begins with the letter "W".
+Print every third state.
+
+
+35.
+Retrieve user input for 5 or more values, separated by spaces.
+Split the values and keep it as a list.
+Print the second and third values.
+Print the fourth and the fifth values.
+Print every second value.
+
+
+36.
+Retrieve user input for 5 or more values, separated by spaces.
+Split the values and keep it as a list.
+Print the second and third values.
+Print the fourth and the fifth values.
+Print every second value.
+
+37.
+Given the list lst=[11, 100, 101, 999, 1001, 222, 333, 4444, 5555]:
+
+Print the second element.
+Print the slice from the second element to the the fifth element (included).
+Print the last element.
+Print every third element.
+Remove the number 4444.
+Reverse the list and print it.
+
+
+38.
+log_line = "08:33:20.532212 IP 142.250.72.170.443 > 192.168.4.22.65043: UDP, length 80"
+
+Given this log line, print the:
+
+Time
+IP source +port
+IP destination +port
+Protocol
+
+
+39.
+Create a program that:
+
+Asks a user to enter five names.
+Prints the first name; i.e. "The first user is [firstuser]"
+Prints the last user; i.e. "The last user is [lastuser]"
+Prints the last three users; i.e. "The last three users are [lasthreeusers]"
+Sorts the list alphabetically and prints it; i.e. "The sorted list is [listsorted]"
+Reverses the list and prints it; i.e. "The reverse list is [reversedlist]"
+
+
+40.
+Write a script that:
+
+Receives a password from user input
+If the password is CSI123, prints "Correct password"
+If the password is not CSI123, prints "Incorrect password"
+
+
+41.
+Write a script that:
+
+Receives a number between 1 and 4 from user input
+Based on the number that has been given, prints "You have chosen 1", "You have chosen 2", "You have chosen 3", or "You have chosen 4"
+
+
+42.
+Write a script that:
+
+Receives a password from user input
+If the password is greater than or equal to 8 characters, prints "The password is secure"
+If the password is less than 8 characters, prints "The password is not secure"
+
+
+43.
+Write a script that:
+
+Receives a username and password from user input
+If the username and password are both "admin", prints "That is the correct username and password"
+If the username and/or password are not "admin", prints "That is the incorrect username and/or password"
+
+
+44.
+Write a script that:
+
+Receives four names from user input
+Puts the names into a list
+If the name "sam" appears in the list, prints "Sam is here"
+If the name "sam" does not appear in the list, prints "Sam is gone"
+
+
+45.
+List_1 = ["koala", "cat", "fox", "panda", "chipmunk", "lion", "penguin", "dolphin"]
+
+Write a script that:
+
+Iterates over the list
+Prints every item in the list
+
+
+46.
+Write a script that:
+
+Accepts three numbers from user input
+Multiplies the numbers together and prints the result
+Hint: You will want to first use split() to create a list of numerical elements from the user input
+
+
+47.
+List_1 = ["Sam", "Lisa", "Micha", "Dave", "Wyatt", "Emma", "Sage"]
+
+Write a script that:
+
+Iterates over the list
+For each name, print "Hello," before printing each name in the list. i.e.: "Hello, Sam"
+
+
+48.
+Write a script that:
+
+Accepts a full name from a user (can be multiple names, such as the first, middle, and last name)
+Prints the initials of all the names
+
+
+49.
+List = ["Sam", "Lisa", "Micha", "Dave", "Wyatt", "Emma", "Sage"]
+
+Write a script that:
+
+Iterates over the list
+Prints the length of each element, i.e: "The name 'Sam' has a length of 3"
+
+
+50.
+Write a script that:
+
+Accepts a number from user input
+Prints all numbers prior to that number (inclusive)
+
+
+51.
+Write a script that:
+
+Accepts a starting and ending number from user input
+Prints every fifth number
+
+
+52.
+Write a script that:
+
+Counts down from 100 to 0
+Prints "Done" when you get to 0
+
+
+53.
+Write a script that prints all numbers between 0 and 50 that are divisible by 3.
+
+
+54.
+Write a script that:
+
+Receives an IP address from user input
+Prints the next five IP addresses
+Hint: Use split() and join() methods
+
+
+55.
+Write a script that:
+
+Receives a word from user input
+Counts how many capital letters are in the word
+Prints the result
+Hint: Use the isupper() method
+
+
+56.
+Write a script that:
+
+Receives a word from user input
+Counts how many special characters are in the word
+Prints the result
+Hint: Use the isalnum() method
+
+
+57.
+Write a script that:
+
+Receives a word from user input
+Counts the number of digits in that word
+Prints the result
+Hint: Use the isnumeric() method
+
+
+58.
+List_1 = ["Poland", "Croatia", "Albania", "USA", "France"]
+
+Loop over this list and check how many words have a length of over six characters.
+
+
+59.
+Write a script that:
+
+Receives a password from user input
+Checks if the following conditions are met:
+At least one capital letter
+At least one digit
+At least one special character
+The length of it is more than 8
+If all conditions are met, prints "This is a strong password"
+If not, print "This is a weak password"
+
+
+60.
+Write a script that prints every seventh number between 1 and 100.
+
+
+61.
+Write a script that:
+
+Receives two numbers from user input
+Iterates over the values between the first and second number (inclusive)
+Prints every number that is divisible by 3 and 5
+
+
+62.
+Write a script that:
+
+Receives a word from user input
+Prints how many consonants (lowercase or capitalized) are in that word
+
+
+63.
+port_list = [22, 25, 80, 22, 21, 21, 22, 25, 80, 443, 1389, 389, 389, 443, 443, 80]
+
+Write a script that:
+
+Iterates over this list
+Counts how many times port 80 appears in this list
+Prints the result
+
+
+64.
+Write a function called reminder that:
+
+Accepts two numbers as input from a user (num_1, num_2)
+Prints the modulus of num_1 by num_2
+Calls the function
+
+65.
+mylist = ["a", 1, 2, 3, 4, 5, 6]
+
+Write a function called print_list that:
+
+Takes the list (mylist) as input
+Prints all of the elements in the list
+Calls the function
+
+
+66.
+Write a function called even_numbers that:
+
+Receives two numbers as input (num_1, num_2)
+Iterates on all the numbers between num_1 and num_2
+Prints all of the even numbers in this range
+Calls the function using any two numbers
+
+
+67.
+Write a function called find_str that:
+
+Takes a string and a list as input
+Checks if the string is in the list
+Returns "the string is in the list" if the string is in the list
+Returns "the string is not in the list" if the string is not in the list
+Calls the function
+Prints the result in one line
+
+
+68.
+Write a function called under_5 that:
+
+Receives a list of numbers as input (list_1)
+Iterates over the list
+Checks for numbers under 5 and puts them in another list (list_2)
+Returns list_2
+Calls the function
+Prints the result in one line
+
+
+69.
+Write a function called min_num that:
+
+Receives a list of positive numbers as input
+Iterates over the list
+Returns the smallest number
+Calls the function
+Prints the result in one line
+
+
+70.
+Write a function called even_or_odd that:
+
+Receives a number as input
+Checks if the number is even or odd
+Returns either "the number is even" or "the number is odd"
+Calls the function
+Prints the result in one line
+
+71.
+Write a function called capital that:
+
+Receives a string as input (word)
+Changes the word to capital letters
+Returns the result
+Calls the function
+Prints the result in one line
+
+
+72.
+Write a function called palindrome_check that:
+
+Takes a string as input
+Checks if the string is a palindrome (reads the same forward and backward)
+Returns "this is a palindrome" or "this is not a plaindrome"
+Calls the function
+Prints the result in one line
+
+
+
+
+
+
+
