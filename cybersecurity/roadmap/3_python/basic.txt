@@ -2,9 +2,12 @@ Variable: is a value that can change depending on conditions or on information p
 Program: consists of instructions that tell the computer what to do and data that the program uses when running.
 
 Data types: Variables can store data of different types, and different types can complete different tasks.
-    integers:   zero, positive or negative whole numbers. They can be of any length, e.g. 0, 100, -10. 
-    floats:     represent the floating point number. These are numbers with decimal points.
-    strings.    collections of alphabets, words, or other characters that are enclosed in quotation marks.
+    integers:       zero, positive or negative whole numbers. They can be of any length, e.g. 0, 100, -10. 
+    floats:         represent the floating point number. These are numbers with decimal points.
+    strings.        collections of alphabets, words, or other characters that are enclosed in quotation marks.
+    dictionaries.   Dictionaries are used to store data values in key:value pairs.
+                    A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+    
 
 Casting: change the data type of a variable.
             Example:
@@ -200,3 +203,63 @@ The Main Function
         Write the import statement first
         Then write all other functions (except the main function). These are called auxiliary functions.
         Lastly, write the main function.
+
+Opening and Reading files
+    
+    The easiest way to open a file is using the open method, which is built-in in Python.
+
+    file_name = ”/voc/public/passwd”
+    open_file = open(file_name)
+
+    Once you have opened the file, the object will have a a few methods available. 
+    Here are some useful ones:
+        close() Closes the file
+        read() Returns the file content
+        readline() Returns one line from the file
+        readlines() Returns a list of lines from the file
+        seek() Change the file position
+        tell() Returns the current file position
+
+    Let's start with the open method. The command is: file_name=open('file_name',mode)
+    Here are descriptions of all the modes:
+        r: Opens a file for reading.
+        w: Opens a file for writing. Creates a new file if it does not exist or truncates the file if it exists.
+        x: Opens a file for exclusive creation. If the file already exists, the operation fails.
+        a: Opens a file for appending at the end of the file without truncating it. Creates a new file if it does not exist.
+        t: Opens in text mode.
+        b: Opens in binary mode.
+        +: Opens a file for updating.
+
+    When you finish reading a file you need to close it to vacate the space in memory. 
+    You can do that by using the close() method.
+
+
+Dictionaries
+    A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+    Syntax
+    dictionary_name = {"key":value}
+
+    Dictionaries are mutable. We can add new items or change the value of existing items using an assignment operator.
+        If the key is already present, then the existing value gets updated. 
+        If the key is not present, a new key:value pair is added to the dictionary.
+    
+    Methods:
+        clear(): Removes all items from the dictionary.
+        get(key[,d]): Returns the value of the key. If the key does not exist, returns d (defaults to None).
+        items(): Returns a new object of the dictionary's items in (key, value) format.
+        keys(): Returns a new object of the dictionary's keys.
+        pop(key[,d]): Removes the item with the key and returns its value or d if key is not found. If d is not provided and the key is not found, it raises KeyError.
+        popitem(): Removes and returns an arbitrary item (key, value). Raises KeyError if the dictionary is empty.
+        update([other]): Updates the dictionary with the key/value pairs from other, overwriting existing keys.
+        values(): Returns a new object of the dictionary's values.
+
+    Ordering a List
+        The sorted() function can accept three parameters: the iterable, the key, and reverse: sorted(iterable, key, reverse)
+            The first argument is to iterate through. In our case it is Dict_1.items() which will give us the keys and the values.
+            The second argument would be the field to sort through. In our case it is the second field or [1]. So we will add this argument.
+            The third argument is if we want to reverse the list or not.
+
+            Syntax
+            ordered_list = sorted(Dict_1.items(), key = lambda x: x[1],reverse = True)
+            print(ordered_list)
+            # The (), key = lambda
