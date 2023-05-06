@@ -9,6 +9,7 @@ Create a variable called age and assign your age to it.
 Print the type of the age variable.
 
 3.
+str1 = '22'
 Print the type of the str1 variable.
 Cast the variable to an integer.
 Assign it to a new variable named num1.

@@ -8,7 +8,6 @@ Data types: Variables can store data of different types, and different types can
     dictionaries.   Dictionaries are used to store data values in key:value pairs.
                     A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
     
-
 Casting: change the data type of a variable.
             Example:
             my_num = "5"

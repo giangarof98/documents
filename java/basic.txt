@@ -250,6 +250,8 @@ Array
         String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
         int[] myNum = {10, 20, 30, 40};
 
+    Array indexes start with 0: [0] is the first element. [1] is the second element, etc.
+
     Multidimensional Arrays
         A multidimensional array is an array of arrays.
         Multidimensional arrays are useful when you want to store data as a tabular form, like a table with rows and columns.
@@ -257,6 +259,99 @@ Array
             int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
 
 Methods
+    A method is a block of code which only runs when it is called.
+    You can pass data, known as parameters, into a method.
+    Methods are used to perform certain actions, and they are also known as functions.
+    Why use methods? To reuse code: define the code once, and use it many times.
     
+    A method must be declared within a class. 
+    It is defined with the name of the method, followed by parentheses (). 
+
+    public class Main {
+        static void myMethod() {
+            // code to be executed
+        }
+
+        public static void main(String[] args){
+            myMethod();
+        }
+    }
+
+    Parameters and arguments
+        Parameters act as variables inside the method.
+        Parameters are specified after the method name, inside the parentheses.
+        when you are working with multiple parameters, the method call must have the same number 
+            of arguments as there are parameters, and the arguments must be passed in the same order.
+
+            public class Main {
+                static void myMethod(String name, int age) {
+                System.out.println(name + age)
+            }
+
+                public static void main(String[] args){
+                    myMethod('GGG', 25);
+                }
+            }
+    
+    Return values
+        The void keyword, indicates that the method should not return a value.
+        If you want the method to return a value, you can use a primitive data type (such as int, char, etc.) 
+            instead of void, and use the return keyword inside the method:
+
+        public class Main{
+            static String myMethod(String name){
+                return name
+            }
+
+            public static void main(String[] args){
+                System.out.println(myMethod("GGG"));
+            }
+        }
+
+        //Example with Conditionals
+        public class App{
+            static String myMethod(int age, String name){
+                if(age <= 18){
+                    return "Welcome! " + name;
+                } else {
+                    return "not welcome";
+                }
+            }
+
+            public static void main(String[] args){
+                System.out.println(myMethod(18, "G"));
+            }
+        }
+    
+    Method overloading
+        Multiple methods can have the same name with different parameters
+        Instead of defining two methods that should do the same thing, it is better to overload one.
+        Multiple methods can have the same name as long as the number and/or type of parameters are different.
+
+    Scope
+        scope refers to the area of the program where a variable or method is accessible. 
+        Java has two main types of scopes: global scope and local scope.
+
+        Local Scope
+            A block of code refers to all of the code between curly braces {}.
+            Variables and methods that are declared inside a method or a block of code are said to have a local scope.
+
+        Global Scope
+            These variables and methods can be accessed from anywhere within the class. 
+            Global variables are created using the static keyword, and they are available to all instances of the class.
 
 
+    Recursion
+        Its a java technique where a method can call itself.
+        Infinite recursion is when the function never stops calling itself.
+
+        public static int factorial(int n) {
+            if (n == 0) {
+                return 1;
+            } else {
+                return n * factorial(n-1);
+            }
+        }
+
+        Halting Condition
+            Every recursive function should have a halting condition, which is the condition where the function stops calling itself.
