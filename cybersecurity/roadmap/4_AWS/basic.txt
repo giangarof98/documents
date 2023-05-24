@@ -1,0 +1,26 @@
+Objective
+    Cloud Concepts
+    AWS Services
+        Compute
+        Storage
+        Network Security
+        BlockChain
+        Machine Learning
+        Artificial Inteligence
+    Security
+    Architecture
+    Pricing
+    Support
+
+
+    AWS glosary: https://docs.aws.amazon.com/general/latest/gr/glos-chap.html
+
+    AWS Whitepaper: https://d0.awsstatic.com/whitepapers/aws-overview.pdf
+
+    AWS Fundamentals: https://aws.amazon.com/getting-started/cloud-essentials/
+
+    Cloud Computing: https://aws.amazon.com/what-is-cloud-computing/
+
+    Types of cloud computing: https://aws.amazon.com/types-of-cloud-computing/
+
+    Cloud computing with aws: https://aws.amazon.com/what-is-aws/
