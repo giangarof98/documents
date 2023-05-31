@@ -1,8 +1,33 @@
 Library made by Facebook
 
+Ways to create a react project
+    npx create-react-app 
+    npm create vite@latest
+
+To export
+    export default ComponentName
+    export default ComponentName(){}
+    export {ComponentName}
+To import
+    import ComponentName from './location.js'
+    import {ComponentName} from './location.js'
+
 JSX
+    Syntax extension for JS
+    Its not 'legal' JS on its own, so it must be transpiled
     It's how react render the html code.
     JSX allows write HTML elements in javascript, place them into the DOM, without use createElement or appendChild() Methods
+    The file extension could be .js or .jsx. The difference is you are letting know that you're using .jsx syntax
+JSX Rules
+    You must explicity close self-closing element <element/>
+    Components can only return a single element
+
+React Fragments
+    Allow you to group multiple React elements together without introducing any additional HTML elements in the rendered output.
+    Useful when you need to return multiple elements from a component, but you don't want to wrap them in a single parent element.
+
+To Style
+    Use className='' in the element tag. Since 'class' is a reserved keyword in react
 
 What's a component? 
     Block of react
