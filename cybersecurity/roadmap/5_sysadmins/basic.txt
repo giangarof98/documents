@@ -1,0 +1,112 @@
+Navigating the Windows Filesystem
+    The Windows Command Line (CMD)
+        The Windows Command Line (CMD)
+
+        cmd /?                              manual
+        cd <directory>                      change directory
+        mkdir <myfolder>                    make directory
+        echo hello > myfile.txt             create file
+        dir                                 ls
+        dir "myfile.txt" /s                 find for a file
+        dir "my*.txt" /s                    the * marks: find whatever which match behind the *
+        
+        icacls                              view file or folder permissions
+        takeown                             take ownership / change file ownership
+
+        attrib                              view or modify the attributes of files or directories.
+        where                               locate the location of an exe file
+
+        runas                               run a program as administrator
+
+        icacls "test.txt"                   view file or folder permissions
+            I means permissions are inherited for the file from another policy or folder.
+            OI means there is object inheritance enabled.
+            CI means there is container (folder) inheritance enabled.
+            F means full access.
+            M means modify access.
+
+            Permissions options
+                F: Full control
+                M: Modify
+                RX: Read and execute
+                R: Read
+                W: Write
+        
+            Add permissions
+            icacls <filename/foldername> /grant <user/group>:<permissions>
+
+            Remove permissions
+            icacls <filename/foldername> /deny <user or sid>:<perm>
+
+            Take ownership of a file
+            takeown /f testfile.txt /a
+
+            Hide a file 
+            attrib +h 'filename'
+
+            display ownership
+            dir /q
+
+        File Compression
+            Compress a file to a zip folder
+                tar -cf myzip.zip myfile.txt
+            
+            To unzip or decompress, run:
+                tar -xf myzip.zip
+
+
+The difference between 64-bit and 32-bit applications pertains to the computer's processor.
+To check it in your computer
+    Right-click on the Windows/Start icon.
+    Select "System".
+    Refer to "System type" under "Device specifications".
+
+Dynamic Link Library (DLL)
+    contains functions and data that can be used by another module
+    is a collection of small programs that larger programs can load when needed to complete specific tasks
+    The following folders hold DLLs:
+        C:\Windows\System32
+            Contains 64-bit libraries
+        C:\Windows\SysWOW64
+            Contains 32-bit libraries
+
+Windows File Extensions
+    .bat, denoting a Batch script
+    .bin, denoting a binary file
+    .csv, denoting a comma-separated value sheet 
+    .dll, denoting a Dynamic Link Library
+    .doc, denoting a Word document
+        .docm and .docx are also common
+        .docm files contain macros, while .docx do not
+    .exe and .msi, denoting executable or installable files
+    .txt, denoting plain text files
+    .zip, denoting a compressed folder
+
+
+Scripting in Windows    
+    Batch Scripts
+    Visual Basic Scripts (VBS)
+    PowerShell Scripts
+
+
+Workgroups vs Domanins
+
+    Workgroups
+        A workgroup is a collection of Windows systems with its own set of users and permissions.
+        Each system has a set of users and passwords (stored in a SAM file).
+        These users have a set of privileges and permissions that apply locally. 
+        You can create a user who has administrative capabilities and a user who has minimal privileges
+        If you have the same username on multiple computers, you can log on to multiple computers by using the same local username.
+
+        The default local Administrator account is a user account for the system administrator.
+        Every Windows operating system has an Administrator account (SID S-1-5-domain-500, with a display name of Administrator).
+        The Administrator account is the first account that gets created during the Windows installation.
+        The Administrator account can create other local users, assign user rights, and assign permissions
+        Note that the default Administrator account cannot be deleted or locked out but can be renamed or disabled.
+
+    Local Groups
+        
+
+
+
+
