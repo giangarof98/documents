@@ -2,21 +2,38 @@ Navigating the Windows Filesystem
     The Windows Command Line (CMD)
         The Windows Command Line (CMD)
 
-        cmd /?                              manual
-        cd <directory>                      change directory
-        mkdir <myfolder>                    make directory
-        echo hello > myfile.txt             create file
-        dir                                 ls
-        dir "myfile.txt" /s                 find for a file
-        dir "my*.txt" /s                    the * marks: find whatever which match behind the *
+        cmd /?                                              manual
+        cd <directory>                                      change directory
+        mkdir <myfolder>                                    make directory
+        echo hello > myfile.txt                             create file
+        dir                                                 ls
+        dir "myfile.txt" /s                                 find for a file
+        dir "my*.txt" /s                                    the * marks: find whatever which match behind the *
         
-        icacls                              view file or folder permissions
-        takeown                             take ownership / change file ownership
+        icacls                                              view file or folder permissions
+        takeown                                             take ownership / change file ownership
 
-        attrib                              view or modify the attributes of files or directories.
-        where                               locate the location of an exe file
+        attrib                                              view or modify the attributes of files or directories.
+        where                                               locate the location of an exe file
 
-        runas                               run a program as administrator
+        runas                                               run a program as administrator
+        net user                                            display a list of local users
+        net user <user-name> /add                           add a local user
+        net user <user-name> /delete                        delete a user
+        net user <user_name> <password>                     reset a local user
+        net user administrator /active:yes                  Enable an administrator account
+        runas /user:<user_name> <program_name>              run a command as administrator
+
+        net localgroup                                      display a list of local groups
+        net localgroup <group_name> /add                    create a localgroup
+        net localgroup <group_name> /delete                 delete a localgroup
+        net localgroup <group_name> <user_name> /add        add a local user to a group
+        net localgroup <group_name> <user_name> /delete     Delete a local user from a group
+
+        klist                                               Show current and cached tickets
+        eventvwr                                            run event Viewer
+
+
 
         icacls "test.txt"                   view file or folder permissions
             I means permissions are inherited for the file from another policy or folder.
@@ -104,9 +121,241 @@ Workgroups vs Domanins
         The Administrator account can create other local users, assign user rights, and assign permissions
         Note that the default Administrator account cannot be deleted or locked out but can be renamed or disabled.
 
+        If you want to run a program as either an administrator or another user,
+            you use the runas command in Command Prompt or PowerShell.
+            For example:
+                runas /user:<your_computer_name>\<user_name> "C:\<path>\<program>.exe"
+                similar to su
+
+
     Local Groups
+        Just like local users exist, local groups exist.
+        Specifically, these user groups exist on your Windows computer or device.
+        They are defined locally, and you can managed them by using the "Local Users and Groups" tool (lusrmgr.msc)
+        These user groups are the ones that home users work with
+        In Windows, several built-in local user groups exist. 
+        To display them, run the net localgroup command.
+        The most interesting local groups are Administrators and Power Users. 
+            They have the highest levels of privileges and permissions.
         
 
+        
+Domain
+    A Windows domain is a network of controlled computers that are used in a network environment.
+    In the local area networks (LANs) of businesses and corporations,
+        a Windows domain is the most commonly used environment.
+    At least one server, called a domain controller (DC), controls the other devices.
+    This lets the network administrators (usually, IT staff) control the computers in the domain through users, 
+        settings, and more.
+    
+    Active Directory (AD) is a service that runs on a Windows DC.
+    The main function of AD is to let administrators manage permissions and control access to network resources.
+    In AD, data gets stored as objects.
+    These objects include users, groups, applications, and devices.
+    And, the objects get categorized according to their names and attributes.
+
+    Active Directory Domain Services (AD DS) is a core component of AD.
+    It provides the main mechanism for both authenticating users and determining the network resources they can access.
+    AD DS also offers features such as single sign-on (SSO), security certificates, 
+        Lightweight Directory Access Protocol (LDAP), and access rights management.
+
+    To create a domain, you can use any Windows client and a server with AD DS installed.
+    But first, you must join the computer to the domain—providing the server as the Domain Name System (DNS).
+    You then refer to that server as the DC.
+
+
+Managing Active Directory
+    After you join a computer to a domain, domain users (but not local users) can log on to that computer. 
+    Domain users reside on the DC and not on the local computer.
+    By using the Active Directory Administrative Center, you can add and delete users, reset user passwords, 
+        and add users to groups according to their privileges.
+
+    Here are some important roles:
+        Domain admin:
+            In AD, the domain admin acts as the director of the domain.
+            Specifically, the domain admin grants access to every resource in the domain and to every file on every computer.
+            The domain admin can also reset passwords, delete users from AD, and delete computers from the domain.
+
+        Domain Admins and Enterprise Admins:
+            Members of these groups have the same privileges as the domain admin—except that they cannot reset or 
+                delete the domain admin.
+            A domain admin can add and delete users from these groups.
+    
+    Besides groups and users, AD contains another type of object, called the organizational unit (OU).
+    An OU is a folder for users, groups, and computers.
+    Companies often have multiple OUs, such as marketing, sales, and IT, that exist according to their functions and needs.
+
+
+Group Policy
+    Group Policy is a Windows feature that facilitates the use of a wide variety of advanced settings.
+    Network administrators can use these settings to control the working environment of users and 
+        computer accounts in AD. 
+    Group Policy provides a centralized place for administrators to manage and configure operating systems, 
+        applications, and user settings.
+
+
+    Group Policy uses the registry to make changes.
+    When you use Group Policies correctly, you can increase the security of users' computers and help defend 
+        against both insider threats and external attacks.
+    
+
+    Why Use Group Policy?
+        Group Policy provides a centralized place for managing domain-wide security controls and for 
+            creating the least privilege policy.
+        You have one place where you can enforce rules for different groups, computers, and specific users.
+        That is the basis for providing security in a Windows environment. 
+        
+        Examples of such rules include:
+            Which programs users can run
+            Whether users can shut down their computers
+            Whether users can put items on their desktops
+
+        You can also have domain-wide policies. Examples include enforcing the length of passwords and 
+            having a lockout policy.
+        
+    How Do You Use Group Policy?
+        A Group Policy Object (GPO) is a predefined command, script, or task execution template that 
+            controls any number of Windows systems and policies.
+        GPOs come with AD and get managed via AD.
+        System administrators can apply GPOs to users, computers, or software throughout an organization 
+            by using a tool named the Group Policy Management Console (GPMC).
+        
+        Each GPO contains two parts, or nodes:
+            User configuration: Applies to the users in the OU or domain that is linked to the GPO.
+            Computer configuration: Applies to the computers in the OU or domain that is linked to the GPO.
+        
+        Both the user and computer configurations have the following settings:
+            Software settings: Used to configure software installations and upgrades. 
+                From this location, you can remotely publish or upgrade any program 
+                (as long as it has the proper installation format).
+            Windows settings: Used to configure settings or rules on one or more devices for the purpose of protecting 
+                resources on a device or network. These include security settings, such as those for password policy, 
+                logon permission, and audit. You can also run scripts from this location.
+            Administrative templates: Used to configure settings for Windows components, such as Internet Explorer, 
+                Terminal Services, Windows Media Player, and Windows Update. Other common settings include those 
+                for user profiles, script execution, and Group Policy.
 
 
 
+Authentication
+    A Windows process, named lsass.exe, takes care of security policy for the operating system.
+    For example, when you log on to a Windows user account or server, lsass.exe verifies the logon name and password.
+    If you terminate lsass.exe, you will probably find yourself logged out of Windows.
+    The lsass.exe process also writes to the Windows security log.
+    So, you can search that log for failed authentication attempts and other security policy issues.
+
+    Windows has two main authentication protocols: NTLMv2 and Kerberos.
+
+    NTLMv2
+        The NTLM authentication protocols authenticate users and computers based on a challenge/response mechanism.
+        Specifically, that mechanism proves to a server or DC that a user knows the password associated with an account.
+        NTLM is an SSO technique that relies on a challenge/response protocol to confirm the user with a password hash.
+        That avoids the need to send unprotected passwords over the network.
+        NTLM authentication gets used for local logon authentication and for authentication against nondomain resources.
+
+        Even though people should not use NTLM in an AD environment, it is available on all Windows systems. 
+        So, attackers widely use it to laterally move from one machine to another.
+
+        To authenticate in an NTLM environment, the following high-level steps occur:
+            The user shares their username, password, and domain name with the client.
+            The client develops a scrambled version of the password—or a hash—and deletes the entire password.
+            The client passes a plain text version of the username to the relevant server.
+            The server replies to the client with a challenge, which consists of a 16-byte random number.
+            The client responds with the challenge encrypted by the hash of the user’s password.
+            The server/DC then sends the challenge, response, and username to the server.
+            The server gets the user’s password from the database and uses it to encrypt the challenge.
+            The server/DC then compares the encrypted challenge to the client response. If they match, 
+                the user gets authenticated and granted access.
+
+    Kerberos
+        Kerberos is a network authentication protocol. 
+        It is designed to provide strong authentication for client/server applications by using secret-key cryptography. 
+        AD uses Kerberos as its main authentication protocol in a domain environment.
+
+        Kerberos is used as SSO authentication.
+        This means that a user can log on with their username and password and then use those credentials to gain access 
+            to any resource in the domain.
+        No need exists to separately log on to each resource.
+
+        To authenticate in a Kerberos environment, the following high-level steps occur:
+            The client requests an authentication ticket (TGT) from the Key Distribution Center (KDC).
+            The KDC verifies the credentials and sends back an encrypted TGT and session key.
+            The TGT gets encrypted by using the Ticket Granting Service (TGS) secret key.
+            The client stores the TGT, and when it expires, the local session manager requests another TGT. 
+                (This process is transparent to the user.)
+        
+        If the client requests access to a service or other resource on the network, the following high-level steps occur:
+            The client sends the current TGT to the TGS with the Service Principal Name (SPN) of the resource that the client wants to access.
+            The KDC verifies the TGT of the user and the fact that the user has access to the service.
+            The TGS sends a valid session key for the service to the client.
+            The client forwards the session key to the service to prove that the user has access, and then the service grants access.
+
+
+SMB and NFS
+    Server Message Block (SMB) is a network file-sharing protocol. 
+    With SMB, applications on a computer can read and write files and request services from server programs on a computer network. 
+    (Note that SMB can be used on top of TCP/IP or other network protocols.) 
+    By using SMB, an application (or the user of an application) can access files or other resources on a remote server. 
+    Applications can thus read, create, and update files on a remote server. 
+    Every Windows system, whether a client or a server, can act as an SMB server.
+
+    Why Use SMB?
+        SMB vulnerabilities have existed for over 20 years. 
+        But in general, most cyberattacks that involve SMB do not occur because an enterprise failed to get an expensive tool or application. 
+        Instead, they mostly occurred because of a failure to implement best practices.
+
+        In 2017, an exploit named EternalBlue was used against a vulnerability in SMB 1.0. 
+        That spurred some of the most intrusive and impactful malware in cybersecurity history. 
+        The malware that used the EternalBlue exploit included WannaCry (ransomware) and Emotet (a trojan). 
+        Both of those could self-propagate throughout a network, causing widespread damage.
+
+        Some of those threats are no longer relevant today. 
+        But, it is essential to note that as new threats emerge, they will continue to use similar attack techniques 
+            to exploit a system or network. The recent SolarWinds attack provides an excellent example of 
+            this—because it also exploited the SMB protocol.
+        
+    How to Share and Use SMB: The SMB Security Share Tab
+        In a business environment, 
+        users access files and folders by using SMB. Users can share files and grant permissions to other users. 
+        One of the definitions that controls access to these files is NTFS permissions. 
+        But when users share files across the network, another set of permissions controls access: share permissions.
+
+    To share a folder, you complete the following high-level steps:
+        Share a folder, and then decide who can access it.
+        Note that in a domain environment, you can choose any domain user or domain group. 
+            You can also decide which permissions, such as reading or writing, to give them.
+        If you want to be more granular, select Advanced Sharing.
+        For more options, select Permissions. These options include the share name, the option for full control, 
+            a deny option, and how many connections are allowed to use this share.
+
+
+
+Auditing
+
+    The most crucial part of monitoring a Windows system is gaining awareness of what is happening on that system. 
+    And, one of the key monitoring tools that you can use is the Event Viewer. 
+    It is a built-in tool that monitors aspects of the Windows operating system, such as:
+        Logons and logouts
+        The installation of software
+        System restarts
+    
+    By default, the Event Viewer logs events. 
+    But, you can configure it to log more information about the system. 
+    To do so, you use Group Policy configurations. 
+    Usually, people configure the essential servers to log more information. 
+    Furthermore, various services, such as IIS/SQL, have specific logs.
+
+    The Event Viewer includes three important logs:
+        Application: Lists the events that applications log. 
+            Application developers decide which events their applications will log. 
+            And, an application can log information from several sources. 
+            So, it is important that you note the source that gets logged together with an event ID.
+
+        System: Lists the events that the operating system logs. 
+            An example of such an event is an issue that a driver experiences during the startup process.
+
+        Security: Lists any security-related events. 
+            These events include logon attempts and file deletions. 
+            By using their audit policies, administrators decide which events get logged.
+    
+    
