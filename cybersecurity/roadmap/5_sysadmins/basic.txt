@@ -34,13 +34,91 @@ Navigating the Windows Filesystem
         eventvwr                                            run event Viewer
 
 
+        PowerShell cmdlets
+            In the command box, enter powershell to open PowerShell.
+
+            Get-host
+            Get-aduser
+            Get-Command *
+            Get-Command -Type Cmdlet
+            Get-Command Get-*
+            Get-Help <command>
+            Update-Help
+            Get-Help <command_name> -Parameter *
+            Get-Content <file_name>
+            Get-Service
+            Get-Process
+            Get-LocalUser
+
+            Outputting Results
+                Outputting Results
+
+                ft (which stands for format-table)
+                fl (which stands for format-list)
+                Get-Service | ft
+                Get-Service | ft name,status
+                Get-Process | fl
+                Get-Process | fl name,id
+            
+            Filtering Results
+                You can filter the results of your queries by using where-object. 
+                And, some commands have a built-in filter parameter.
+
+                    ‑ne	            not equal to
+                    ‑lt	            less than
+                    ‑le	            less than or equal to
+                    ‑gt	            greater than
+                    ‑ge	            greater than or equal to
+                    ‑like	        matches the wildcard pattern
+                    ‑notlike	    does not match the wildcard pattern
+                    ‑contains	    contains the specified value
+                    ‑notcontains	does not contain the specified value
+                
+                Here is an example:
+
+                    Get-Service | where-object { $_.Status -eq 'running' }
+                    Or, you can use a shortened form:
+
+                    Get-Service | ? { $_.Status -eq 'running' }
+                    You can combine filtering with outputting, like you can in Bash:
+
+                    Get-Service | ? { $_.Status -eq 'running' } | ft name,displayname
+                    Note: To get the output options, enter fl.
+                
+                Getting Logs
+                    The Get-EventLog cmdlet provides the main way to get logs
+
+                    To get a list of all the logs, run:
+
+                        Get-EventLog -List
+                            Usually, you will be interested in the security log:
+
+                        Get-EventLog -LogName Security
+                            To filter according to the log message, run:
+
+                        Get-EventLog -LogName Security -Message '*failed*'
+                            To filter according to the event ID, run:
+
+                        Get-EventLog -LogName Security | ? { $_.EventID -eq 'EventID_Number' }
+                            To further filter according to the time period, run:
+
+                        $Begin = Get-Date -Date '1/17/2019 08:00:00'
+                        $End = Get-Date -Date '1/17/2019 17:00:00'
+                        Get-EventLog -LogName Security -EntryType -After $Begin -Before $End
+                            To further filter according to the event ID, 
+                            note that Event ID 4624 signifies a successful logon and 
+                            that you can check for a specific user.
+
+
+
+
 
         icacls "test.txt"                   view file or folder permissions
-            I means permissions are inherited for the file from another policy or folder.
-            OI means there is object inheritance enabled.
-            CI means there is container (folder) inheritance enabled.
-            F means full access.
-            M means modify access.
+            I   means permissions are inherited for the file from another policy or folder.
+            OI  means there is object inheritance enabled.
+            CI  means there is container (folder) inheritance enabled.
+            F   means full access.
+            M   means modify access.
 
             Permissions options
                 F: Full control
@@ -358,4 +436,31 @@ Auditing
             These events include logon attempts and file deletions. 
             By using their audit policies, administrators decide which events get logged.
     
-    
+Auditing Extra Configurations
+    As mentioned before, you can monitor additional security events, such as a specific registry change, 
+        to find persistence or service creation. So when you want to audit a registry key on many computers, 
+        it makes sense to use a Group Policy Object (GPO).
+
+    To configure the necessary setting, complete the following steps:
+        Go to Computer Configuration > Policies > Windows Settings > Security Settings > Registry.
+        Open the container's context menu (or right-click in the right pane).
+        Run the Add Key command.
+        In the dialog that appears, navigate the registry until you reach the key that you want. 
+            If the key does not exist on the local machine, enter the path into the input box.
+        In the registry, choose the key as follows: 
+            right-click, select Permissions > Advanced, and then decide what you want to monitor.
+
+
+PowerShell
+    a cross-platform shell and scripting language, 
+    people can manage tasks directly from the command line. 
+    In fact, PowerShell automates thousands of activities. 
+    This language was built on the Microsoft .NET Framework and makes many of our lives easier.
+
+    PowerShell provides a straightforward way to communicate with the operating system to get information.
+    frameworks, such as Empire and Nishang, exist that people use for penetration testing.
+
+
+Running Scripts in PowerShell
+    PowerShell scripts have the ps1 extension. By default, only signed scripts can run on a machine.
+    PowerShell syntax consists of verb-noun combinations, called cmdlets.
