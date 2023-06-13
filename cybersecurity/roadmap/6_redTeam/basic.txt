@@ -1,0 +1,37 @@
+Offensive Security
+    Offensive security is a proactive and adversarial approach to protecting computer systems, networks, individuals, 
+        and their data from attacks.
+    It is a method of testing where testers target systems and applications to determine whether vulnerabilities can 
+        be exploited to compromise the system, its data, or its environmental resources.
+    Testers are given information about the targets to test in the form of a rules of engagement document.
+    This document outlines the systems or applications that will be tested, how they will be tested, 
+        and what is allowed and not allowed during the testing, often called the Scope of Work.
+    The most important thing to remember is that offensive security assessments require PERMISSION, 
+        usually in the form of a contract or established rules, as in the case of bug bounty programs, to perform.
+    
+    There are two ways to perform offensive security assessments: 
+        penetration testing and red teaming. 
+        They both tend to follow the following phases: 
+        Reconnaissance (Profiling) -> Scanning (Enumeration) -> Vulnerability Analysis -> Exploitation (Attack) -> Reporting.
+
+    Pen Testing
+        Short testing windows (days to weeks)
+        Identify exploitable vulnerabilities to remediate security risks.
+        Use different tools and techniques depending on the scope of the test.
+        Identify exploitable security vulnerabilities, recommend remediation advice, and technical recommendations.
+        This is usually cheaper because the testing is agreed upon based on the client’s objective and budget.
+
+    Red Teaming
+        Long testing windows (weeks to months)
+        Access specific systems or data by exploiting vulnerabilities and behaviors to test for security awareness and culture.
+        Use a combination of real-world tactics, tools, and procedures.
+        Provide insight into the overall security posture of the target organization.
+        This is usually more expensive because there are more people, tools, and techniques involved.
+
+The MITRE ATT&CK framework
+    is a compilation of tactics, techniques, and procedures (TTPs) that attackers use throughout their offensive engagements. 
+    The framework can be used for various purposes, including testing defenses against certain kinds of attacks, 
+        identifying the types of threat agents that cause harm to an application or computer system 
+        (also known as threat modeling), and more. 
+        For example, what attacks have you seen in the news lately? 
+        Under what categories do these attacks fall in the MITRE ATT&CK framework?
