@@ -19,6 +19,7 @@ Navigating the Windows Filesystem
         runas                                               run a program as administrator
         net user                                            display a list of local users
         net user <user-name> /add                           add a local user
+        net user <user_name> /add /passwordreq:no           add a new user without password
         net user <user-name> /delete                        delete a user
         net user <user_name> <password>                     reset a local user
         net user administrator /active:yes                  Enable an administrator account

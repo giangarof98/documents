@@ -1,0 +1,29 @@
+//React Events
+    Events are objects that represent interactions with the user interface, such as clicking a button, 
+    typing in an input field, or scrolling a page.
+
+    Event Handling
+        define event handlers as functions that are called when a specific event occurs.
+        Event handlers are typically defined as methods within a component class.
+        For example, if you want to handle the click event on a button,
+
+    Event Prop
+        To associate an event handler with a particular element, you use a special prop named after the event you want to handle.
+
+    Event Object
+        When an event occurs, React creates a synthetic event object and passes it as the first argument to the event handler method.
+        You can access this object within the event handler to get information about the event and perform necessary actions.
+        For example, you can access the target element, event type, or retrieve form input values. 
+
+    Event Binding
+        you need to explicitly bind event handler methods to the component instance so that this refers to the correct instance within the method. 
+        There are a few ways to achieve this binding:
+            Binding in the constructor
+            Using class properties with arrow functions (no binding required):
+            Using arrow function syntax in the event prop (autobinding):
+
+
+    Event Propagation
+        React follows the same event propagation mechanism as native DOM events, known as bubbling.
+        When an event occurs, it first triggers on the innermost child element and then propagates 
+            up the DOM tree unless explicitly stopped by calling event.stopPropagation().

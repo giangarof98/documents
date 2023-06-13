@@ -18,9 +18,10 @@ JSX
     It's how react render the html code.
     JSX allows write HTML elements in javascript, place them into the DOM, without use createElement or appendChild() Methods
     The file extension could be .js or .jsx. The difference is you are letting know that you're using .jsx syntax
-JSX Rules
-    You must explicity close self-closing element <element/>
-    Components can only return a single element
+
+        JSX Rules
+            You must explicity close self-closing element <element/>
+            Components can only return a single element
 
 React Fragments
     Allow you to group multiple React elements together without introducing any additional HTML elements in the rendered output.
@@ -28,6 +29,12 @@ React Fragments
 
 To Style
     Use className='' in the element tag. Since 'class' is a reserved keyword in react
+
+Props
+    properties to pass data from one to another Component
+    Are like arguments that can be provided to the component
+    inmutable (can't change value)
+
 
 What's a component? 
     Block of react
@@ -64,11 +71,6 @@ What's a component?
 To render the React code 
     ReactDOM.render(<First/>, document.getElementById('root'))
 
-
-//Props
-    properties to pass data from one to another Component
-    Are like arguments that can be provided to the component
-    inmutable (can't change value)
 
 //State
     Important part of react which allows to interact with the application component.
