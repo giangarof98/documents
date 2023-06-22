@@ -1,0 +1,25 @@
+Reconnaissance
+    Reconnaissance is a preliminary survey to gain information about a target.
+    It is the most important part of any offensive security engagement,
+        as it allows you to better understand your target. 
+    Reconnaissance is done in two approaches – passive and active.
+
+Passive reconnaissance
+    Involves gaining information about your target without directly interacting with it.
+    using Shodan to see information about the target.
+
+    The main benefit of passive reconnaissance is that it does not 
+        let the target know they are being scoped.
+    
+    There are several open source intelligence (OSINT) tools 
+        that can be used for this as well, e.g. Shodan, theHarvester, etc.
+
+Active reconnaissance
+    Involves gaining information about your target by directly interacting with it.
+    The main benefit of active reconnaissance is that it allows you to see 
+        exactly what the target has
+
+    However, you are making noise on their network and risk letting 
+        the target know that they are being scanned,
+        which could cause the target to become warier of future 
+        attacks and increase their monitoring and defenses.

@@ -1,0 +1,64 @@
+Nmap Scanning
+    What is a port ?
+        A port or port number is a number assigned to uniquely identify a connection endpoint and 
+        to direct data to a specific service. At the software level, within an operating system, 
+        a port is a logical construct that identifies a specific process or a type of network service.
+    
+    Short for Network Mapper
+    It was initially developed by Gordon Lyon
+
+    Nmap is a free and open-source utility for network discovery and security auditing.
+    It's used to scan networks.
+    Targets to scan can be supplied by hostname, IP address, or CIDR on the command line.
+
+    Syntax:
+        nmap [Scan Type] [Options] [Target(s)]
+
+        nmap -p-   [Target]                         all ports
+        nmap -sV   [Target]                         service scan
+        nmap -sC   [Target]                         run default nmap script located at /usr/share/nmap/scripts/
+        nmap -sV   [Target]                         Determine the version service running on port
+
+    Nmap scan types:
+        Ping Sweep
+            performed with the -sn option.
+            It is used to find what systems are alive on a network.
+            A ping sweep sends ICMP (Internet Control Message Protocol) requests to scanned systems and 
+                checks for responses from those systems.
+            Just because a system does not respond to ICMP requests does not mean it is not alive.
+
+        Port Scan
+            Performed by default.
+            Specify which ports to scan using the -p option.
+            This is used to check for open ports on a system.
+            Open ports identify some services running on the system
+            Standard ports you will see during scans:
+                20/21 - FTP, file transfer server, used to host files
+                22 - SSH server, used to log into the server
+                25 - SMTP server, used to send email
+                53 - DNS server, used for domain name resolution
+                80 - Web server used for HTTP
+                443 - Web server used for HTTPS
+                445 - SMB server, used by Windows systems or Samba servers
+
+        Service Scan 
+            Performed with the -sV option.
+            It identifies the particular version of the service running on the port,
+    
+    Nmap also comes with the Nmap scripting engine,
+    allowing Nmap to run more customized scans. 
+
+    /usr/share/nmap/scripts directory is where the Nmap scripts are located in the Kali Linux by default
+
+
+
+What measures can be taken to make service detection more difficult for attackers?
+    Firewall Configuration
+    Port Restriction
+    Service Banner Customization
+    Network Segmentation
+    Non-Standard Port Usage
+    Intrusion Detection/Prevention Systems (IDS/IPS)
+    Rate Limiting
+    Regular Patching and Updates
+    Security Monitoring and Logging
