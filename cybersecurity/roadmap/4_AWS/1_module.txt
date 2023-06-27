@@ -1,17 +1,16 @@
 Introduction to AWS
 
-    AWS offers a massive range of services for every business, starting with basic elements, 
-    like:
-    compute, storage, and network security tools, through complex solutions like blockchain, 
-    machine learning, or artificial intelligence, and robot development platforms, 
-    all the way through very specialized tool sets, like video production management systems, 
-    and orbital satellites you can rent by the minute.
+    AWS offers a massive range of services for every business, starting with basic elements, like:
+        compute, storage, and network security tools, through complex solutions like blockchain, 
+        machine learning, or artificial intelligence, and robot development platforms, 
+        all the way through very specialized tool sets, like video production management systems, 
+        and orbital satellites you can rent by the minute.
 
     Almost all modern computing centers around a basic client-server model.
     It can be more complicated than that, so let's take a look at a coffee shop example.
 
     This coffee shop is going to give us some real world metaphors to help you understand 
-    why AWS can change the way your IT operates.
+        why AWS can change the way your IT operates.
 
     The server, the barista. And the client, the customer.
     I make a request. In this case, it is for coffee.

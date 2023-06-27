@@ -1,0 +1,136 @@
+Web vulnerabilities
+
+    Proxy:
+        Is a gateway between users and the internet.
+        is a server application that acts as an intermediary between 
+            a client requesting a resource and the server providing that resource
+
+    Burb Suite 
+        Burp Suite is a comprehensive suite of web application security testing tools. 
+        Some of the tools that can be used include the following:
+
+            Burp Proxy: 
+                This allows you to intercept HTTP requests and responses sent between Burp’s browser and the target server. 
+                It enables you to study how the website behaves when you perform different actions.
+
+            Burp Intruder: 
+                This automates customized attacks against web applications. 
+                It is powerful and configurable and can perform many tasks.
+
+            Burp Repeater: 
+                This allows you to reissue an interesting request, i.e., network packets, repeatedly. 
+                It lets you study the target website’s response to different inputs without having 
+                    to intercept the request each time.
+
+    Client-Side Vulnerabilities
+
+        Client-side vulnerabilities refer to security incidents and breaches that occur on the customer’s, 
+            or user’s, computer system rather than on the company’s (on the server side) or in between the two.
+
+        For example, most people think of web security as the sole attack on a web server 
+            when the user’s web browser can also be targeted.
+
+            Cross-Site Scripting: XSS
+                Occurs when an attacker uses a web application to send malicious code to a user, 
+                    usually running arbitrary JavaScript within a user’s browser. 
+                
+                Cross-Site Scripting comes in three primary forms:
+
+                    Reflected XSS:
+                        the injected script is reflected off the web server, such as in an error message, 
+                            search result, or any other response that includes some or all of the input 
+                            sent to the server as part of the request.
+
+                    Stored XSS:
+                        injected scripts that are permanently stored on the target servers, 
+                            such as in a database, message forum, visitor log, comment field, etc.
+                    
+                    DOM-Based XSS:
+                        This attack payload is executed because of modifying the Document Object Model
+                            in the victim’s browser used by the original client-side script so that 
+                            the client-side code runs in an “unexpected” manner.
+                        
+            Cross-Site Request Forgery (CSRF):
+                Also known as Session Hijacking.
+                It is an attack that forces an end user to execute unwanted actions on a 
+                    web application in which they are currently authenticated.
+                For example, 
+                    you are presently authenticated to a website that handles bank transactions. 
+                    An attacker may have you click a malicious link that makes your bank website send money to an attacker.
+
+    SQL Injection   
+        Structured Query Language (SQL)
+        Is the language that is used to interact with databases.
+        This includes creating, reading, updating, and deleting data within them. 
+        A database is an organized collection of structured information, or data, 
+            typically stored electronically in a computer system.
+        The data within databases are stored in “tables,”
+            and multiple tables can exist in a single database.
+        
+        The following are examples of statements that can be used to interact with the Customers table:
+            SELECT * FROM Customers
+
+            SELECT FirstName,LastName FROM Customers
+
+            SELECT CustomerId FROM Customers WHERE CustomerId=3
+
+            SELECT LastName,CustomerId FROM Customers WHERE CustomerId=3 OR LastName=”Griffin”
+
+            SELECT * FROM Customers –-This is a comment
+
+        SQL Injection is a vulnerability found in web applications that allows 
+            you to modify the SQL query being executed by the application directly.
+
+        Modifying the SQL can allow you to manipulate the application to have unintended effects, such as the following:
+            Revealing more data from a database/table than intended
+            Bypassing logins
+            Deleting data or causing a denial of service
+
+        SQL injection vulnerabilities arise when a web application passes data that is inputted from a user 
+            to a SQL statement that does not properly sanitize the user’s input.
+        
+    Command Injection
+        is a vulnerability that occurs when an application allows an attacker to 
+            interface directly with the underlying operating system on which the application runs.
+        In other words, it will enable you to run commands on the web server through the web application.
+        Exploiting this kind of vulnerability requires knowledge of the underlying operating system on 
+            which the application runs, whether it be Linux or Windows.
+        
+        Exploiting this kind of vulnerability involves finding where the application interprets 
+            input from the user as an operating system command, such as a text input box, 
+            or an HTTP request, such as the ShellShock vulnerability.
+
+        One of the ways to recognize vulnerabilities like these is when an application displays 
+            an output that seems like an operating system command, like the ping command. 
+        If the web application appears to be feeding your input to an operating system command, 
+        there may be a command injection vulnerability present. 
+
+    File Inclusion
+        is a vulnerability that allows attackers to make the web application reveal arbitrary 
+            files on the web server or have the web application execute files from an attacker-controlled server.
+        The attacker is “including” files that are normally not part of normal operations of the web application.
+
+        File inclusion vulnerabilities are dangerous because they can reveal sensitive information on the server, 
+            or in other cases, can allow attackers to execute arbitrary code on the web server, e.g., a webshell.
+
+        Types of File Inclusion Vulnerabilities
+            Local File Inclusion (LFI): 
+                This type of vulnerability allows attackers to read files located on the file server itself, 
+                    e.g., the /etc/passwd file.
+
+            Remote File Inclusion (RFI):
+                This type of vulnerability allows attackers to make the web application include remote files,
+                    i.e., files located in places that are not on the web server itself. 
+                    These files can be used to make the web server run arbitrary code.
+
+    Other Web Server Vulnerabilities
+        Outdated software and plugins
+            Example: Wordpress
+        
+        Outdated components of software:
+            Example: Log4j
+        
+        Default or weak passwords:
+            Examples: Equifax compromise, John Podesta DNC hack, Mirai Botnet
+        
+    
