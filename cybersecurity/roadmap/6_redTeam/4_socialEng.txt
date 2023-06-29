@@ -1,0 +1,77 @@
+Shells
+    When performing a penetration test or red team engagement, 
+        there will be a point where you will need to compromise 
+        some system to establish a foothold on the target network. 
+
+    The MITRE ATT&CK Framework outlines how to compromise a system under the Initial Access section
+
+    Contrary to widespread belief, compromising a system is entirely situational, 
+        and no universal “exploit” works on all OSs or applications.
+
+    Exploits come in several different types. 
+        Some exploits reveal sensitive information, e.g., file inclusion, 
+        while others could shut down a system or make it inoperable, e.g., a DDoS attack.
+
+    One of the more common types of exploits results in what is known as a “shell.”
+    A shell is effectively a command line interface to the exploited system.
+    This is one of the most dangerous exploits, as a shell allows you to run arbitrary commands on a system.
+
+    There are generally two kinds of shells:
+    
+        Bind Shell: 
+            A bind shell is associated with a specific port of the exploited system. 
+            For example, an attacker would run an exploit and then connect to a port on the exploited system, 
+                resulting in a shell. In this scenario, the attacker connects to the exploited system.
+        
+        Reverse Shell: 
+            A reverse shell is established when the exploited system connects to the attacker. 
+            An attacker would run an exploit that would cause the exploited system to reach out 
+                to an attacker-controlled server, which results in a shell. 
+            In this scenario, the exploited system connects back to the attacker.
+
+Refer to 
+    https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheetLinks 
+    or 
+    https://highon.coffee/blog/reverse-shell-cheat-sheet/Links
+to establish reverse shells for Bash and Python.
+
+
+Social Engineering
+
+    Social engineering is a collection of manipulation techniques that exploit
+        human error to gain private information, access, or valuables.
+    Also known as the art of “hacking people,” social engineering attacks 
+        typically involve preying on human emotion.
+    
+
+    Types of social engineering attacks:
+
+        Phishing:
+            Typically, an email is sent to a user to get them to click a link or reveal sensitive information.
+        
+        Smishing
+            SMS phishing is similar to phishing, but in a SMS text message form.
+
+        Vishing:
+            Voice phishing involves having a live person attempt to gain sensitive 
+                information from a target. It can also be done in voice mail form. 
+
+        Tailgating:
+            This is the act of following someone into a sensitive area to utilize 
+                the level of access they have to the area.
+        
+
+        Combining these attacks with the perception of urgency can make them very effective against employees. 
+        For example, sending a phishing email with the implication of a deadline, 
+        e.g. “your password is about to expire”, 
+        “I need this sensitive information because the deadline for my project is coming soon”, etc., 
+        can influence people to send information without actually verifying whether the email is legitimate.
+
+        Protection
+            Here are some things to ask yourself when trying to identify social engineering attacks:
+                Did this message come from a legitimate sender?
+                Does this website I am on have odd details?
+                Is this message too good to be true?
+                Are the attachments or links in this message suspicious?
+                Is the language in this message inconsistent or use bad grammar?
+                Is the person following me into this building an actual company employee?
