@@ -1,0 +1,173 @@
+Data types
+    Primitive data types
+        Primitive Data is not an object and has no methods or properties.
+        number
+        bigint
+        boolean
+        undefined
+        Symbol
+        null
+        string        'Wrapper object'
+                      JavaScript creates, under the hood, a wrapper to wrap this value and expose it as an object.  
+
+        So, what is a wrapper object?
+            A wrapper object is a temporary object that JavaScript creates automatically to allow primitive data types 
+            (like strings, numbers, and booleans) to have methods and properties like regular objects.
+
+variables
+    var: Declares a function-scoped or globally-scoped variable.
+    let: Declares a block-scoped local variable.
+    const: The value of a constant can’t be changed through reassignment, can’t be changed through reassignment.
+
+    Hoisting: Is a behavior in which a function or a variable can be used before declaration.
+    Scope:  Refers to the visibility of a variable or how it can be used after it is declared.
+            The scope of a variable depends on the keyword that was used to declare it.
+            
+            There're three types of Scopes: 
+                Global Scope:
+                    Declared outside any function, and can be accessed from anywhere within the same JS code.
+                    var, let, const provide Global Scope
+                Function Scope:
+                    Declared within a function can only be used within that same function. 
+                    Outside that function, they are undefined. 
+                    var, let, const provide Function Scope.
+                Block Scope:
+                    A block is any part of JavaScript code bounded by ’{}‘.
+                    Variables declared within a block can not be accessed outside that block.
+                    This Scope is only provided by the let and const keywords. 
+                    If you declare a variable within a block using the var keyword, it will NOT have Block Scope.
+
+comparision operators
+    ==              equal to       
+    ===             equal value and equal type
+    !=              not equal
+    !==             not equal value or not equal type
+    >               greater than     
+    >=              greater than or equal to
+    <               less than
+    <=              less than or equal to
+
+Control Flow
+    conditionals
+        ternary operator
+            condition ? expression_if_true : expression_if_false;
+
+            condition: An expression that evaluates to a Boolean value (true or false).
+            expression_if_true: The value or expression to be returned if the condition evaluates to true.
+            expression_if_false: The value or expression to be returned if the condition evaluates to false.
+
+        if ... else
+            Executes a statement if a specified condition is truthy. 
+            If the condition is falsy, another statement in the optional else clause will be executed.
+
+                if (condition) {
+                    statement1;
+                } else {
+                    statement2;
+                }
+
+        switch
+            Evaluates an expression, matching the expression’s value against a series of case clauses,
+            and executes statements after the first case clause with a matching value, 
+            until a break statement is encountered.
+
+            The default clause of a switch statement will be jumped to if no case matches the expression’s value.
+
+                switch (expression) {
+                    case value1:
+                        //Statements executed when the result of expression matches value1
+                        break;
+                    case value2:
+                        //Statements executed when the result of expression matches value2
+                        break;
+                    case valueN:
+                        //Statements executed when the result of expression matches valueN
+                        break;
+                    default:
+                        //Statements executed when none of the values match the value of the expression
+                        break;
+                }
+
+    Exception Handling
+        Throw
+            throws a user-defined exception.
+            The throw statement allows you to create a custom error.
+            The throw statement throws (generates) an error.
+            The throw statement throws an exception.
+            Using throw with try and catch, lets you control program flow and generate custom error messages.
+
+        try ... catch ... finally
+            try {
+                tryCode - Code block to run
+            }
+            catch(err) {
+                catchCode - Code block to handle errors
+            }
+            finally {
+                finallyCode - Code block to be executed regardless of the try result
+            }
+
+            The try statement defines the code block to run (to try).
+            The catch statement defines a code block to handle any error.   
+            The finally statement defines a code block to run regardless of the result.
+            Both catch and finally are optional, but you must use one of them.
+
+
+String
+    methods
+        string.length                       string.trim()
+        string.slice()                      string.trimStart()
+        string.substring()                  string.trimEnd()
+        string.substr()                     string.padStart()
+        string.replace()                    string.padEnd()
+        string.replaceAll()                 string.charAt()
+        string.toUpperCase()                string.charCodeAt()
+        string.toLowerCase()                string.split()
+        string.concat()
+
+Array
+    methods
+
+Objects
+
+Loops
+    do ... while
+    while
+    for Loop
+    for in Loop
+    for of Loop
+
+Functions
+    Parameters and arguments
+    Function Expression:
+    arrow functions
+    IIFEs
+    Generator Function:
+    Constructor Function:
+    Higher-Order Function:
+    Anonymous Function:
+    Recursive Function:
+
+asyncronous
+    async/await
+    callbacks
+    callback hell
+    Promises
+
+this keyword
+
+    using this keyword in a method
+    using this keyword in a function
+    using this keyword in alone
+    using this keyword in event handlers
+    using this keyword in arrow functions
+
+
+API 
+    fetch
+
+Objects
+
+Classes
+
+OOP

