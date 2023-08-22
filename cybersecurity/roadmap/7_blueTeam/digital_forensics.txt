@@ -1,0 +1,130 @@
+Digital Forensics
+    It is essential for cybersecurity professionals to go through the entire forensic process in the event of an incident,
+        including identifying, preserving, analyzing, and presenting digital evidence. 
+        Digital Forensics (DF) has changed significantly over the years, and the industry is constantly evolving 
+        to keep up with new and emerging threats. In today's age of zero days and ransomware attacks, 
+        being up to date on the latest cyber news is critical. 
+
+    Computers and systems have also continued to evolve, and more Internet of Things (IoT) devices are 
+        now connected to the Internet than ever before. As a result, various kinds of crime can occur online. 
+        Because of this, the need to gather new forms of evidence has turned digital forensics 
+        into a valuable tool law enforcement uses to prosecute crimes. Four critical areas of analysis exist:
+
+            Storage media
+            Hardware and operating systems
+            Networks
+            Applications
+ 
+
+    Principles
+        In the identification phase, you must identify the investigation's purpose and what resources 
+            and tools you will need to complete the investigation. 
+
+        In the preservation phase, the goal is to 'preserve' as much evidence as possible in its original form. 
+            Additionally, the data should be secured and isolated so it cannot be tampered with later. 
+
+        The analysis phase is where the bulk of the investigation happens. 
+            In this phase, you will process the data into information and interpret the results 
+            of this analysis to inform later decisions and responses. 
+
+        Next, the documentation phase is arguably one of the most important. 
+            During this phase, you need to document everything that occurred during the investigation, 
+            including photographs of the evidence and chain of custody forms to keep track of who worked with the data. 
+
+    Anti-Forensics Techniques
+        When conducting your ransomware investigation, you may encounter many signs of anti-forensics in the incident. 
+            Attackers often use anti-forensics techniques to remove evidence that could link the cause of the incident 
+            back to them. On a crime scene, the equivalent would be a criminal scrubbing their fingerprints from the 
+            scene to stay anonymous. As you conduct forensics on StackFull Software's ransomware incident, 
+            it is imperative to search for signs of anti-forensics in the environment to ensure that your 
+            investigation is comprehensive. Below are some popular anti-forensics techniques. 
+
+            File encryption is a technique in which data is translated into a secret code. 
+                Only authorized people can access the encrypted file, which is a great way to secure the data. 
+                Because of this, many attackers use forms of file encryption, like forensics, to hinder the 
+                forensic investigation process. Disk wiping is another technique in which the attacker permanently 
+                deletes or destroys the evidence on the disk. Finally, steganography is the process of hiding 
+                messages and files within another file. This is another excellent anti-forensics technique 
+                 attackers can hide information 'in plain sight' or in a way that makes it hard for forensics tools to uncover.
+
+    Digital Forensics Tools
+        While conducting your forensics investigation, you will encounter several digital forensics tools 
+            that usually fall into two categories: commercial or free and open source (FOSS). 
+            The cost of ownership is usually the most significant factor when deciding which one to use. 
+            Open-source software is typically free or at least lower cost. On the other hand, 
+            commercial software requires a license to be purchased before it can be used, which is generally quite expensive. 
+            Although you can save a lot of money using an open-source tool, commercial tools may be better if 
+            tool integration is essential. For example, if your company already uses many Microsoft products, 
+            it would be much easier to integrate another commercial Microsoft tool into the environment than to use a third-party tool. 
+
+        Volatility
+            Volatility is one of the most popular forensics tools for memory analysis. 
+                Pulling evidence from compromised devices as quickly as possible is incredibly important. 
+                This evidence may be a hard disk image or logs on a system. Unfortunately, this process can be tedious, 
+                depending on the number of logs to parse or the amount of data on the hard disk.
+            Capturing Random Access Memory (RAM) is an excellent alternative because the memory here is much smaller 
+                than on a hard disk and, therefore, easier to capture. Furthermore, once the data has been captured 
+                with Volatility, you can search through the processes running on the device at the time of the compromise 
+                to help determine what happened.
+
+        Sleuth Kit + Autopsy
+            Autopsy is the open-source GUI that goes along with The Sleuth Kit and is software 
+                that allows you to analyze hard drives and phones. 
+        
+        ExifTool
+            Did you know that any photos, videos, or other media you create have hidden metadata embedded? 
+                Metadata can be defined as data about other data. This data includes the time/location 
+                that the media was created and many other pieces of information that ExifTool allows us to uncover. 
+                ExifTool is another open-source and command-line software that enables you to 
+                discover hidden information in media.
+
+Forensic Imaging
+    Forensic investigations have been around for years, most notably crime scene investigations. 
+        Computer/Digital Forensics investigations are remarkably similar to these. 
+        In both cases, a subject will be investigated, and an analysis/investigation period will be conducted. 
+        It is essential to follow protocol to ensure no data is tampered with. 
+
+    Acquisition and Collection of Forensic Evidence
+        Several distinct types of data can be collected during a forensic investigation. 
+            Active data includes the data you can see and all programs, data, and files the operating system uses. 
+            This is also the easiest type of data to gather. Archive and backup data is data preserved for long-term 
+            storage on a system. This could include a hard drive, optical storage, or other forms of backup media. 
+            Finally, hidden data types are usually the most challenging data to gather. 
+            This includes data that may be deleted or overwritten. This can consist of metadata (data about data) and residual data.
+
+        Data can also be categorized into two types, volatile and persistent. Volatile data can be thought of as 
+            'temporary' data. This data is lost if the device shuts down or loses power. 
+            RAM (random access memory) is the most common volatile data type. 
+            Digital Forensics investigation needs to be quick and efficient to collect RAM and other volatile 
+            data before it is lost. Persistent data is the opposite of volatile data. It is data that 'persists' 
+            or remains on the system even if the system loses power. This data remains the same and is not 
+            accessed very frequently. Persistent data is stored on a drive, making it much easier 
+            to find and analyze than volatile data.
+
+    Preserving Evidence
+        It is imperative to ensure the integrity of the data with which you are working. 
+            Documenting everything in an investigation is necessary to provide a written record of the process 
+            in case it must be referenced later. Details should include where the incident happened, 
+            the connected network devices that may be impacted, a list of users with access to the system, and more. 
+            This is imperative, especially if the investigation goes to a court of law. 
+
+        A chain of custody form is a permanent record and paper trail of everyone who has 
+            handled or come into contact with a piece of forensic evidence. 
+            It documents the people who come into contact with evidence, the date and time it occurred, 
+            and the individual's intent/purpose in handling the data. This is another crucial step to 
+            preserve the integrity of evidence. Without a chain of custody form, evidence 
+            may be ruled inadmissible in a court of law. 
+
+        You should never work on the original copy of forensic evidence. 
+            Instead, the best practice is to create an 'image' or reproduction of the data for your analysis. 
+            This is important because if anything goes wrong during the analysis or the copy is altered, 
+             can still reference the original work and create another copy for analysis.
+
+Malware Analysis
+    Malware, short for 'malicious software', 
+        is a type of software intentionally designed to disrupt, damage, or gain unauthorized access to a computer. 
+        Attackers usually develop malware to steal and damage data.
+        Some common examples of malware include adware, viruses, worms, trojans, bots, and ransomware. 
+        Being familiar with malware and its diverse types is vital in Digital Forensics. 
+        Forensic investigators are searching for potential malware and must figure out how it got on a system. 
+        more familiar a person is with malware, the better an investigator they will be. 

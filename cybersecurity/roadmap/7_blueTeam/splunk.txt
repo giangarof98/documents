@@ -1,0 +1,32 @@
+Splunk
+    Splunk is a big data tool and software platform used to search, analyze, 
+        and visualize the machine-generated data gathered from the websites, applications, sensors, devices, etc., 
+        which make up IT infrastructures. Additionally, Splunk uses real-time data and formats it into easy-to-read logs, 
+        allowing for more successful and efficient cyber security monitoring.
+    
+    When Splunk indexes your data, it labels each event with several fields. 
+        These fields become a part of the index's event data and are returned as part of the search results. 
+        Splunk also adds some data to several default fields that serve particular purposes within Splunk's internal processing.
+    
+    Searching with SPL: Splunk uses a coding language called SPL, or Splunk Processing Language. 
+        SPL is the search processing language designed by Splunk for use with Splunk software. 
+        SPL encompasses all the search commands and their functions, arguments, and clauses. 
+        Its syntax was originally based on the UNIX pipeline and SQL. 
+        The scope of SPL includes data searching, filtering, modification, manipulation, insertion, and deletion
+
+Search Structures
+    One of the amazing benefits of Splunk is that you can really get into the details of what you want to search. 
+        This can make sorting events and creating timelines much easier without a lot of filler data. 
+        Using the | (pipe character) and Boolean operators (such as AND, OR, and NOT) can also help with detailed searches.
+
+        Splunk Boolean Searches
+            Splunk Boolean searches can be simple or compound, meaning that you can have a single Boolean expression, 
+                such as the following: Shutdown OR Closing. 
+                You can also have a compound Boolean expression, such as the following: 
+                (shutdown OR Closing) AND (date_mday=3 OR date_mday=4) 
+                Splunk, like any programming language, evaluates Boolean expressions using a predetermined precedence. 
+                This means that your Splunk search will be evaluated as follows: 
+
+                    Evaluate the expressions within the parentheses.
+                    Evaluate the OR clauses.
+                    Evaluate the AND or NOT clauses.
