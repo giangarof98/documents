@@ -1,0 +1,87 @@
+Privilege Escalation
+    After exploiting a vulnerable service running on a Windows server and getting a reverse shell, 
+        you gain situational awareness of what is available. You run a netstat command and notice 
+        an outbound connection to another Windows system on port 445. This seems promising! However, 
+        after running a “whoami” command, you realize you are not the “Administrator” user you are used to being. 
+        Instead, you are a regular unprivileged user that cannot run administrator-level commands. This means that 
+        you cannot run tools like Mimikatz to steal credentials. Instead, you can laterally move to another Windows 
+        system on the network. You have been tasked with figuring out a way to gain administrator privileges on the 
+        Windows system so you can dump credentials and laterally move to the other Windows system.
+
+    Privilege escalation is gaining elevated access to resources on a system. This means gaining root or administrator 
+    privileges on the compromised system. Privilege escalation is commonly known as “getting root” on the system. 
+    As the root or administrator user, you can extract more useful information than a standard, unprivileged user. 
+    Therefore, it is in the penetration tester, or red teamer’s, best interest to escalate their privileges to gain 
+    better access to the system.
+
+        As a red teamer or pen-tester, your goal is to try to gain access to administrative accounts. 
+            Here are some common account names that tend to have elevated privileges associated with them:
+
+            root - found on Linux/Mac systems
+            Administrator - found on Windows systems
+            SYSTEM - found on Windows systems
+            NT Authority - found on Windows systems
+        
+        You can also go for users on systems that are in administrative groups. Here are some common names of groups 
+            that have administrative privileges associated with them:
+
+                root - found on Linux/Mac systems
+                wheel - found on Linux/Mac systems
+                Administrators - found on Windows systems
+
+        When establishing a system’s command and control, it is unlikely that you will start as an administrative user. 
+            Instead, you will begin as a user with limited privileges. Then, you will have to escalate 
+            your privileges to an administrative level.
+
+    Escalation
+        The techniques for privilege escalation tend to be one of the following:
+
+        Gain access to a user account with administrator privileges, i.e., password guessing, 
+            password compromise, User Account Control bypasses, etc.
+        Exploit a vulnerable program on the system that can give you administrator privileges,
+            e.g., SUID bit program, DLL hijacking, etc.
+        Exploit an OS vulnerability that leads to administrator privileges, 
+            e.g., DirtyCOW, Polkit Privilege Escalation, DirtyPipe, etc. Please note that these exploits 
+            sometimes crash the system on which they are executed.
+        
+        Several techniques can be used to escalate your privileges, which the MITRE ATT&CK Framework has 
+            documented at https://attack.mitre.org/tactics/TA0004/Links to an external site.. 
+            Luckily, there are open-source scripts and Metasploit modules that can check systems 
+            for privilege escalation vulnerabilities in an automated fashion.
+
+        A popular Python script used to check for privilege escalation is called the Linux Privilege Escalation Checker. 
+            Once on a system, it can be executed to check for potential privilege escalation opportunities. 
+            A Metasploit module named post/multi/recon/local_exploit_suggester can also be used for this for Windows systems.
+
+Lateral Movement
+    Lateral movement is the concept of an attacker extending their access within a network by moving 
+        from one compromised system to another. This is also known as “pivot.” 
+        Pivoting allows attackers to move deeper into a network, furthering their control and increasing 
+        their chances of compromising sensitive information.
+    
+        Lateral movement is usually performed by one of the following means:
+
+            Steal keys or credentials and use them to access another system, which is the most common method.
+            Exploit a vulnerable external service that allows for the compromise of the system running the vulnerable service.
+            
+        How to laterally move between Linux systems differs from how to move between Windows systems laterally.
+
+    Linux Lateral Movement
+        Linux lateral movement is usually performed in one of two ways:
+
+        Compromise a user’s password and use it on another system on the network, i.e., password guessing, brute force attacks, etc.
+        Compromise an SSH key.
+
+    Windows Lateral Movement
+        Lateral movement within Windows environments is performed using tools specifically for this purpose. The two main tools are PSExec and WMI.
+
+
+    Passing the Hash
+        Passing the hash is not a “lateral movement tool” in the sense of a program like PSExec or wmic.exe, 
+            but it is instrumental in lateral movement. Passing the hash takes advantage of the flaw in NTLM authentication, 
+            allowing you to become a user using the user’s password hash without ever knowing the actual password. 
+            This means you have access to all the resources they have access to, i.e., file shares, systems, etc. 
+            A user’s password hash can be directly used in place of a password in Metasploit modules, 
+            specifically within the SMBPass option.
+
+
