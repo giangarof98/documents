@@ -1,0 +1,30 @@
+Structured Query Language
+
+Queries: 
+    This is the component that allows you to retrieve data from a database. 
+    The SELECT statement is most commonly used for this purpose.
+
+Data Definition Language (DDL): 
+    It lets you to create, alter, or delete databases and their related objects like tables, views, etc. 
+    Commands include CREATE, ALTER, DROP, and TRUNCATE.
+
+Data Manipulation Language (DML): 
+    It lets you manage data within database objects. 
+    These commands include SELECT, INSERT, UPDATE, and DELETE.
+
+Data Control Language (DCL): 
+    It includes commands like GRANT and REVOKE, which primarily deal with rights, 
+    permissions and other control-level management tasks for the database system.
+
+SQL databases come in a number of forms, such as Oracle Database, Microsoft SQL Server, and MySQL. 
+Despite their many differences, all SQL databases utilise the same language commands - SQL.
+
+Relational database
+    A relational database is a type of database that stores and organizes data in a structured way.
+    Data in a relational database is stored in various data tables, each of which has a unique key identifying every row.
+
+    The term “relational database” comes from the concept of a relation—a set of tuples that the database organizes into rows and columns. 
+    Each row in a table represents a relationship among a set of values.
+
+    Relational databases use keys to create links between tables. A primary key is a unique identifier for a row of data. 
+    A foreign key is a column or combination of columns used to establish and enforce a link between the data in two tables.

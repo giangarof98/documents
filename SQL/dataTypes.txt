@@ -1,0 +1,19 @@
+Numeric
+    INT is used for whole numbers. 
+    DECIMAL is used for decimal and fractional numbers.
+    FLOAT
+    BIT
+    DOUBLE
+
+Strings
+    CHAR is used for fixed-length strings. 
+    VARCHAR is used for variable-length strings.
+    BINARY is used for binary strings.  
+    BLOB
+    TEXT
+
+Date 
+    DATE is used for dates in the format (YYYY-MM-DD).
+    DATETIME is used for date and time values in the format (YYYY-MM-DD HH:MI:SS).
+
+BOOLEAN is used for boolean values (TRUE or FALSE).

@@ -1,0 +1,20 @@
+mysql -u root -p
+
+show databases;
+
+CREATE DATABASE <name>;
+
+DROP DATABASE <name>;
+
+USE <database name>;
+    output: 'Database changed'
+
+SELECT database();
+    select the database itself
+
+SHOW TABLES;
+
+SHOW COLUMNS FROM <table name>;
+DESC <table name>;
+
+DROP TABLE <table name>;
