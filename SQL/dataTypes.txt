@@ -17,3 +17,56 @@ Date
     DATETIME is used for date and time values in the format (YYYY-MM-DD HH:MI:SS).
 
 BOOLEAN is used for boolean values (TRUE or FALSE).
+
+
+DATA CONSTRAITS
+    PRIMARY KEY
+        You define a primary key for a table using the PRIMARY KEY constraint. 
+        A table can have only one primary key.
+
+        A primary key is a special relational database table field (or combination of fields)
+            designated to uniquely identify all table records.
+
+        A primary key’s main features are:
+            It must contain a unique value for each row of data.
+            It cannot contain null values.
+
+        CREATE TABLE Employees (
+            ID INT PRIMARY KEY,
+            NAME TEXT,
+            AGE INT,
+            ADDRESS CHAR(50)
+        );
+
+    AUTO_INCREMENT
+        Is used to automatically generate a unique value for a column, usually for primary keys.
+        This is commonly used to ensure that each row in a table has a unique identifier 
+            without needing to manually assign values.
+        create table students(
+            id int not null auto_increment primary key,
+            name varchar(50),
+            age int,
+            email varchar(50)
+        );
+
+
+
+    NOT NULL
+        Ensures that a column cannot have a NULL value.
+        If NOT NULL is not specified, a field into the table can have a null value.
+        CREATE TABLE Employees (
+            ID int NOT NULL,
+            Name varchar(255) NOT NULL,
+            Age int,
+            Address varchar(255)
+        );
+    
+    DEFAULT
+        If no value is specified in a field, 
+            the Default keyword take place to fill the spot with a default option
+        CREATE TABLE Employees (
+            ID int NOT NULL,
+            Name varchar(255) NOT NULL DEFAULT,
+            Age int,
+            Address varchar(255) DEFAULT 'optional'
+        );

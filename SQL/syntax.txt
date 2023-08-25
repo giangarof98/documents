@@ -1,20 +1,39 @@
 mysql -u root -p
-
 show databases;
 
-CREATE DATABASE <name>;
+Create
+    CREATE DATABASE <name>;
+    CREATE TABLE users(name varchar(250), age int, country varchar(250));
 
-DROP DATABASE <name>;
+USE
+    USE <database name>;
+        output: 'Database changed'
 
-USE <database name>;
-    output: 'Database changed'
+Select
+    SELECT database();
+        select the database itself
+    SELECT * FROM <table name>
 
-SELECT database();
-    select the database itself
 
-SHOW TABLES;
+Read
+    SHOW TABLES;
 
-SHOW COLUMNS FROM <table name>;
-DESC <table name>;
+    SHOW COLUMNS FROM <table name>;
+    DESC <table name>;
 
-DROP TABLE <table name>;
+
+Insert
+    Single insert
+        INSERT INTO users (name, age, country) values ('jhon', 30, 'usa');
+
+    Multi inserts:
+        INSERT INTO users (name, age, country)
+        VALUES
+            ('dana', 23, 'mexico'),
+            ('jack', 18, 'italy'),
+            ('domenico', 20, 'italy');
+        
+
+Delete
+    DROP TABLE <table name>;
+    DROP DATABASE <name>;
