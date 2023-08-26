@@ -28,3 +28,7 @@ Relational database
 
     Relational databases use keys to create links between tables. A primary key is a unique identifier for a row of data. 
     A foreign key is a column or combination of columns used to establish and enforce a link between the data in two tables.
+
+
+Aliases:
+    Aliases are used to provide temporary names for tables or columns in a query result.

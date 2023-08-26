@@ -1,39 +1,67 @@
 mysql -u root -p
 show databases;
 
+CRUD
+    Basics operation to retrieve, update, see, and delete data.
+        Stands for:
+            CREATE
+            READ 
+            UPDATE 
+            DELETE
+
 Create
     CREATE DATABASE <name>;
     CREATE TABLE users(name varchar(250), age int, country varchar(250));
 
-USE
-    USE <database name>;
-        output: 'Database changed'
+    Insert
+        Single insert
+            INSERT INTO users (name, age, country) values ('jhon', 30, 'usa');
 
-Select
-    SELECT database();
-        select the database itself
-    SELECT * FROM <table name>
-
+        Multi inserts:
+            INSERT INTO users (name, age, country)
+            VALUES
+                ('dana', 23, 'mexico'),
+                ('jack', 18, 'italy'),
+                ('domenico', 20, 'italy');
+                
 
 Read
-    SHOW TABLES;
+    USE
+        USE <database name>;
+            output: 'Database changed'
+
+    SELECT database();
+        select the database itself
 
     SHOW COLUMNS FROM <table name>;
     DESC <table name>;
 
+    SELECT * FROM <table name>
+    SELECT <field from table> from <table name>
 
-Insert
-    Single insert
-        INSERT INTO users (name, age, country) values ('jhon', 30, 'usa');
+    SELECT * FROM <table name> WHERE <field> = <value field name>
+        CREATE TABLE Employees (
+                ID INT PRIMARY KEY,
+                NAME TEXT,
+                AGE INT,
+                COUNTRY CHAR(50)
+            );
+            SELECT * FROM Employees WHERE AGE = 20
 
-    Multi inserts:
-        INSERT INTO users (name, age, country)
-        VALUES
-            ('dana', 23, 'mexico'),
-            ('jack', 18, 'italy'),
-            ('domenico', 20, 'italy');
-        
+    ALIASES
+        SELECT name as employee_name FROM Employees;
+
+
+
+Update
+    Update Employees set age = 12 where name = <field value name>;       
+
 
 Delete
     DROP TABLE <table name>;
     DROP DATABASE <name>;
+
+    DELETE FROM <table name>;
+        It'll delete all the data
+
+    DELETE FROM Employees WHERE age = id;
