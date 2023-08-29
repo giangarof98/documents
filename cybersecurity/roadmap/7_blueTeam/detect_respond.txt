@@ -1,0 +1,90 @@
+According to the National Institute of Standards and Technology (NIST) Cybersecurity Framework, 
+    the detect function enables the timely discovery of cybersecurity events. 
+First, it is crucial that you protect assets. 
+Then, you then need a way to be notified if anyone or anything can get past the protection mechanisms you enforced.
+
+To detect an incident in the environment, you can use various tools. 
+    Examples include a vulnerability scanner and an endpoint detection tool.
+
+Snort
+    Wireshark Review
+        Wireshark is a network protocol analyzer for traffic analysis. 
+        Wireshark also has many uses during an incident response investigation. 
+            For one, it provides lots of statistical data about packet captures. 
+            And during an incident response investigation, such data can identify whether any 
+                unusual connection patterns exist across the network. 
+            For example, if evidence exists of one system connecting to many others in the network, 
+                that might indicate network scanning or lateral movement
+
+    Intrusion Detection Systems
+        An intrusion detection system (IDS) is a device that monitors a network for malicious activity. 
+        If it finds any intrusion activity, it reports that to the IDS administrator. 
+        IDSs come in two types: host-based and network-based. 
+            A host-based IDS monitors network traffic and devices that are installed locally on the endpoints of the host. 
+            After the host-based IDS gets installed on a device, it monitors the traffic on that device. 
+            By contrast, a network-based IDS monitors only network traffic. 
+            That is, a network-based IDS does not monitor a particular system. 
+            Instead, it scans data packets across the network. 
+
+    Snort
+        Snort is a well-known, open-source network intrusion prevention and detection system (IDPS). 
+        It performs traffic analysis and network packet logging. 
+        Snort is based on library packet capture (libpcap), 
+            which searches for and analyzes packet logging and real-time traffic. 
+        Snort has several modes for use as an IDPS. As an IPS, Snort monitors network traffic 
+            and compares it against a rule set. The main component of Snort applies rules to the traffic 
+            and creates an alert when an activity contradicts the rule set.
+
+Respond
+    Responding to an incident includes two parts. 
+        The first consists of quickly identifying what is happening. 
+        The second consists of taking action to minimize any adverse effects and to reduce and contain the damage. 
+
+        Incident Response
+            An incident response ensures an organized and systematic way to address the results of a cyber incident. 
+            And, it aims to limit the adverse impacts as much as possible. 
+            Typically, the incident response team of an organization is in charge of coordinating these activities. 
+            But, many teams in the organization take part in the overall process. 
+
+            An incident response plan is a document outlining that process and the procedures to take if an incident occurs. 
+            Having an incident response plan before an incident occurs is crucial for preparedness. 
+            And if that plan has been practiced and widely accepted throughout the organization, 
+                the incident response process will prove much more manageable.
+
+            The incident response process includes the preparation, detection, and response processes. 
+                To respond, it is essential to analyze what happened, establish the root cause, 
+                and continue to improve your security environment.
+
+            After an incident has been resolved, conducting a post-mortem with any involved individuals is also essential. 
+            During the post-mortem, it is important to discuss what happened, why it happened, and the impact on the organization. 
+            It is also necessary to discuss what can and should be done in the future to ensure that it does not happen again. 
+            By having this conversation, the appropriate changes can be made to make the organization both more robust and more resilient.
+
+        SIEM Tools
+            During an incident response, people commonly use security information and event management (SIEM) tools. 
+            With such tools, organizations can aggregate data from several sources in one place. 
+            The tools thus provide a central location for observation and analysis. 
+            And during this analysis, people might discover different threats—allowing organizations to respond proactively. 
+
+            As discussed in earlier lessons, Splunk is an industry-leading SIEM tool. 
+            Splunk can help you search through information to generate alerts, reports, and visualizations. 
+            But, people throughout the industry also use other popular SIEM tools, such as Sentinel, Qradar, and McAfee.
+
+            One of the most attractive features of a SIEM tool is automation. 
+            Such a tool can be programmed to automatically respond to alerts and incidents by taking specific actions. 
+            This can reduce resource utilization. Specifically, the tool can handle the more routine or straightforward 
+                alerts and incidents—without the involvement of people. 
+            Incident response employees can thus focus on incoming alerts and utilize more resources for problems that are more significant.
+
+
+        EDR Tools
+
+            Endpoint detection and response (EDR) helps security teams eliminate anomalous and suspicious activity on endpoints. 
+            EDR tools have various features and functions, including investigations and threat hunting. 
+
+            Whereas the main purpose of a SIEM tool is to aggregate information and event logs, 
+                the main purpose of an EDR tool is to provide continuous detection and response at the endpoint level. 
+            EDR tools collect their data only from endpoints. By contrast, SIEM tools can collect information from many other sources. 
+            So, a SIEM tool and an EDR tool are complementary. 
+            By having both, an organization can better understand its environment and respond to threats. 
+            Popular EDR tools include Carbon Black, Microsoft Defender for Endpoint, and Falcon.

@@ -1,0 +1,113 @@
+NIST Cybersecurity Framework
+    Governance can be defined as a process to manage security and risk in organizations. 
+    It specifies the correct standards and responsible parties to ensure risks are mitigated. 
+    Ensuring an organization's security strategies align with the laws and regulations is crucial. 
+    GRC, meaning governance, risk, and compliance, are different, but all work together. 
+    Corporate governance policies, enterprise risk management programs, and company compliance are all vital to understanding the field of cybersecurity. 
+    By combining the three, companies can achieve their goals more efficiently and effectively. 
+    Also, business units are encouraged to work together instead of being separated by their usual silos. 
+    Finally, GRC is for more than just big companies. A company of any size can and should implement these principles.
+
+    NIST is the National Institute of Standards and Technology. 
+    They are a non-regulatory agency providing tools and resources companies can use to further their cybersecurity posture. 
+    According to NIST, their Cybersecurity Framework helps businesses of all sizes to better manage, understand, and reduce cybersecurity risk.    
+
+Framework Core
+    The NIST Cybersecurity Framework is divided into the following functions: identify, protect, detect, respond, and recover.
+     We will go through an overview of these functions today, but each subsequent lesson will go into more detail on each. 
+
+        The Identify function helps organizations understand how to manage their systems and data. 
+            This function can include identifying any physical and software assets in an organization, 
+                identifying cybersecurity policies that the organization has previously established, 
+                and identifying any vulnerabilities that may currently be in place. 
+
+        The Protect function focuses on using previously developed information and planning. 
+            As a result, an organization can establish safeguards to limit or contain the impact of a potential cybersecurity event. 
+            This includes conducting security awareness training for staff and managing protective technologies to ensure systems' resilience. 
+
+        The Detect function helps an organization recognize when there may be a potential security event. 
+            Within this function, a company ensures that events are correctly detected and will continue 
+            implementing continuous monitoring capabilities to monitor any additional events that may surface.
+
+        The Respond function is critical. 
+            These include incident response activities and will test the company's ability to act after a detected incident. 
+            In addition, a company must ensure its response plan is executed, analysis is conducted, and mitigation activities are performed. 
+
+        Finally, the Recover function will identify gaps in existing processes and support a quick recovery to 
+            normal operations to reduce the impact of the incident. 
+            An organization must be diligent in implementing improvements based on the lessons learned.
+
+Identify
+    As you know, the Identify function of the NIST Cybersecurity Framework includes identifying any physical and software assets in an organization, 
+        identifying cybersecurity policies that the organization has previously established, and identifying any vulnerabilities that may currently be in place. 
+        That is where risk management comes into play.
+
+    Risk management is identifying, evaluating, and prioritizing risks that come up in a company. 
+    Risk management aims to control and mitigate future options as much as possible. 
+    It is a proactive strategy to ensure that these risks are brought up before they become too much of a problem, reducing their impact. 
+    There are three primary responses to risk: avoidance, mitigation, and acceptance. 
+
+    Using an avoidant strategy means a business wants to avoid the risk as much as possible. 
+    The most common approach is to eliminate the risk by any means necessary. 
+    Mitigation means that a company will attempt to lower the possibility that the risk will happen to an acceptable level but not altogether remove it, 
+        as in the avoidant strategy. Finally, a company that uses the acceptance response will 'accept' that the risk will occur. 
+        This may be because the risk is out of their control or the financial impact of the risk is less than the money that would be used to mitigate the risk.
+
+Protect
+    It is vital for a company to protect its systems and adopt a proactive mindset rather than a reactive one. 
+    The time spent fixing and responding to incidents will be reduced by looking ahead and anticipating potential security incidents. 
+    By identifying vulnerabilities early on and preparing for likelihoods, a company can quickly act and be prepared during an incident. 
+
+
+    Firewalls and OSI Model Review
+        A firewall is a security device that monitors traffic entering and leaving a network. 
+        Based on a set of rules previously defined by the organization, the firewall will block or allow data to flow in and out. 
+        The overall purpose of a firewall is to review the data coming in and out beforehand to prevent malicious activity. 
+        A firewall is like a guard. Before anyone can pass through, the guard (or firewall) must verify that the 
+            action is legitimate and allowed to pass through.
+
+        Several diverse types of firewalls can be used. 
+            For example, a packet-filtering firewall will go through information (or packets) trying to pass through the network and 
+            match them with the pre-defined filtering rules. A packet filtering firewall will filter these packets 
+            based on the source and destination IP address and the source and destination port. 
+
+
+    Introduction to Patch Management
+        Patch management is the process of organizing, planning, and applying patches to software. 
+        Often, it is crucial to patch software quickly to protect it from emerging vulnerabilities. 
+        In addition, patch management is essential to defend your environment's assets. 
+        In a large corporation, there can be thousands and thousands of systems with thousands of applications, 
+            which can amount to millions and millions of patches that need to be applied to a system. 
+        Managing millions of patches is not a small undertaking, so it is essential to have a patch management strategy 
+            to ensure potential vulnerabilities are mitigated efficiently and promptly. 
+
+        The first step in the patch management process is establishing inventory and updating baselines. 
+        To ensure that all systems are patched and up to date, you need to know your inventory. 
+        Then, you will need to gather patch information. This task can be difficult because there is so much information to collect. 
+        Finding this patch information for vendors like Microsoft and Linux is simple. But for some third-party vendors, 
+            it may be necessary to visit their website to find out if there is a new patch.
+
+        Next, you must filter and assign the patches to the endpoints in the patch management process using the inventory 
+            list to determine which assets need software updates and which do not. 
+        Then, you must review, approve, and mitigate. 
+        Before installing, it is critical to review the changes made with the update to ensure that this still aligns with the organization. 
+        Furthermore, you may also need to go to a manager to approve these updates. 
+        After the patches are approved, you will then test and deploy the patches and ensure that the changes have been documented.
+
+
+
+Encryption for SOC Analysts
+    SOC analysts use encryption in several ways to protect sensitive information and ensure that data remains secure. 
+    Some of the ways in which SOC analysts use encryption include:
+
+        Protecting communication channels: SOC analysts use encryption to secure communication channels between different systems and devices. 
+            This can include encrypting data in transit between two systems or encrypting data that is transmitted over the internet.
+
+        Securing data storage: Encryption can be used to secure data at rest, such as in databases, storage devices, or on individual devices. 
+            This helps to ensure that unauthorized users cannot access sensitive data.
+
+        Protecting sensitive information: SOC analysts use encryption to protect sensitive information, 
+            such as passwords or other credentials, to prevent unauthorized access.
+
+        Compliance requirements: Many industries and countries require organizations to protect certain types of data, 
+            such as personally identifiable information (PII), credit card information, and health records, with encryption.
