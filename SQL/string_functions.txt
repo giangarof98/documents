@@ -1,0 +1,34 @@
+Next examples are following the fields from the .sql file attached
+
+Concat
+    Combine data for cleaner output
+        SELECT CONCAT('h', 'e','l', 'l','o');
+        SELECT CONCAT (author_fname, '!!!') FROM BOOKS;
+        SELECT CONCAT (author_fname,' ', author_lname) AS fullnames from books;
+
+        Concat with separator
+            SELECT CONCAT_WS (' ', author_fname, author_lname) AS fullnames from books;
+
+Substring
+    Two ways to use SUBSTRING:
+        SUBSTRING()
+        SUBSTR()
+
+    Work with part of strings
+    Extract 5 characters from a string, starting in position 1:
+        SELECT SUBSTRING('Hello World', 1, 5)
+
+    The first value comes from the table or string provided, 
+        the second value is the starting position
+            SELECT SUBSTRING(author_fname, 4) from books;
+
+            SELECT SUBSTR(author_fname, 1,1), author_lname, title from books;
+
+            SELECT CONCAT
+            (
+                SUBSTRING(title, 1, 10),
+                '...'
+            ) AS 'short title'
+            FROM books;
+
+    You can use a negative number as start point as well 
