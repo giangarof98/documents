@@ -32,3 +32,41 @@ Substring
             FROM books;
 
     You can use a negative number as start point as well 
+
+Replace
+    Replace parts of string
+    REPLACE(start, from, to)
+
+    REPLACE(hello world, hell, !@#$%)
+    output: !@#$%o world
+
+    The REPLACE() function in SQL is used to modify data in a specific query result or expression, 
+        but it doesn't directly modify the data in the underlying table.
+
+Reverse
+    It does reverse the string
+    SELECT Reverse()
+
+Char_length
+    MySQL has separate CHAR_LENGTH() and LENGTH() functions. 
+    CHAR_LENGTH() returns the length of the string in characters,
+    while LENGTH() in MySQL returns the length of the string in bytes. 
+    
+    This can make a difference if your string includes multibyte characters (like UTF-8). 
+    In such scenarios, it’s always recommended to be sure how your specific 
+    SQL system implements LENGTH function.
+
+    MySQL use CHAR_LENGTH otherwise, use LENGTH
+    SELECT CHAR_LENGTH('Hello World');
+
+Upper
+    it is used to convert all letters in a specified string to uppercase.
+    SELECT UPPER('Hello World');
+
+Lower
+    used to return all uppercase character(s) in a string to lowercase.
+    SELECT LOWER('Hello World');
+
+TRIM
+    removes leading and trailing spaces of a string. You can also remove other specified characters.
+    SELECT TRIM('  Hello  ');

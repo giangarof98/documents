@@ -1,0 +1,15 @@
+Floor
+    used to round down any specific decimal or numeric value to its nearest whole integer.
+
+Abs
+    is used to return the absolute value of a number, i.e., the numeric value without its sign.
+
+Mod
+    returns the remainder of the values from the division of two numbers.
+
+Round
+    is used to round a numeric field to the nearest specified decimal or integer.
+
+Ceiling
+    is used to round up values. The function takes a single argument, which is a numeric or decimal number, 
+    and returns the smallest integer that is greater than or equal to the supplied number.
